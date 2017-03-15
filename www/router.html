@@ -43,7 +43,14 @@
 <script type="text/javascript" src="js/vue-router.js"></script>
 <!-- 引入组件库 -->
 <script type="text/javascript" src="js/mint.js"></script>
-
+<script type="text/x-template" id="barTemplate">
+    <div class="page-tabbar">
+        <mt-header title="基础产品演示平台"></mt-header>
+        <mt-cell title="哈哈哈">
+            <span style="color: green" v-html="cellname">这里是元素</span>
+        </mt-cell>
+    </div>
+</script>
 <!-- 页面脚本 -->
 <script type="text/javascript" src="router.js"></script>
 

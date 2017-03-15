@@ -13,7 +13,7 @@ var deviceWidth = document.documentElement.clientWidth;
 if(deviceWidth > 750) deviceWidth = 750;
 document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
 
-
+/*
 $(function(){
     $('.module-right').each(function(index,element){
         var itemNameWidth=0;
@@ -35,9 +35,10 @@ $(function(){
         _this.find('.item-data').width(itemDataWidth);
     });
 });
+*/
 
 
-new Vue({
+const mainVue = new Vue({
     el: '.page-tabbar',
     data: function () {
         return {
@@ -48,7 +49,7 @@ new Vue({
                 yjsframe: false,
                 wlwframe: false
             },
-            yjsurl: 'http://10.250.190.140/cescloud/tj/index',
+            // yjsurl: 'http://180.168.156.212:2210/proxy/cescloud/tj/index',
             yjshtml: '',
             datas: null,
             groups: []
@@ -90,11 +91,30 @@ new Vue({
         }
     },
     created: function() {
-        this.$http.jsonp('http://10.250.190.140/cescloud/tj/index.json').then(function(response) {
+        /*this.$http.jsonp('http://180.168.156.212:2210/proxy/cescloud/tj/index.json').then(function(response) {
             this.datas = response.body;
             this.groups = this.datas.groups;
         }).catch(function(response) {
             console.log(response);
-        })
+        })*/
+        $('.module-right').each(function(index,element){
+            var itemNameWidth=0;
+            var itemDataWidth=0;
+            var _this=$(element);
+            _this.find('.item-name').each(function(i,elem){
+                if($(elem).width()>itemNameWidth){
+                    itemNameWidth=Math.ceil($(elem).width()+1);
+                }
+            });
+            _this.find('.item-name').width(itemNameWidth);
+
+
+            _this.find('.item-data').each(function(i,elem){
+                if($(elem).width()>itemDataWidth){
+                    itemDataWidth=Math.ceil($(elem).width()+1);
+                }
+            });
+            _this.find('.item-data').width(itemDataWidth);
+        });
     }
 })
