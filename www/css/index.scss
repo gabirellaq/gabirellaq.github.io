@@ -3,6 +3,7 @@
 @import "iconfont/iconfont.css";
 @import "mint";
 //common
+$common-bg-color:#f9f9f9;
 $common-color:#1B7DCE;
 $font-color:#333;
 $font-size:0.24rem;
@@ -39,6 +40,14 @@ $dot-bg-color:#EF7810;
 
 //yunjisuan
 $cloud-sum-money-bg-color:#F78923;
+$cloudSum-height:0.78rem;
+$cloudlist-bg-color:#30A3E5;
+$cloudlist-money-bg-color:#78C8F3;
+$cloudlist-money-font-size:0.5rem;
+
+//aboutme
+$aboutMe-cell-iconfont-size:0.4rem;
+$aboutMe-cell-font-size:0.3rem;
 
 @mixin textoverflow(){
     overflow:hidden;
@@ -49,14 +58,13 @@ $cloud-sum-money-bg-color:#F78923;
 .page-tabbar {
     overflow: hidden;
     height: 100vh;
+    background:$common-bg-color;
 }
 .page-wrap{
     position:absolute;
     left:0;
     right:0;
-    bottom:$header-height + 0.04;
-    top:$header-height;
-    overflow:auto;
+    top:$header-height;    
 }
 .page-video {
     width: 100%;
@@ -72,6 +80,7 @@ $cloud-sum-money-bg-color:#F78923;
 
 .mint-tab-container{
     margin-top:$navber-height / 2 ;
+    margin-bottom:$navber-height / 2  + 0.1;
 }
 .mint-navbar{
     height:$navber-height;  
@@ -313,6 +322,13 @@ $cloud-sum-money-bg-color:#F78923;
         border-radius:$border-radius;
         text-align:center;
         color:$white-color;
+        height:$cloudSum-height;
+        line-height:$cloudSum-height;
+        .textxS,
+        .textM,
+        .unit{
+            vertical-align:top;
+        }
         .textxS{
             font-size:0.26rem;
         }
@@ -320,5 +336,114 @@ $cloud-sum-money-bg-color:#F78923;
             font-size:0.44rem;
             font-weight:bold;
         }
+    }
+    .cloudDeatil{
+        margin-top:$common-margin;
+        ul{
+            width:100%;
+            float:left;
+            li{
+                float:left;
+                width:50%;
+                font-size:$font-size;
+                color:$font-color;
+                padding:0.1rem 0;
+                .cloudDetailName,
+                .item-name{
+                    display:inline-block;
+                    width:1.8rem;
+                    text-align:right;
+                    padding-right:0.1rem;
+                }
+                .data-num{
+                    color:$common-color;
+                }
+            }
+        }
+    }
+    .cloudlist {
+        margin-top:$common-margin;
+        margin-bottom:$common-margin;
+        .module{
+            margin-bottom:$common-margin;
+            background:$cloudlist-bg-color;
+            font-size:$font-size;
+            color:$white-color;
+            border-radius:$border-radius;
+            width:100%;
+            .module-left,
+            .module-right{
+                display:table-cell;
+                vertical-align:middle;
+            }
+            .module-left{
+                .module-left-name{
+                    text-align: center;
+                    @include textoverflow;
+                    font-size:$font-size + 0.06;
+                    width:2.3rem;
+                    margin-bottom:$common-margin;
+                    margin-left:$common-margin;
+                    &.multi{
+                        margin-bottom:0;
+                        span{
+                            display:block;
+                            text-align:center;
+                            line-height:$line-height;
+                            &.tip{
+                                font-size:$font-size;
+                            }
+                        }
+                    }
+                }
+                .module-left-data{
+                    background:$cloudlist-money-bg-color;
+                    margin-left:$common-margin;
+                    padding:#{ $common-margin + 0.2 } 0;
+                    width:2.3rem;
+                    box-shadow: 1px 1px 2px 0 rgba(15,30,50,0.5);
+                    border-radius: $border-radius;
+                    text-align:center;
+                    .iconfont{
+                        font-size:$font-size;
+                    }
+                    >span{
+                        font-size:$cloudlist-money-font-size;
+                        .unit{
+                            font-size:$font-size;
+                        }
+                    }
+                }
+            }
+            .module-right {
+                ul{
+                    margin:$common-margin;
+                }
+                ul,
+                li{
+                    float:none;
+                }
+                li{
+                    width:auto;
+                    span{
+                        color:$white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aboutMe{
+    .iconfont{
+        font-size:$aboutMe-cell-iconfont-size;
+        vertical-align:middle;
+        padding-left:0.1rem;
+        padding-right: 0.1rem;
+        color:$common-color;
+    }
+    .mint-cell-text{
+        font-size:$aboutMe-cell-font-size;
+        color:$font-size;
     }
 }

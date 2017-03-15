@@ -19,8 +19,6 @@ Some notes:
 <meta name="msapplication-tap-highlight" content="no">
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 <link rel="stylesheet" href="css/base.css">
-<!--<link rel="stylesheet" type="text/css" href="yjs/iconfont/iconfont.css">-->
-<!--<link rel="stylesheet" type="text/css" href="yjs/yjs.css">-->
 <link rel="stylesheet" href="css/index.css">
 <title>基础产品演示平台</title>
 </head>
@@ -100,6 +98,79 @@ Some notes:
                                     <span class="data-name textxS">总金额</span>
                                     <span class="data-num textM" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
                                     <span class="data-num textM" v-else v-html="datas.total.totalString"></span>
+                                </div>
+                                <div class="cloudDeatil clearfix">
+                                    <ul>
+                                        <li>
+                                            <span class="cloudDetailName">云主机数量</span>
+                                            <span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
+                                            <span class="data-num" v-else v-html="datas.total.serverCount"></span>
+                                        </li>
+                                        <li>
+                                            <span class="cloudDetailName">内存数GB</span>
+                                            <span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
+                                            <span class="data-num" v-else v-html="datas.total.memorySize/1024"></span>
+                                        </li>
+                                        <li>
+                                            <span class="cloudDetailName">CPU核数</span>
+                                            <span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
+                                            <span class="data-num" v-else v-html="datas.total.cpuCount"></span>
+                                        </li>
+                                        <li>
+                                            <span class="cloudDetailName">内存GB小时数</span>
+                                            <span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
+                                            <span class="data-num" v-else v-html="datas.total.memoryHoursString"></span>
+                                        </li>
+                                        <li>
+                                            <span class="cloudDetailName">CPU小时数</span>
+                                            <span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
+                                            <span class="data-num" v-else v-html="datas.total.cpuHours"></span>
+                                        </li>
+                                        <li>
+                                            <span class="cloudDetailName">硬盘容量GB</span>
+                                            <span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span>
+                                            <span class="data-num" v-else v-html="datas.total.volumeSize"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cloudlist">
+                                    <div class="module" v-for="group in groups">
+                                        <div class="module-left">
+                                            <div class="module-left-name multi" v-if="group.name.length > 6"><span v-html="group.name"></span></div>
+                                            <div class="module-left-name" v-else><span v-html="group.name"></span></div>
+                                            <div class="module-left-data">
+                                                <i class="iconfont icon-renminbi"></i><span v-html="group.totalString"></span>
+                                            </div>  
+                                        </div>
+                                        <div class="module-right cloudDeatil">
+                                            <ul>
+                                                <li>
+                                                    <span class="item-name">云主机数量</span>
+                                                    <span class="item-data" v-html="group.serverCount"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-name">CPU核数</span>
+                                                    <span class="item-data" v-html="group.cpuCount"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-name">CPU小时数</span>
+                                                    <span class="item-data" v-html="group.cpuHoursString"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-name">内存数GB</span>
+                                                    <span class="item-data" v-html="group.memorySize/1024"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-name">内存GB小时数</span>
+                                                    <span class="item-data" v-html="group.memoryHoursString"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="item-name">硬盘容量GB</span>
+                                                    <span class="item-data" v-html="group.volumeSize"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </mt-tab-container-item>
@@ -191,7 +262,20 @@ Some notes:
                 </div>
             </mt-tab-container-item>
             <mt-tab-container-item id="关于我们">
-
+                <div class="aboutMe">
+                    <mt-cell  title="中心概况"  href="//github.com"  is-link>
+                        <span slot="icon" class="iconfont icon-gaikuang"></span>
+                    </mt-cell>
+                    <mt-cell  title="组织沿革"  href="//github.com"  is-link>
+                        <span slot="icon" class="iconfont icon-zuzhijigoushaixuan"></span>
+                    </mt-cell>
+                    <mt-cell  title="组织定位"  href="//github.com"  is-link>
+                        <span slot="icon" class="iconfont icon-icon4"></span>
+                    </mt-cell>
+                    <mt-cell  title="中心文化"  href="//github.com"  is-link>
+                        <span slot="icon" class="iconfont icon-tubiao"></span>
+                    </mt-cell>
+                </div>
             </mt-tab-container-item>
         </mt-tab-container>
     </div>
