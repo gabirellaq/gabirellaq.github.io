@@ -6,25 +6,31 @@ new Vue({
     el: '.wrapper',
     data: function () {
         return {
-            datas: null
+            datas: null,
+            groups: []
         }
     },
     methods: {
         loadData: function(callback){
-            this.$http.jsonp('http://180.168.156.212:2177/cold/mqtt/wlw.json', {
+            /*this.$http.jsonp('http://10.250.190.148/cescloud/tj/index.json', {
                 timeout: 3000
             }).then(function(response) {
                 this.datas = response.body;
+                this.groups = this.datas.groups;
                 if(callback) {
                     callback();
                 }
             }).catch(function(response) {
                 console.log(response);
-                this.datas = {};
+                this.datas = {
+                    query: {},
+                    total: {},
+                    groups: []
+                };
                 if(callback) {
                     callback();
                 }
-            })
+            })*/
 
             if(callback) {
                 callback();

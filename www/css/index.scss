@@ -13,7 +13,7 @@ $border-radius:8px;
 $white-color:#fff;
 $line-height:1.5;
 $video-height:4.41rem;
-$border-color:#ddd;
+
 
 //footer
 $footer-bg-color:#f3f8ff;
@@ -64,15 +64,8 @@ $cloudlist-money-font-size:0.5rem;
     right:0;
     top:$header-height;    
 }
-
-.page-video{
+.page-video {
     width: 100%;
-    height:$video-height;
-    video,
-    img{
-        width:100%;
-        height:100%;
-    }
 }
 .mint-loadmore-text{
     font-size:$font-size;
@@ -80,25 +73,10 @@ $cloudlist-money-font-size:0.5rem;
 .mint-tab-item-label{
     font-size:inherit;
 }
-.mint-header,
-.page-back{
+.mint-header{
     height:$header-height;
     background:$common-color;
     font-size:$header-font-size;
-}
-.page-back{
-    width:100%;
-    display:block;
-    text-decoration:none;
-    color:$white-color;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    .mintui-back{
-        padding: 0.3rem;
-        display: inline-block;
-    }
 }
 
 .mint-tab-container{
@@ -146,6 +124,9 @@ $cloudlist-money-font-size:0.5rem;
     }
 }
 
+.page-video{
+    height:$video-height;
+}
 
 .mtslider{
     text-align:center;
@@ -161,7 +142,6 @@ $cloudlist-money-font-size:0.5rem;
 }
 
 .mtArticle{
-    margin-bottom:$common-margin;
     .mtArticleH1{
         margin:$common-margin;
         font-size:$article-font-size;
@@ -184,7 +164,6 @@ $cloudlist-money-font-size:0.5rem;
         text-indent:$font-size * 2;
         font-size:$font-size;
         line-height:$line-height;
-        text-align:left;
     }
     .mtDesList{
         margin-bottom:$common-margin;
@@ -223,27 +202,18 @@ $cloudlist-money-font-size:0.5rem;
             text-align:center;
             width:50%; 
             margin-bottom:$common-margin;
+            color:$font-color;
             > a{
                 margin:0 $common-margin / 2 0 $common-margin;
                 display:block;
                 border:1px solid $menulist-border-color;
                 border-radius:$border-radius;
                 line-height:$menulist-height;
-                text-decoration: none;
-                color:$font-color;
                 @include textoverflow;
                 .iconfont{
                     font-size:$menulist-iconfont-size;
                     margin-right:0.1rem;
                     color:$common-color;
-                }
-                &:active {
-                    color:$white-color;
-                    background:$common-color;
-                    border-color:$common-color;
-                    .iconfont{
-                        color:$white-color;
-                    }
                 }
             }
             i,span{
@@ -475,125 +445,6 @@ $cloudlist-money-font-size:0.5rem;
     }
     .mint-cell-text{
         font-size:$font-size;
-        color:$font-size;
-    }
-}
-
-
-.section{
-    margin-top:$header-height;
-    font-size:$font-size;
-    color:$font-color;
-    line-height:$line-height;
-    p{
-        margin-left:0;
-        margin-right:0;
-    }
-    .sectionMargin{
-        margin:0 $common-margin $common-margin $common-margin;
-    }
-    .articleImg{
-        text-align:center;
-        .oneImg{
-            max-width:100%;
-            max-height:5rem;
-        }
-        .twoImg{
-            float:left;
-            width:50%;
-        }
-    }
-    .articlelist {
-        ul{
-            text-indent:$font-size * 2;
-        }
-    }
-    h1{
-        font-size: $font-size;
-        position:relative;
-        .iconDot{
-            display: inline-block;
-            width: $dot-width;
-            height: $dot-height;
-            background: $dot-bg-color;
-            border-radius: $dot-width;
-            margin-right: 0.2rem;
-            margin-left: 0.2rem;
-            position: absolute;
-            top: 0.16rem;
-        }
-        a{
-            display: inline-block;
-            margin-left:0.5rem;
-        }
-    }
-    .articalTable{
-        table {
-            width:100%;
-            th,
-            td{
-                padding:0.2rem;
-                border: 1px solid $border-color;
-            }
-            th{
-                background:$common-color;
-                color:$white-color;
-            }
-            td{
-                vertical-align:middle;
-            }
-        }
-    }
-}
-
-.fade-enter-active {
-    animation:slideInRight 0.3s linear;
-}
-.page-tabbar.fade-enter-active{
-    animation:slideInLeft 0.3s linear;
-}
-.fade-leave-active {
-    //animation:slideInLeft 0.1s linear;
-}
-.fade-enter,
-.fade-leave-active {
-}
-
-@keyframes slideInLeft {
-    0% {
-        -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-            transform: translateX(0);
-    }
-}
-
-@-webkit-keyframes slideInRight {
-    0% {
-        -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    0% {
-        -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-        visibility: visible;
-    }
-
-    100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
+        color:$font-color;
     }
 }

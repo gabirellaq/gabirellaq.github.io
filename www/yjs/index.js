@@ -10,7 +10,7 @@ new Vue({
     },
     methods: {
         loadData: function(callback){
-            this.$http.jsonp('http://180.168.156.212:2210/proxy/cescloud/tj/index.json', {
+            this.$http.jsonp('http://10.250.190.140/cescloud/tj/index.json', {
                 timeout: 3000
             }).then(function(response) {
                 this.datas = response.body;
