@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+@import "iconfont/iconfont.css";
+@import "mint";
+//common
+$common-color:#1B7DCE;
+$font-color:#333;
+$font-size:0.24rem;
+$common-margin:0.30rem;
+$article-font-size:0.28rem;
+$border-radius:8px;
+$white-color:#fff;
+$line-height:1.5;
+$video-height:4.41rem;
+
+
+//footer
+$footer-bg-color:#f3f8ff;
+
+//navbar
+$navbar-color:#E5EEF9;
+$navbar-font-size:0.32rem;
+$navber-height:0.8rem;
+
+//header
+$header-height:0.96rem;
+$header-font-size:0.38rem;
+
+//menulist
+$menulist-height:0.75rem;
+$menulist-border-color:#bbb;
+$menulist-icon-width:0.66rem;
+$menulist-iconfont-size:0.4rem;
+
+//dot
+$dot-width:0.12rem;
+$dot-height:0.12rem;
+$dot-bg-color:#EF7810;
+
+//yunjisuan
+$cloud-sum-money-bg-color:#F78923;
+
+@mixin textoverflow(){
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.page-tabbar {
+    overflow: hidden;
+    height: 100vh;
+}
+.page-wrap{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:$header-height + 0.04;
+    top:$header-height;
+    overflow:auto;
+}
+.page-video {
+    width: 100%;
+}
+.mint-tab-item-label{
+    font-size:inherit;
+}
+.mint-header{
+    height:$header-height;
+    background:$common-color;
+    font-size:$header-font-size;
+}
+
+.mint-tab-container{
+    margin-top:$navber-height / 2 ;
+}
+.mint-navbar{
+    height:$navber-height;  
+    background:$navbar-color;
+    position:fixed;
+    left:0;
+    right:0;
+    top:$header-height;
+    z-index:1;
+    .mint-tab-item{
+        padding:0.26rem 0;
+        font-size:$navbar-font-size;
+        color:$font-color;
+        &.is-selected{
+            color:$common-color;
+            border:0;
+            margin:0;
+        }
+    }
+}
+
+.mint-tabbar{
+    background-color:$footer-bg-color;
+    .iconfont{
+        display:block;
+        font-size:0.4rem;
+    }
+    .footerText{
+        font-size:0.18rem;
+    }
+    .mint-tab-item-label{
+        font-size:0.4rem;
+    }
+    .mint-tab-item{
+        color:$font-color;
+    }
+    .mint-tab-item.is-selected {
+        background-color: transparent;
+        color: $common-color;
+    }
+}
+
+.page-video{
+    height:$video-height;
+}
+
+.mtslider{
+    text-align:center;
+    img {
+        max-width:100%;
+        height:4.41rem;
+    }
+    &.productslider{
+        img{
+            height:5.63rem;
+        }
+    }
+}
+
+.mtArticle{
+    .mtArticleH1{
+        margin:$common-margin;
+        font-size:$article-font-size;
+        color:$common-color;
+        img{
+            width:0.38rem;
+            height:0.38rem;
+        }
+        img,
+        span{
+            vertical-align:middle;
+        }
+        .iconfont{
+            font-size:0.38rem;
+            font-weight:normal;
+        }
+    }
+    p{
+        margin:0 $common-margin $common-margin / 2 $common-margin;
+        text-indent:$font-size * 2;
+        font-size:$font-size;
+        line-height:$line-height;
+    }
+    .mtDesList{
+        margin-bottom:$common-margin;
+        li{
+            margin:$common-margin / 2 $common-margin 0 $common-margin;
+            font-size: $font-size;
+            line-height: $line-height;
+            position:relative;
+            span{
+                display: inline-block;
+                width: $dot-width;
+                height: $dot-height;
+                background: $dot-bg-color;
+                border-radius: $dot-width;
+                margin-right: 0.2rem;
+                margin-left: 0.2rem;
+                position: absolute;
+                top: 0.16rem;
+            }
+            a{
+                display: inline-block;
+                margin-left:0.5rem;
+            }
+        }
+    }
+}
+
+.mtMenulist {
+    ul {
+        width:100%;
+        float:left;
+        li{
+            float:left;
+            height:$menulist-height;
+            font-size:$font-size;
+            text-align:center;
+            width:50%; 
+            margin-bottom:$common-margin;
+            color:$font-color;
+            > a{
+                margin:0 $common-margin / 2 0 $common-margin;
+                display:block;
+                border:1px solid $menulist-border-color;
+                border-radius:$border-radius;
+                line-height:$menulist-height;
+                @include textoverflow;
+                .iconfont{
+                    font-size:$menulist-iconfont-size;
+                    margin-right:0.1rem;
+                    color:$common-color;
+                }
+            }
+            i,span{
+                vertical-align:middle;
+            }
+            &:nth-child(even) {
+                > a {
+                    margin-right: $common-margin;
+                    margin-left: $common-margin / 2;
+                }
+            }
+        }
+    }
+    &.mtMenulistDashuju {
+        margin-top:$common-margin;
+        li{
+            width:25%;
+            > a{
+                border-color:$common-color;
+            }
+            &:nth-child(even) {
+                > a {
+                    margin-right: $common-margin;
+                    margin-left: $common-margin/2;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                > a {
+                    margin-right: $common-margin / 2;
+                    margin-left: $common-margin / 2;
+                }
+            }
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7){
+                width:33.3%;
+            }
+            &:nth-child(6) {
+                > a {
+                    margin-right: $common-margin / 2;
+                    margin-left: $common-margin / 2;
+                }
+            }
+            &:nth-child(7) {
+                > a {
+                    margin-left: $common-margin / 2;
+                    margin-right: $common-margin;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+
+.menulist{
+    margin-bottom:$common-margin;
+    ul{
+        float:left;
+        width:100%;
+        li{
+            float:left;
+            width:50%;
+            @include textoverflow;
+            > p{
+                margin:$common-margin #{$common-margin / 2} 0 $common-margin;
+                border:1px solid $common-color;
+                border-radius:$border-radius;
+                color:$font-color;
+                font-size:$font-size;
+                height:$menulist-height;
+                .iconfont{
+                    font-size:$menulist-iconfont-size;
+                    background:$common-color;
+                    border-radius:$border-radius - 2;
+                    width: $menulist-icon-width;
+                    display: inline-block;
+                    height: 100%;
+                    line-height: $menulist-height;
+                    text-align: center;
+                    color:$white-color;
+                }
+                .iconfont,
+                .menuText{
+                    vertical-align:middle;
+                }
+            }
+            &:nth-child(even) {
+                p{
+                    margin-right:$common-margin;
+                    margin-left:$common-margin / 2;
+                }
+            }
+        }
+    }
+}
+
+
+.cloudBox{
+    margin:0 $common-margin;
+    .cloudSum{
+        margin-top:$common-margin;
+        background:$cloud-sum-money-bg-color;
+        border-radius:$border-radius;
+        text-align:center;
+        color:$white-color;
+        .textxS{
+            font-size:0.26rem;
+        }
+        .textM{
+            font-size:0.44rem;
+            font-weight:bold;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<link rel="stylesheet" href="../css/mint.css">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<mt-loadmore :top-method="loadTop" :auto-fill="false" ref="loadmore">
+		<!--<div class="header">
+			<span class="icon-logo"></span><span class="logoText">基础产品演示平台</span>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a>云计算</a></li>
+				<li><a>大数据</a></li>
+				<li class="current"><a>物联网</a></li>
+				<li><a>移动端</a></li>
+			</ul>
+		</div>-->
+		<div class="slider">
+			<img src="slider/slider.png" class="slider-img">
+		</div>
+		<div class="menulist clearfix">
+			<ul>
+				<li>
+					<p>
+						<span class="iconfont icon-temperature"></span>
+						<span class="menuText">大气温度：18.9℃</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="iconfont icon-shidu"></span>
+						<span class="menuText">大气湿度：24.6℃</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="iconfont icon-turangwendu"></span>
+						<span class="menuText">土壤温度：19℃</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="iconfont icon-shidu"></span>
+						<span class="menuText">土壤湿度：24.6℃</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="iconfont icon-fengsu"></span>
+						<span class="menuText">风速：0</span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="iconfont icon-fengxiangbiao-"></span>
+						<span class="menuText">风向：292.5</span>
+					</p>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="article">
+			<h1 class="article-title">
+				<span class="iconfont icon-qingbaobanlianwang"></span>
+				<span>中信物联网</span>
+			</h1>
+			<p>物联网(Internet of Things)是一个基于传统信息网络之上，让所有能够被独立寻址的普通物理对象实现互联互通的网络。它具有普通对象设备化、自治终端互联化和普适服务智能化3个重要特征。</p>
+			<p>智农云终端是将传感器、云平台等物联网技术在传统农业上运用的软硬件一体化产品，通过智能终端实现对农业生产进行控制，做到精确感知、精准操作、精细管理。</p>
+		</div>
+		</mt-loadmore>
+	</div>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript" src="../js/mint.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+    <script>
+    	/**
+	 * 第一种方案（参考网易）http://www.codeceo.com/article/font-size-web-design.html
+	 * [以iPhone4/5的设计稿为例js动态设置文档 rem 值]
+	 * 6.4怎么来的，当然是根据设计稿的横向分辨率/100得到的
+	 * 如果是750的设计稿，应该除以7.5
+	 * 当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站 所以加上这个判断if(deviceWidth > 640) deviceWidth = 640;
+	 */
+	var deviceWidth = document.documentElement.clientWidth;
+	if(deviceWidth > 750) deviceWidth = 750;
+	document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
+    </script>
+</body>
+</html>
