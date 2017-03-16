@@ -4,82 +4,13 @@
 
 // 0. 如果使用模块化机制编程，導入Vue和VueRouter，要调用 Vue.use(VueRouter)
 // 本地存储
-const storage = window.localStorage;
+var storage = window.localStorage;
 // 初始化本地存储内容
-
-// 1. 定义（路由）组件。
-// 可以从其他文件 import 进来
-const MainPage = {
-    template: '#mainpage',
-    
-}
-// 云基
-// 信息发布平台
-const Infoplat = { template: '#infoplatpage' }
-// 系统配置平台
-const Config = { template: '#configpage'}
-// 基础组件平台
-const Coral = { template: '#coralpage'}
-// 全文检索平台
-const Search = { template: '#searchpage'}
-// 系统管理平台
-const Authsystem = { template: '#authsystempage'}
-// 工作流平台
-const Workflow = { template: '#workflowpage'}
-
-// 灵器
-// 电子文件通用浏览器
-const BrowserTool = {template: '#browsertoolpage'};
-// 电子文件封装工具
-const PackageTool = {template: '#packagetoolpage'};
-// 电子文件格式转换软件
-const ConvertTool = {template: '#converttoolpage'};
-// 电子文件检测软件
-const CheckTool = {template: '#checktoolpage'};
-// 电子文件离线浏览软件
-// const OfflineTool = {template: '#offlinetoolpage'};
-
-// 关于我们
-// 中心概述
-const CenterInfo = {template: '#centerinfopage'};
-// 组织沿革
-const OrganizeHistory = {template: '#organizehistorypage'};
-// 组织定位
-const OrganizeOrientation = {template: '#organizeorientationpage'};
-// 中心文化
-const CenterCulture = {template: '#centerculturepage'};
-
-// 2. 定义路由
-// 每个路由应该映射一个组件。 其中"component" 可以是
-// 通过 Vue.extend() 创建的组件构造器，
-// 或者，只是一个组件配置对象。
-// 我们晚点再讨论嵌套路由。
-const routes = [
-    { path: '/', component: MainPage },
-    { path: '/base/infoplat', component: Infoplat },
-    { path: '/base/config', component: Config },
-    { path: '/base/coral', component: Coral },
-    { path: '/base/search', component: Search },
-    { path: '/base/authsystem', component: Authsystem },
-    { path: '/base/workflow', component: Workflow },
-
-    { path: '/tool/browser', component: BrowserTool },
-    { path: '/tool/package', component: PackageTool },
-    { path: '/tool/convert', component: ConvertTool },
-    { path: '/tool/check', component: CheckTool },
-    // { path: '/tool/offline', component: OfflineTool },
-
-    { path: '/about/info', component: CenterInfo },
-    { path: '/about/history', component: OrganizeHistory },
-    { path: '/about/orientation', component: OrganizeOrientation },
-    { path: '/about/culture', component: CenterCulture },
-]
-
 
 // 4. 创建和挂载根实例。
 // 记得要通过 router 配置参数注入路由，
 // 从而让整个应用都有路由功能
-const app = new Vue({
+var app = new Vue({
 	el: '.page-tabbar',
     data: function () {
         return {
@@ -93,7 +24,7 @@ const app = new Vue({
             yjshtml: '',
             datas: null,
             groups: [],
-            wlwDatas: null,
+            wlwDatas: null
         }
     },
     watch: {
@@ -160,7 +91,7 @@ const app = new Vue({
                         },
                         "query" : {
                             "startTime": "",
-                            "endTime": "",
+                            "endTime": ""
                         }
                     };
                 }
@@ -198,7 +129,7 @@ const app = new Vue({
                         "fx" : "",
                         "trwd" : "",
                         "trsd" : ""
-                    };
+                    }
                 }
                 if(callback) {
                     callback();
