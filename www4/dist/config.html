@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>系统配置平台</title>
+</head>
+<body>
+<div id="app">
+	<a href="index-all.html" class="page-back router-link-active" style="width: 100px; z-index: 2;"><i class="mintui mintui-back"></i></a>
+    <mt-header title="系统配置平台" fixed ></mt-header>
+    <div class="section">
+        <div class="sectionMargin">
+            <div class="mtArticle">
+                <h1 class="mtArticleH1">
+                    <span>系统配置平台（CES Syscfg）</span>
+                </h1>
+                <p>为适应软件系统复杂性的不断增长，简化应用开发过程，提高软件系统生产效率及软件系统质量，我司开发了B/S架构的系统配置平台。系统配置平台的应用，使架构在其上的应用系统具有良好的柔性，大大延长了系统的寿命，增强了系统的自适应性和可扩展性。</p>
+                <p>系统配置平台提供系统管理员和业务管理员对业务分类、数据结构、应用功能、个性化界面等多方面的定义和各类参数的配置功能，并且将定义和配置的结果固化成业务构件归入构件仓库，并通过构件的装配形成能够实现一定需求的功能模块，从而满足用户单位对应用系统功能扩展和调整的需要。主要功能框架如下图所示：</p>
+                <div class="articleImg clearfix">
+                    <img src="images/config1.png" class="oneImg">
+                </div>
+                <h1><span class="iconDot"></span><a>强大的自定义功能</a></h1>
+                <p>系统提供了强大的自定义功能，以档案系统为例，自定义功能包括档案类型定义、数据结构定义、操作界面定义、著录模板定义、查询列表定义、档号定义等，如下图所示：</p>
+                <div class="articleImg clearfix">
+                    <img src="images/config2.jpg" class="oneImg">
+                </div>
+                <p>通过后台配置，各种常见档案类型和专业档案类型的管理功能不需要二次开发即可正常运行。</p>
+                <h1><span class="iconDot"></span><a>出众的构件容器功能</a></h1>
+                <p>系统配置平台不但可以实现各类功能的后台配置，同时也是各类组件的容器。基础组件平台中提供的各种组件既可以在应用程序开发中直接调用，也可以植入系统配置平台中进行拖拉配置，系统配置平台实际上是基于构件的应用系统的集成开发环境。如下图所示：</p>
+                <div class="articleImg clearfix">
+                    <img src="images/config3.jpg" class="oneImg">
+                </div>
+                <p>系统管理员在配置应用系统时如果要使用各类组件和构件，只需要找到相应的组件/构件，将其置于表单中即可。同时系统管理员定义和配置的结果又可以回到构件仓库中。</p>
+                <h1><span class="iconDot"></span><a>个性化的台帐配置功能</a></h1>
+                <p>系统提供了个性化台帐配置工具，任何人可以订阅他最关心的信息，每次进入系统，主页上直接显示他所订阅的信息。这样，避免了每次都进行相同的操作来找到自己需要的信息，简化了用户的操作，提高了页面的友好性。</p>
+                <p>不同用户的个性化台帐界面示意如下：</p>
+                <div class="articleImg clearfix">
+                    <img src="images/config4.jpg" class="oneImg">
+                </div>
+                <h1><span class="iconDot"></span><a>工厂化的软件开发模式</a></h1>
+                <p>系统配置平台的研发改变了传统应用软件的开发模式，即从调研?分析?设计?开发?测试?实施整个生命周期都强烈依赖于软件技术人员的个人能力的现状，使工厂化的软件开发成为可能。这其中，系统配置平台就是软件工厂中的加工流水线，处于其中最核心的位置，如下图所示：</p>
+                <div class="articleImg clearfix">
+                    <img src="images/config5.png" class="oneImg">
+                </div>
+                <p>系统配置平台具有如下一些突出功能特性；</p>
+                <div class="articlelist clearfix">
+                    <ul>
+                        <li>1.提供了强大的自定义功能，既包括基础定义，也包括业务定义（特别针对档案行业设计），可以做到用户新增一种档案类型，不需要任何二次开发，只需要在平台上进行配置即可完全用户需求；</li>
+                        <li>2.提供了后台各类参数的设置功能，尽量做到用户需求的变化不是通过开发，而是通过配置实现；对于配置结果都可以存为模板，方便用户后续操作；</li>
+                        <li>3.作为构件容器和构件仓库的设计思路大大提升了该平台的包容性和整合能力，使其能够成为其他平台的基础，实现工厂化的软件开发；</li>
+                        <li>4.集成工作流引擎和报表引擎，可以方便的调用工作流平台和报表平台满足用户相应需求；并可以方便的实现和系统管理平台的集成，使用同一套单位、组织、用户和权限管理，避免重复定义；</li>
+                        <li>5.提供了灵活方便的个性化台帐配置功能，在很大程度上满足了用户的个性化需求，提高了系统的友好性。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 添加页面模板 -->
+<!-- 页面脚本 -->
+<script type="text/javascript" src="vue/vue.min.js"></script>
+<script type="text/javascript" src="vue/mint.min.js"></script>
+<script type="text/javascript">
+    /**
+     * 第一种方案（参考网易）http://www.codeceo.com/article/font-size-web-design.html
+     * [以iPhone4/5的设计稿为例js动态设置文档 rem 值]
+     * 6.4怎么来的，当然是根据设计稿的横向分辨率/100得到的
+     * 如果是750的设计稿，应该除以7.5
+     * 当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站 所以加上这个判断if(deviceWidth > 640) deviceWidth = 640;
+     */
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 750) deviceWidth = 750;
+    document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
+
+
+    const app = new Vue({
+       el: "#app"
+    });
+</script>
+</body>
+</html>

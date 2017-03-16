@@ -18,24 +18,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="css/main.min.css">
     <title>信息发布平台</title>
-    <script>
-        /**
-     * 第一种方案（参考网易）http://www.codeceo.com/article/font-size-web-design.html
-     * [以iPhone4/5的设计稿为例js动态设置文档 rem 值]
-     * 6.4怎么来的，当然是根据设计稿的横向分辨率/100得到的
-     * 如果是750的设计稿，应该除以7.5
-     * 当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站 所以加上这个判断if(deviceWidth > 640) deviceWidth = 640;
-     */
-    var deviceWidth = document.documentElement.clientWidth;
-    if (deviceWidth > 750) deviceWidth = 750;
-    document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
-    </script>
 </head>
 <body>
 <div id="app">
+	<a href="index-all.html" class="page-back router-link-active" style="width: 100px; z-index: 2;"><i class="mintui mintui-back"></i></a>
     <mt-header title="信息发布平台" fixed ></mt-header>
     <div class="section">
         <div class="page-video">
@@ -135,10 +123,21 @@
 <script type="text/javascript" src="vue/vue.min.js"></script>
 <script type="text/javascript" src="vue/mint.min.js"></script>
 <script type="text/javascript">
-const app = new Vue({
-   el: "#app"
-});
+    /**
+     * 第一种方案（参考网易）http://www.codeceo.com/article/font-size-web-design.html
+     * [以iPhone4/5的设计稿为例js动态设置文档 rem 值]
+     * 6.4怎么来的，当然是根据设计稿的横向分辨率/100得到的
+     * 如果是750的设计稿，应该除以7.5
+     * 当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站 所以加上这个判断if(deviceWidth > 640) deviceWidth = 640;
+     */
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 750) deviceWidth = 750;
+    document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
 
+
+    const app = new Vue({
+       el: "#app"
+    });
 </script>
 </body>
 </html>

@@ -18,21 +18,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="css/main.min.css">
     <title>基础产品演示平台</title>
-    <script>
-        /**
-     * 第一种方案（参考网易）http://www.codeceo.com/article/font-size-web-design.html
-     * [以iPhone4/5的设计稿为例js动态设置文档 rem 值]
-     * 6.4怎么来的，当然是根据设计稿的横向分辨率/100得到的
-     * 如果是750的设计稿，应该除以7.5
-     * 当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站 所以加上这个判断if(deviceWidth > 640) deviceWidth = 640;
-     */
-    var deviceWidth = document.documentElement.clientWidth;
-    if (deviceWidth > 750) deviceWidth = 750;
-    document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
-    </script>
+
 </head>
 <body>
 <div id="app">
@@ -63,11 +51,11 @@
                                 <div class="mtMenulist clearfix">
                                     <ul>
                                         <li><a href="infoplat.html"><i class="iconfont icon-inforelease"></i><span>信息发布平台</span><i class="iconfont icon-video2"></i></a></li>
-                                        <li><a><i class="iconfont icon-xinxifabu"></i><span>系统配置平台</span></a></li>
-                                        <li><a><i class="iconfont icon-guizezujian"></i><span>基础组件平台</span><i class="iconfont icon-video2"></i></a></li>
-                                        <li><a><i class="iconfont icon-gongzuoliu"></i><span>全文检索平台</span></a></li>
-                                        <li><a><i class="iconfont icon-xitongguanli"></i><span>系统管理平台</span><i class="iconfont icon-video2"></i></a></li>
-                                        <li><a><i class="iconfont icon-kuaisujiansuo"></i><span>工作流平台</span></a></li>
+                                        <li><a href="config.html"><i class="iconfont icon-xinxifabu"></i><span>系统配置平台</span></a></li>
+                                        <li><a href="coral.html"><i class="iconfont icon-guizezujian"></i><span>基础组件平台</span><i class="iconfont icon-video2"></i></a></li>
+                                        <li><a href="search.html"><i class="iconfont icon-gongzuoliu"></i><span>全文检索平台</span></a></li>
+                                        <li><a href="authsystem.html"><i class="iconfont icon-xitongguanli"></i><span>系统管理平台</span><i class="iconfont icon-video2"></i></a></li>
+                                        <li><a href="workflow.html"><i class="iconfont icon-kuaisujiansuo"></i><span>工作流平台</span></a></li>
                                     </ul>
                                 </div>
 
@@ -344,6 +332,6 @@
 <script type="text/javascript" src="vue/vue-resource.js"></script>
 <script type="text/javascript" src="vue/jquery.min.js"></script>
 <script type="text/javascript" src="vue/mint.min.js"></script>
-<script type="text/javascript" src="vue/index3.js"></script>
+<script type="text/javascript" src="vue/index.js"></script>
 </body>
 </html>
