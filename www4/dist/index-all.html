@@ -293,16 +293,16 @@
                 </mt-tab-container-item>
                 <mt-tab-container-item id="关于我们">
                     <div class="aboutMe">
-                        <mt-cell title="中心概况" is-link href="centerinfopage.html">
+                        <mt-cell title="中心概况" is-link v-on:click.native="window.location.href = 'centerpage.html'">
                             <span slot="icon" class="iconfont icon-gaikuang"></span>
                         </mt-cell>
-                        <mt-cell title="组织沿革" is-link href="organizehistory.html">
+                        <mt-cell title="组织沿革" is-link v-on:click.native="window.location.href = 'organizehistory.html'">
                             <span slot="icon" class="iconfont icon-zuzhijigoushaixuan"></span>
                         </mt-cell>
-                        <mt-cell title="组织定位" is-link href="organizeorientation.html" >
+                        <mt-cell title="组织定位" is-link v-on:click.native="window.location.href = 'organizeorientation.html'" >
                             <span slot="icon" class="iconfont icon-icon4"></span>
                         </mt-cell>
-                        <mt-cell title="中心文化" is-link href="centerculture.html">
+                        <mt-cell title="中心文化" is-link v-on:click.native="window.location.href = 'centerculture.html'">
                             <span slot="icon" class="iconfont icon-tubiao"></span>
                         </mt-cell>
                     </div>
