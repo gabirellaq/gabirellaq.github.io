@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1489631970318'); /* IE9*/
-  src: url('iconfont.eot?t=1489631970318#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1489631970318') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1489631970318') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1489631970318#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1489633382632'); /* IE9*/
+  src: url('iconfont.eot?t=1489633382632#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1489633382632') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1489633382632') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1489633382632#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -26,6 +26,8 @@
 .icon-temperature:before { content: "\e65c"; }
 
 .icon-tubiao:before { content: "\e621"; }
+
+.icon-video2:before { content: "\e645"; }
 
 .icon-inforelease:before { content: "\e78e"; }
 

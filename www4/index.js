@@ -2,17 +2,6 @@
  * Created by lenovo on 2017/3/14.
  */
 
-/**
- * 第一种方案（参考网易）http://www.codeceo.com/article/font-size-web-design.html
- * [以iPhone4/5的设计稿为例js动态设置文档 rem 值]
- * 6.4怎么来的，当然是根据设计稿的横向分辨率/100得到的
- * 如果是750的设计稿，应该除以7.5
- * 当deviceWidth大于640时，则物理分辨率大于1280（这就看设备的devicePixelRatio这个值了），应该去访问pc网站 所以加上这个判断if(deviceWidth > 640) deviceWidth = 640;
- */
-var deviceWidth = document.documentElement.clientWidth;
-if (deviceWidth > 750) deviceWidth = 750;
-document.documentElement.style.fontSize = deviceWidth / 7.2 + 'px';
-
 // 0. 如果使用模块化机制编程，導入Vue和VueRouter，要调用 Vue.use(VueRouter)
 // 本地存储
 const storage = window.localStorage;

@@ -14,6 +14,7 @@ $white-color:#fff;
 $line-height:1.5;
 $video-height:4rem;
 $border-color:#ddd;
+$video-color:#dea95a;
 
 //footer
 $footer-bg-color:#f3f8ff;
@@ -234,10 +235,18 @@ $aboutme-font-size:0.3rem;
                 text-decoration: none;
                 color:$font-color;
                 @include textoverflow;
+                position:relative;
                 .iconfont{
                     font-size:$menulist-iconfont-size;
                     margin-right:0.1rem;
                     color:$common-color;
+                }
+                .icon-video2{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    font-size: 0.3rem;
+                    color: $video-color;
                 }
                 &:active {
                     color:$white-color;
