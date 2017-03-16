@@ -10,7 +10,7 @@ const storage = window.localStorage;
 // 1. 定义（路由）组件。
 // 可以从其他文件 import 进来
 const MainPage = {
-    template: '<div class="page-tabbar"><mt-header title="基础产品演示平台" fixed></mt-header><div class="page-wrap"><mt-tab-container class="page-tabbar-container" v-model="selected" ref="tabContrainer"><mt-tab-container-item id="基础产品"><div class="page-navbar"><mt-navbar class="page-part" v-model="jccpSelected"><mt-tab-item id="yj">云基</mt-tab-item><mt-tab-item id="lq">灵器</mt-tab-item></mt-navbar><mt-tab-container v-model="jccpSelected"><mt-tab-container-item id="yj"><!-- 云基 --><div class="mtslider"><img src="img/yunjiSlider@2x.png"></div><div class="mtArticle clearfix"><h1 class="mtArticleH1"><img src="img/yunji.png"><span>“云基”平台系列产品</span></h1><p>平台化的设计理念起源于构件化和模块化软件开发思想，将应用软件开发过程中的通用功能进行提炼和升华，并按照松耦合、强内聚的基本设计思想进行功能划分和接口设计，使平台模块之间既保持接口上的关联，又实现功能上的独立。</p></div><div class="mtMenulist clearfix"><ul><li><router-link :to="\'/base/infoplat\'"><i class="iconfont icon-inforelease"></i><span>信息发布平台</span></router-link></li><li><router-link :to="\'/base/config\'"><i class="iconfont icon-xinxifabu"></i><span>系统配置平台</span></router-link></li><li><router-link :to="\'/base/coral\'"><i class="iconfont icon-guizezujian"></i><span>基础组件平台</span></router-link></li><li><router-link :to="\'/base/search\'"><i class="iconfont icon-gongzuoliu"></i><span>全文检索平台</span></router-link></li><li><router-link :to="\'/base/authsystem\'"><i class="iconfont icon-xitongguanli"></i><span>系统管理平台</span></router-link></li><li><router-link :to="\'/base/workflow\'"><i class="iconfont icon-kuaisujiansuo"></i><span>工作流平台</span></router-link></li></ul></div></mt-tab-container-item><mt-tab-container-item id="lq"><!-- 灵器 --><div class="mtslider"><img src="img/lingqiSlider@2x.png"></div><div class="mtArticle clearfix"><h1 class="mtArticleH1"><img src="img/lingqi.png"><span>“灵器”工具系列产品</span></h1><p>工具软件是指可以完成某一功能的独立软件，相对于应用软件的主体作用而言，工具软件起到了辅助作用，使用工具软件能节省软件生产开发时间和费用，提高软件生产率和质量。工具既可以在一定的条件下独立运行，也可以作为应用软件功能的一部分集成到项目中去，还可以作为基础功能整合在软件产品中。</p></div><div class="mtMenulist clearfix"><ul><li><router-link :to="\'/tool/browser\'">电子文件通用浏览器</router-link></li><li><router-link :to="\'/tool/package\'">电子文件封装工具</router-link></li><li><router-link :to="\'/tool/convert\'">电子文件格式转换软件</router-link></li><li><router-link :to="\'/tool/check\'">电子文件检测软件</router-link></li><li><a>电子文件离线浏览软件</a></li></ul></div></mt-tab-container-item></mt-tab-container></div></mt-tab-container-item><mt-tab-container-item id="云数物端"><div class="page-navbar"><mt-navbar class="page-part" v-model="yswdSelected" ref="yswdTab"><mt-tab-item id="yjs">云计算</mt-tab-item><mt-tab-item id="dsj">大数据</mt-tab-item><mt-tab-item id="wlw">物联网</mt-tab-item></mt-navbar><mt-tab-container v-model="yswdSelected" ref="yswdContainer"><mt-tab-container-item id="yjs"><!-- 云计算 --><mt-loadmore :top-method="loadYjsTop" :auto-fill="false" ref="yjsloadmore"><div class="cloudBox"><div class="cloudSum"><span class="data-name textxS">总金额</span><span class="data-num textM" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num textM" v-else v-html="datas.total.totalString"></span></div><div class="cloudDeatil clearfix"><ul><li><span class="cloudDetailName">云主机数量</span><span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num" v-else v-html="datas.total.serverCount"></span></li><li><span class="cloudDetailName">内存数GB</span><span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num" v-else v-html="datas.total.memorySize/1024"></span></li><li><span class="cloudDetailName">CPU核数</span><span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num" v-else v-html="datas.total.cpuCount"></span></li><li><span class="cloudDetailName">内存GB小时数</span><span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num" v-else v-html="datas.total.memoryHoursString"></span></li><li><span class="cloudDetailName">CPU小时数</span><span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num" v-else v-html="datas.total.cpuHours"></span></li><li><span class="cloudDetailName">硬盘容量GB</span><span class="data-num" v-if="datas == null"><mt-spinner color="#26a2ff" type="fading-circle"></mt-spinner></span><span class="data-num" v-else v-html="datas.total.volumeSize"></span></li></ul></div><div class="cloudlist"><div class="module" v-for="group in groups"><div class="module-left"><div class="module-left-name multi" v-if="group.name.length > 6"><span v-html="group.name"></span></div><div class="module-left-name" v-else><span v-html="group.name"></span></div><div class="module-left-data"><i class="iconfont icon-renminbi"></i><span v-html="group.totalString"></span></div></div><div class="module-right cloudDeatil"><ul><li><span class="item-name">云主机数量</span><span class="item-data" v-html="group.serverCount"></span></li><li><span class="item-name">CPU核数</span><span class="item-data" v-html="group.cpuCount"></span></li><li><span class="item-name">CPU小时数</span><span class="item-data" v-html="group.cpuHoursString"></span></li><li><span class="item-name">内存数GB</span><span class="item-data" v-html="group.memorySize/1024"></span></li><li><span class="item-name">内存GB小时数</span><span class="item-data" v-html="group.memoryHoursString"></span></li><li><span class="item-name">硬盘容量GB</span><span class="item-data" v-html="group.volumeSize"></span></li></ul></div></div></div></div></mt-loadmore></mt-tab-container-item><mt-tab-container-item id="dsj"><!--大数据--><div class="mtslider productslider"><img src="img/dashujuSlider@2x.png"></div><div class="mtMenulist mtMenulistDashuju clearfix"><ul><li><a>数据源</a></li><li><a>数据抽取</a></li><li><a>数据存储</a></li><li><a>商业报表</a></li><li><a>大数据库处理</a></li><li><a>数据查询分析</a></li><li><a>数据仓库</a></li></ul></div><div class="mtArticle clearfix"><h1 class="mtArticleH1"><span class="iconfont icon-dashuju"></span><span>中信大数据</span></h1><ul class="mtDesList"><li><span class="iconDot"></span><a>大数据为企业获得更为深刻、全面的洞察能力提供了前所未有的空间与潜力。</a></li><li><span class="iconDot"></span><a>实时准确地监控、追踪竞争对手动态，是企业获取竞争情报的利器。</a></li><li><span class="iconDot"></span><a>通过大数据计算可以帮助企业进行品牌信息的水平化设计和碎片化扩散。</a></li><li><span class="iconDot"></span><a>为企业决策部门和管理层提供便捷、多途径的企业战略决策工具。</a></li></ul></div></mt-tab-container-item><mt-tab-container-item id="wlw"><!-- 物联网 --><mt-loadmore :top-method="loadWlwTop" :auto-fill="false" ref="wlwloadmore"><div class="mtslider productslider"><img src="img/wulianwangSlider@2x.png"></div><div class="menulist clearfix"><ul><li><p><span class="iconfont icon-temperature"></span><span class="menuText" v-if="wlwDatas == null"><mt-spinnercolor="#26a2ff" type="fading-circle"></mt-spinner></span><span class="menuText" v-else  v-html="\'大气温度：\' + wlwDatas.dqwd + \'℃\'"></span></p></li><li><p><span class="iconfont icon-shidu"></span><span class="menuText" v-if="wlwDatas == null"><mt-spinnercolor="#26a2ff" type="fading-circle"></mt-spinner></span><span class="menuText" v-else  v-html="\'大气湿度：\' + wlwDatas.dqsd + \'℃\'"></span></p></li><li><p><span class="iconfont icon-turangwendu"></span><span class="menuText" v-if="wlwDatas == null"><mt-spinnercolor="#26a2ff" type="fading-circle"></mt-spinner></span><span class="menuText" v-else  v-html="\'土壤温度：\' + wlwDatas.trwd + \'℃\'"></span></p></li><li><p><span class="iconfont icon-turangshidu"></span><span class="menuText" v-if="wlwDatas == null"><mt-spinnercolor="#26a2ff" type="fading-circle"></mt-spinner></span><span class="menuText" v-else  v-html="\'土壤湿度：\' + wlwDatas.trsd + \'℃\'"></span></p></li><li><p><span class="iconfont icon-fengsu"></span><span class="menuText" v-if="wlwDatas == null"><mt-spinnercolor="#26a2ff" type="fading-circle"></mt-spinner></span><span class="menuText" v-else  v-html="\'风速：\' + wlwDatas.fs + \' m/s\'"></span></p></li><li><p><span class="iconfont icon-redianfengxiangbiao"></span><span class="menuText" v-if="wlwDatas == null"><mt-spinnercolor="#26a2ff" type="fading-circle"></mt-spinner></span><span class="menuText" v-else  v-html="\'风向：\' + wlwDatas.fx + \'\'"></span></p></li></ul></div><div class="mtArticle clearfix"><h1 class="mtArticleH1"><span class="iconfont icon-qingbaobanlianwang"></span><span>中信物联网</span></h1><p>物联网是“信息化”时代的重要发展阶段。其一，物联网的核心和基础仍然是互联网，是在互联网基础上的延伸和扩展的网络；其二，其用户端延伸和扩展到了任何物品与物品之间，进行信息交换和通信，也就是物物相息。物联网通过智能感知、识别技术与普适计算等通信感知技术，广泛应用于网络的融合中，也因此被称为继计算机、互联网之后世界信息产业发展的第三次浪潮。物联网是互联网的应用拓展，与其说物联网是网络，不如说物联网是业务和应用。因此，应用创新是物联网发展的核心，以用户体验为核心的创新2.0是物联网发展的灵魂。</p></div></mt-loadmore></mt-tab-container-item></mt-tab-container></div></mt-tab-container-item><mt-tab-container-item id="关于我们"><div class="aboutMe"><mt-cell title="中心概况" is-link to="/about/info"><span slot="icon" class="iconfont icon-gaikuang"></span></mt-cell><mt-cell title="组织沿革" is-link to="/about/history"><span slot="icon" class="iconfont icon-zuzhijigoushaixuan"></span></mt-cell><mt-cell title="组织定位" is-link to="/about/orientation"><span slot="icon" class="iconfont icon-icon4"></span></mt-cell><mt-cell title="中心文化" is-link to="/about/culture"><span slot="icon" class="iconfont icon-tubiao"></span></mt-cell></div></mt-tab-container-item></mt-tab-container></div><mt-tabbar v-model="selected" fixed ref="tabbars"><mt-tab-item id="基础产品"><span class="iconfont icon-icon61"></span><span class="footerText">基础产品</span></mt-tab-item><mt-tab-item id="云数物端"><span class="iconfont icon-chanpin"></span><span class="footerText">云数物</span></mt-tab-item><mt-tab-item id="关于我们"><span class="iconfont icon-guanyuwomen"></span><span class="footerText">关于我们</span></mt-tab-item></mt-tabbar></div>',
+    template: '#mainpage',
     data: function () {
         return {
             selected: '基础产品',
@@ -176,39 +176,39 @@ const MainPage = {
 }
 // 云基
 // 信息发布平台
-const Infoplat = { template: '<div>AAA</div>' }
+const Infoplat = { template: '#infoplatpage' }
 // 系统配置平台
-const Config = { template: '<div>AAA</div>'}
+const Config = { template: '#configpage'}
 // 基础组件平台
-const Coral = { template: '<div>AAA</div>'}
+const Coral = { template: '#coralpage'}
 // 全文检索平台
-const Search = { template: '<div>AAA</div>'}
+const Search = { template: '#searchpage'}
 // 系统管理平台
-const Authsystem = { template: '<div>AAA</div>'}
+const Authsystem = { template: '#authsystempage'}
 // 工作流平台
-const Workflow = { template: '<div>AAA</div>'}
+const Workflow = { template: '#workflowpage'}
 
 // 灵器
 // 电子文件通用浏览器
-const BrowserTool = {template: '<div>AAA</div>'};
+const BrowserTool = {template: '#browsertoolpage'};
 // 电子文件封装工具
-const PackageTool = {template: '<div>AAA</div>'};
+const PackageTool = {template: '#packagetoolpage'};
 // 电子文件格式转换软件
-const ConvertTool = {template: '<div>AAA</div>'};
+const ConvertTool = {template: '#converttoolpage'};
 // 电子文件检测软件
-const CheckTool = {template: '<div>AAA</div>'};
+const CheckTool = {template: '#checktoolpage'};
 // 电子文件离线浏览软件
 // const OfflineTool = {template: '#offlinetoolpage'};
 
 // 关于我们
 // 中心概述
-const CenterInfo = {template: '<div>AAA</div>'};
+const CenterInfo = {template: '#centerinfopage'};
 // 组织沿革
-const OrganizeHistory = {template: '<div>AAA</div>'};
+const OrganizeHistory = {template: '#organizehistorypage'};
 // 组织定位
-const OrganizeOrientation = {template: '<div>AAA</div>'};
+const OrganizeOrientation = {template: '#organizeorientationpage'};
 // 中心文化
-const CenterCulture = {template: '<div>AAA</div>'};
+const CenterCulture = {template: '#centerculturepage'};
 
 // 2. 定义路由
 // 每个路由应该映射一个组件。 其中"component" 可以是
