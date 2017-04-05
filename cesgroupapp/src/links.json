@@ -1,0 +1,18 @@
+[
+    {"name": "infoplat"},
+    {"name": "config"},
+    {"name": "coral"},
+    {"name": "search"},
+    {"name": "authsystem"},
+    {"name": "workflow"},
+    {"name": "wotalk"},
+
+    {"name": "browsertool"},
+    {"name": "converttool"},
+    {"name": "monitortool"},
+
+    {"name": "centerpage"},
+    {"name": "organizehistory"},
+    {"name": "organizeorientation"},
+    {"name": "centerculture"}
+]
