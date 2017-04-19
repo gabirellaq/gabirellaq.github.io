@@ -11,6 +11,11 @@
 npm install
 ```
 
+``` bash
+npm vue-resource
+npm vue-router
+```
+
 ## Develop
 
 ``` bash
