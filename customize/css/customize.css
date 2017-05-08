@@ -118,6 +118,9 @@
     font-size: 24px;
     text-align: left;
 	outline:0;
+	background: #2c3e50 url(headerBg.jpg) no-repeat center;
+    color: #fff;
+    margin-bottom: 60px;
 }
 
 .bs-customizer label {
