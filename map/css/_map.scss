@@ -40,6 +40,7 @@ html{
 	font-size:$font-size;
 	color:$font-color;
 	line-height:1.4;
+	overflow:hidden;
 	.iconfont{
 		font-size: $font-size + 0.06;
 	}
@@ -583,7 +584,8 @@ html{
 		.tracepro {
 			white-space: nowrap;
 			display: inline-block;
-			width: 100%;						
+			width: 100%;
+			margin-bottom: $listul-padding / 2;						
 			overflow: auto;
 			> a {
 				margin:0 ( $listul-padding);
