@@ -1096,6 +1096,7 @@ html {
   z-index: 4;
   background: #fff;
   font-size: 0.4rem;
+  height: 1.7rem;
   overflow: hidden; }
   .traceList > h1 {
     text-align: center;
