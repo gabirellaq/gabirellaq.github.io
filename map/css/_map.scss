@@ -4,7 +4,7 @@ $searchListBox-zindex:99;
 $searchListHead-height:1.04rem;
 $listul-padding:0.4rem;
 
-@mixin icon($bg-color:$green-color,$text-color:$white-color,$width:0.24rem){
+@mixin icon($bg-color:$green-color,$text-color:$white-color,$width:0.34rem){
 	background:$bg-color;
 	border-radius:50px;
 	color:$text-color;
