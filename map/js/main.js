@@ -18,7 +18,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 	bmapInit();
 
 	//关闭
-	$('body').on('click','.iconBack',function(e){
+	$('body').on('tap','.iconBack',function(e){
 		e.stopPropagation();
 		var _this = $(this).parents('.secondWrap,.resultWrap');
 		_this.animate({'left':'100%'},function(){
@@ -32,7 +32,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 
 	//选择距离范围
 	var flag = false;
-	$('body').on('click','#chooseKmButton',function(){
+	$('body').on('tap','#chooseKmButton',function(){
 		if(!flag){
 			$(this).parents('.chooseDistance').children('.chooseKm').show();
 			flag = true;
@@ -77,7 +77,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 	};
 
 	//切换距离
-	$('body').on('click','#chooseKm span',function(){
+	$('body').on('tap','#chooseKm span',function(){
 		var _text = $(this).text();
 		var _data = $(this).attr('data');
 		$('#kmsum').text(_text).attr('data',_data);
@@ -95,7 +95,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 	};
 
 	//超市，菜场，批发市场，餐饮企业搜索事件
-	$('body').on('click','#searchSort > span',function(){
+	$('body').on('tap','#searchSort > span',function(){
 		$(this).addClass('current').siblings().removeClass('current');
 		var localmark = $("#mapSearchText").val();
 	    var panel = "r-result";
@@ -194,12 +194,12 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 	};
 
 	//点击超市，菜场等的详情事件
-	$('body').on('click','#showDetailList',function(){
+	$('body').on('tap','#showDetailList',function(){
 		$('#r-result').parents('.resultWrap').show().animate({'left':'0'});
 	});
 
 	//点击超市，菜场等详细列表后进入图片展示页面
-	$('body').on('click','#r-result li',function(){
+	$('body').on('tap','#r-result li',function(){
 		var rname = "超市";
 		var raddress = "大道";
 		var rdistance = "1km";
@@ -240,7 +240,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 	});
 
 	//展示
-	$('body').on('click','#searchThumblist a',function(){
+	$('body').on('tap','#searchThumblist a',function(){
         //获取内容
         var img = $(this).find('.thumbimg').attr('src');
         var name = $(this).find('.thumbname').text();
@@ -281,7 +281,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 
 
 	//类别
-	$('body').on('click','#headList li',function(){
+	$('body').on('tap','#headList li',function(){
 		var _thisChild = $(this).children('.iconfont');
 		var _this = $(this);
 		var fixed = $(this).parents('.resultWrap');
@@ -301,7 +301,7 @@ document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
 		}
 	});
 
-	$('body').on('click','#categoriesList > span',function(){
+	$('body').on('tap','#categoriesList > span',function(){
 		$(this).addClass('current').siblings().removeClass('current');
 	});
 

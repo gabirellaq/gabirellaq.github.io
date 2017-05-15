@@ -569,7 +569,7 @@ html{
 	right:0;
 	z-index:4;
 	background: $white-color;
-	font-size:$font-size;
+	font-size:$font-size + 0.1;
 	overflow:hidden;
 	> h1 {
 		text-align: center;
