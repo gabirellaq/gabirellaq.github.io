@@ -689,10 +689,11 @@ html {
   background: none !important;
   color: #23A340;
   font-family: "iconfont" !important;
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; }
   .r-result li > span:first-child:before {
     content: "\e628";
     /*圆点*/
@@ -705,7 +706,7 @@ html {
     background: transparent !important; }
     .r-result > div > div li {
       margin: 0 !important;
-      padding: 0.2rem !important;
+      padding: 0.2rem 0 !important;
       border-bottom: 1px solid #ddd;
       position: relative;
       line-height: 1.8 !important;
@@ -741,8 +742,8 @@ html {
   background: rgba(0, 0, 0, 0.3); }
 
 .searchListHead {
-  height: 1.3rem;
-  line-height: 1.3rem;
+  height: 1.04rem;
+  line-height: 1.04rem;
   background: #fff;
   width: 100%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
@@ -809,13 +810,13 @@ html {
 
 .searchListBody {
   position: absolute;
-  top: 1.3rem;
+  top: 1.04rem;
   bottom: 0;
   left: 0;
   right: 0;
   background: #fff;
   font-size: 0.26rem;
-  padding: 0.4rem;
+  padding: 0.2rem;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
   .searchListBody .listUl li {
@@ -854,17 +855,16 @@ html {
     .searchListBody .listUl li:active {
       background: #f2f2f2; }
   .searchListBody .searchThumblist li {
-    float: left; }
+    float: left;
+    width: 50%; }
     .searchListBody .searchThumblist li a {
       display: block;
-      margin: 0.4rem;
-      margin-right: 0.2rem;
+      margin: 0.2rem;
+      margin-right: 0.1rem;
       margin-left: 0;
       margin-top: 0;
-      height: 5.3rem;
       background: #fff;
-      width: 4.4rem;
-      padding: 0.2rem; }
+      padding: 0.1rem; }
       .searchListBody .searchThumblist li a img {
         height: 2.2rem;
         width: 100%; }
@@ -882,33 +882,34 @@ html {
       .searchListBody .searchThumblist li a .thumbcodename,
       .searchListBody .searchThumblist li a .thumbcode,
       .searchListBody .searchThumblist li a .thumbline {
-        margin-bottom: 0.2rem; }
+        margin-bottom: 0.1rem; }
       .searchListBody .searchThumblist li a .thumbline .iconfont {
         background: #23A340;
         border-radius: 50px;
         color: #fff;
         padding: 0.1rem;
-        margin-right: 0.3rem;
+        margin-right: 0.25rem;
         position: relative;
         font-size: 0.24rem;
-        width: 0.44rem;
-        height: 0.44rem;
-        line-height: 0.44rem;
+        width: 0.24rem;
+        height: 0.24rem;
+        line-height: 0.24rem;
         display: inline-block;
         text-align: center; }
         .searchListBody .searchThumblist li a .thumbline .iconfont:after {
           content: " → ";
           position: absolute;
-          right: -0.3rem;
+          right: -0.25rem;
           color: #999;
-          font-size: 0.24rem; }
+          font-size: 0.24rem;
+          top: 0.12rem; }
         .searchListBody .searchThumblist li a .thumbline .iconfont:last-child:after {
           content: ""; }
       .searchListBody .searchThumblist li a:active {
         background: #f2f2f2;
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
     .searchListBody .searchThumblist li:nth-child(even) a {
-      margin-left: 0.2rem;
+      margin-left: 0.1rem;
       margin-right: 0; }
 
 #searchThumbBox .searchListBody {
@@ -937,7 +938,7 @@ html {
     border-radius: 50px;
     color: #fff;
     padding: 0.1rem;
-    margin-right: 0.3rem;
+    margin-right: 0.25rem;
     position: relative;
     font-size: 0.24rem;
     width: 0.44rem;
@@ -1001,23 +1002,23 @@ html {
   #mapSearchBox .iconZuobiao {
     position: absolute;
     left: 0.6rem;
-    top: 0.3rem;
+    top: 0.2rem;
     font-size: 0.6rem;
     color: #23A340; }
   #mapSearchBox #mapSearchText {
-    width: calc(100% - 3.5rem );
-    padding-left: 0.8rem;
-    font-size: 0.5rem;
+    width: calc(100% - 2.2rem );
+    padding-left: 0.6rem;
+    font-size: 0.3rem;
     box-sizing: border-box;
     border: 0;
     margin-left: 0.4rem;
     outline: 0;
-    padding-bottom: 0.3rem; }
+    padding-bottom: 0.2rem; }
   #mapSearchBox .chooseDistance {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     border: 0;
     outline: 0;
-    width: 2.5rem;
+    width: 1.5rem;
     display: inline-block;
     text-align: right;
     margin-left: -4px;
@@ -1044,14 +1045,17 @@ html {
           background: #f2f2f2; }
 
 .mapserachResultBox {
-  padding: 0.4rem; }
+  padding: 0 0.4rem;
+  padding-top: 0.4rem; }
   .mapserachResultBox span,
   .mapserachResultBox label {
     vertical-align: middle; }
   .mapserachResultBox .mapserachResult {
-    float: left; }
+    float: left;
+    padding-bottom: 0.4rem; }
   .mapserachResultBox .mapserachResultShow {
-    float: right; }
+    float: right;
+    padding-bottom: 0.4rem; }
   .mapserachResultBox .mapSearchSum,
   .mapserachResultBox .iconfont {
     color: #23A340; }
@@ -1090,12 +1094,12 @@ html {
   right: 0;
   z-index: 4;
   background: #fff;
+  font-size: 0.24rem;
   overflow: hidden; }
   .traceList > h1 {
     text-align: center;
     margin: 0.2rem; }
   .traceList .traceBox {
-    margin: 0.2rem;
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -1115,6 +1119,9 @@ html {
 
 a[href*="http://api.map.baidu.com/place/detail"] {
   display: none; }
+
+#searchThumblistBox {
+  padding: 0.4rem; }
 
 /*.BMap_Marker{
 	&[title*="超市"]{

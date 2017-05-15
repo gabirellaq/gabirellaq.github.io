@@ -1,20 +1,20 @@
 @charset "utf-8";
 
 $searchListBox-zindex:99;
-$searchListHead-height:1.3rem;
+$searchListHead-height:1.04rem;
 $listul-padding:0.4rem;
 
-@mixin icon($bg-color:$green-color,$text-color:$white-color){
+@mixin icon($bg-color:$green-color,$text-color:$white-color,$width:0.24rem){
 	background:$bg-color;
 	border-radius:50px;
 	color:$text-color;
 	padding:0.1rem;
-	margin-right: 0.3rem;
+	margin-right: 0.25rem;
 	position:relative;
 	font-size: $font-size;
-    width: 0.44rem;
-    height: 0.44rem;
-    line-height: 0.44rem;
+    width: $width;
+    height: $width;
+    line-height: $width;
     display: inline-block;
     text-align: center;
 }
@@ -23,7 +23,7 @@ $listul-padding:0.4rem;
 	background:none !important;
 	color:$green-color;
 	font-family: "iconfont" !important;
-    font-size: 0.7rem;
+    font-size: 0.4rem;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -81,6 +81,7 @@ html{
 	li {
 		> span:first-child {
 			@include iconfont;
+			position:relative;
 			&:before {			
 				content: "\e628"; /*圆点*/
 				position: absolute;
@@ -95,7 +96,7 @@ html{
 			background: transparent !important;
 			li {
 				margin:0 !important;
-				padding:$listul-padding / 2 !important;
+				padding:($listul-padding / 2)  0!important;
 				border-bottom: 1px solid $border-color;
 				position:relative;
 				line-height: 1.8 !important;
@@ -238,7 +239,7 @@ html{
 	right:0;
 	background:$second-bg-color;
 	font-size:$font-size + 0.02;
-	padding:$listul-padding;
+	padding:$listul-padding / 2;
 	overflow: auto;
     -webkit-overflow-scrolling: touch;
 	.listUl {
@@ -289,16 +290,15 @@ html{
 	.searchThumblist {
 		li{
 			float: left;
+			width: 50%;
 			a {
 				display: block;
-				margin:$listul-padding;
-				margin-right: $listul-padding / 2;
+				margin:$listul-padding / 2;
+				margin-right: $listul-padding / 4;
 				margin-left: 0;
 				margin-top: 0;
-				height:5.3rem;
 				background:$second-bg-color;
-				width: 4.4rem;
-				padding:$listul-padding / 2 ;
+				padding:$listul-padding / 4;
 				img{					
 					height:2.2rem;
 					width: 100%;
@@ -318,7 +318,7 @@ html{
 				.thumbcode,
 				.thumbline
 				{
-					margin-bottom: $listul-padding / 2;
+					margin-bottom: $listul-padding / 4;
 				}
 				.thumbline {
 					.iconfont {
@@ -326,9 +326,10 @@ html{
 						&:after {
 							content:" → ";
 							    position: absolute;
-							    right: -0.3rem;
+							    right: -0.25rem;
 							    color: $font-des-color;
 							    font-size: $font-size;
+							    top: $font-size / 2;
 						}
 						&:last-child {
 							&:after {
@@ -344,7 +345,7 @@ html{
 			}
 			&:nth-child(even) {
 				a {
-					margin-left: $listul-padding / 2;
+					margin-left: $listul-padding / 4;
 					margin-right: 0;
 				}
 			}			
@@ -384,7 +385,7 @@ html{
 	position:relative;
 	margin-bottom:$listul-padding;
 	.iconfont {
-		@include icon;
+		@include icon($width:0.44rem);
 		margin-top: $listul-padding;
 		&:after {
 			content: "↓";
@@ -454,25 +455,25 @@ html{
 	.iconZuobiao {
 		position: absolute;
 	    left: $listul-padding + 0.2;
-	    top: $listul-padding - 0.1;
+	    top: $listul-padding - 0.2;
 	    font-size: $font-size + 0.36;
 	    color:$green-color;
 	}
 	#mapSearchText {
-		width: calc(100% - 3.5rem );
-	    padding-left:$listul-padding * 2;
-	    font-size: $font-size + 0.26;
+		width: calc(100% - 2.2rem );
+	    padding-left:$listul-padding + 0.2;
+	    font-size: $font-size + 0.06;
 	    box-sizing: border-box;
 	    border: 0;	    
 	    margin-left: $listul-padding;
 	    outline:0;
-	    padding-bottom: $listul-padding - 0.1;
+	    padding-bottom: $listul-padding - 0.2;
 	}
 	.chooseDistance {
-		font-size: $font-size + 0.26;
+		font-size: $font-size + 0.06;
 	    border: 0;
 	    outline: 0;
-	    width: 2.5rem;
+	    width: 1.5rem;
 	    display: inline-block;
 	    text-align: right;
 	    margin-left: -4px;
@@ -509,12 +510,15 @@ html{
 	label {
 		vertical-align: middle;
 	}
-	padding:0.4rem;
+	padding:0 $listul-padding;
+	padding-top:$listul-padding;
 	.mapserachResult {
 		float: left;
+		padding-bottom:$listul-padding;
 	}
 	.mapserachResultShow {
 		float: right;
+		padding-bottom:$listul-padding;
 	}
 	.mapSearchSum,
 	.iconfont {
@@ -565,13 +569,13 @@ html{
 	right:0;
 	z-index:4;
 	background: $white-color;
+	font-size:$font-size;
 	overflow:hidden;
 	> h1 {
 		text-align: center;
 		margin:$listul-padding / 2;
 	}
 	.traceBox {
-		margin:$listul-padding / 2;
 		position:relative;
 		overflow: hidden;
 		display: inline-block;
@@ -596,6 +600,9 @@ html{
 
 a[href*="http://api.map.baidu.com/place/detail"]{
 	display:none;
+}
+#searchThumblistBox {
+	padding:$listul-padding ;
 }
 
 /*.BMap_Marker{
