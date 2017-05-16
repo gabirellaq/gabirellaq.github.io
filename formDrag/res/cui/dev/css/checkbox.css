@@ -1,0 +1,43 @@
+.coral-checkbox {
+    position: relative;
+	display: inline-block;
+	outline: none;
+}
+.coral-checkbox-label {
+	cursor: default;
+	display: inline-block;
+	margin-right: 6px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+.coral-checkbox-icon {
+	margin-right: 1px;
+	position: relative;
+	vertical-align: middle;
+}
+.coral-checkbox input {
+	position: absolute;
+	left: -99999px;
+}
+.coral-checkbox.coral-isLabel {
+	color: #9a9a9a;
+}
+.coral-checkbox-highlight .coral-checkbox-icon {
+	color: #1277c8;
+}
+.coral-checkbox-hover .coral-checkbox-icon {
+	color: #666;
+}
+.coral-checkbox-text{
+    display:inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    vertical-align: middle;
+}
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+.coral-autocomplete-tree.coral-tree{
+	position: absolute;
+}
+.coral-textboxlist-ul {
+	padding: 0 12px;
+	margin: 0;
+	zoom: 1;
+  	overflow: hidden;
+}
+
+.coral-textboxlist .coral-textboxlist-item {
+	border: 1px solid #CAD8F3;
+	background: #DEE7F8;
+	cursor: default;
+	border-radius: 9px;
+	position: relative;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	height: 20px;
+  	line-height: 20px;
+  	white-space: pre;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-right:12px;
+}
+.coral-textboxlist.coral-isLabel .coral-textboxlist-item,
+.coral-textboxlist.coral-readonly .coral-textboxlist-item {
+	border: 1px solid transparent;
+	background: transparent;
+}
+.coral-textboxlist .coral-textboxlist-item.coral-state-active {
+	border: 1px solid #598BEC;
+	background: #598BEC;
+	color: #fff;
+	font-weight: normal;
+}
+
+.coral-textboxlist li {
+	float: left;
+	display: inline-block;
+	list-style-type: none;
+	outline: none;
+	margin: 0 3px 0px 0;
+}
+
+.coral-textboxlist .coral-textboxlist-inputLi {
+	width: auto;	
+	height: 24px;
+}
+.coral-textboxlist .coral-textboxlist-inputLi input{
+	padding: 0;
+}
+.coral-textboxlist .coral-label-close.coral-label-close-hover{
+	color: #fff;
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/**
+	滚动条
+**/
+/* Tiny Scrollbar */
+ .scrollbar1 {
+	width: 100%;
+	height:100%;
+	-moz-user-select: none;
+	overflow:hidden;
+	position: relative;
+}
+
+.scrollbar1 .viewport {
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.scrollbar1 .overview {
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.scrollbar1 .scrollbar {
+	background:transparent;
+	position: absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position: 0 0;
+	z-index:2;
+}
+
+.scrollbar1 .track {
+	background:transparent;
+	height: 100%;
+	position: relative;
+}
+
+.scrollbar1 .thumb {
+    border-radius: 10px;
+	height: 20px;
+	min-height: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.scrollbar1 .thumb .end {
+    border-radius: 10px;
+	overflow: hidden;
+	height: 5px;
+}
+
+.scrollbar1 .scrollbar,
+.scrollbar1 .track,
+.scrollbar1 .thumb,
+.scrollbar1 .thumb .end{
+	width:6px;
+}
+
+
+
+/*.scrollbar1 .scrollbar{
+	display:none;
+}
+.scrollbar1:hover .scrollbar{
+	display:block;
+}*/
+
+
+.scrollbar1 .disable,
+.scrollbar1:hover .scrollbar.disable {
+	display: none;
+}
+
+.leftMenuScroll .scrollbar{
+	display:none;
+}
+.leftMenuScroll:hover .scrollbar{
+	display:block;
+}
+.leftMenuScroll .disable,
+.leftMenuScroll:hover .scrollbar.disable {
+	display: none;
+}
+
+
+
+.noSelect {
+	user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.leftMenuScroll,
+.leftMenuScroll .viewport,
+.layoutMenuScroll,
+.layoutMenuScroll .viewport{
+	overflow: visible;
+}

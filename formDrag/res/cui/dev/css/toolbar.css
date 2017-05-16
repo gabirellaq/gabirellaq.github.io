@@ -1,0 +1,278 @@
+.coral-toolbar {
+	display: inline-block;
+	vertical-align: middle;
+	/* overflow */
+	/*border: 1px solid #f60;
+	border-radius: 4px;
+	padding: 3px;*/
+	overflow: hidden;
+	position: relative;
+	display: block;
+	/*width: 100%;*/
+}
+
+.coral-state-disabled.coral-splitbutton-disabled {
+	opacity: 1;
+}
+
+.coral-state-disabled.coral-menubutton-disabled {
+	opacity: 1;
+}
+
+.coral-toolbar-html {
+	padding: 4px 12px;
+	line-height: 20px;
+	border: 1px solid transparent;
+}
+
+/* modify toolbar style */
+.coral-menu.coral-tieredmenu .coral-splitbutton-menu .coral-state-hover
+	{
+	background: #428bca;
+	color: #fff;
+	border-radius: 0px;
+}
+
+.coral-tieredmenu .coral-menu-list .coral-menuitem {
+	border-bottom: 1px solid #ccc;
+	color: #555;
+}
+
+.coral-menu.coral-tieredmenu .coral-menu-list .coral-menuitem.coral-corner-all
+	{
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.coral-splitbutton-menu .coral-menuitem-text {
+	font-size: 12px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+/* modify toolbar style */
+.coral-toolbar .coral-textbox {
+	width: 180px;
+}
+
+.coral-toolbar .coral-textbox {
+	padding-right: 1px;
+	vertical-align: top;
+}
+
+.coral-toolbar .coral-splitbutton {
+	padding-right: 1px;
+}
+
+.coral-toolbar .coral-menubutton {
+	padding-right: 1px;
+}
+
+.coral-tieredmenu[id$='_tieredmenu'] {
+	width: auto;
+}
+
+.coral-toolbar-border {
+	display: block;
+	/*width: auto;
+	height: auto;*/
+	/* overflow */
+	/*overflow: hidden;*/
+	position: relative;
+	float: left;
+	left: 0;
+	top: 0;
+	height: 28px;
+}
+
+.coral-toolbar.coral-toolbar-initHidden .coral-toolbar-border {
+	overflow: visible;
+	height: auto;
+}
+
+.coral-toolbar.coral-toolbar-initHidden .ctrl-init-toolbar,
+	.coral-toolbar.coral-toolbar-initHidden .ctrl-init-toolbar .coral-toolbar-item
+	{
+	position: relative;
+}
+
+/* overflow */
+.coral-toolbar .ctrl-init-toolbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 1px;
+}
+
+.coral-toolbar .ctrl-init-toolbar .coral-toolbar-item {
+	position: absolute;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.coral-toolbar .ctrl-init-toolbar .coral-toolbar-item,
+	.coral-toolbar .coral-button .coral-button-text {
+	white-space: nowrap;
+}
+
+.coral-toolbar .coral-toolbar-separator-horizontal {
+	/* top: 4px; */
+	height: 27px;
+	border-style: solid;
+	border-width: 0 0 0 1px;
+	border-left-color: #e1e1e1;
+	border-right-color: white;
+	vertical-align: middle;
+	margin-right: .1em;
+}
+
+.coral-toolbar-btn {
+	position: relative;
+	display: inline-block;
+	min-width: 35px;
+	width: auto;
+	height: 28px;
+	line-height: 28px;
+	cursor: pointer;
+	margin-right: 1px;
+	margin-left: 2px;
+	vertical-align: middle;
+}
+
+.coral-toolbar-btn .coral-textbox-default {
+	height: 26px;
+	line-height: 26px;
+}
+
+.coral-toolbar-children {
+	border: 1px solid #dae3ed;
+}
+
+.coral-toolbar-children .coral-toolbar-btn-border {
+	border: 0 none;
+	width: 100%;
+}
+
+.coral-toolbar-btn-border {
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+	padding-right: 8px;
+	padding-left: 8px;
+	height: 100%;
+	border: 1px solid #c9caca;
+}
+
+.coral-toolbar-children-border .coral-toolbar-btn-border {
+	line-height: 28px;
+}
+
+.coral-toolbar-children-border .coral-toolbar-btn-border {
+	float: none;
+}
+
+.coral-toolbar-btn-dropdown {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	border: 1px solid #c9caca;
+	margin-left: -1px;
+	white-space: nowrap;
+}
+
+.coral-toolbar-btn-dropdown .icon-arrow-down2 {
+	font-size: 16px;
+}
+
+.coral-toolbar-btn-text {
+	display: inline-block;
+}
+
+.coral-toolbar-child, .coral-toolbar-child-1, .coral-toolbar-child-2 {
+	width: auto;
+	height: auto;
+	margin: 0px;
+	background: #fff;
+}
+
+.coral-toolbar-child-1 {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 30px;
+}
+
+.coral-toolbar-child-2 {
+	display: none;
+	position: absolute;
+	top: 0px;
+}
+
+.coral-toolbar-child-btn {
+	position: relative;
+	display: block;
+	min-width: 35px;
+	width: auto;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.coral-toolbar-disabled {
+	color: #808080;
+}
+
+.coral-toolbar-hidden {
+	display: none;
+}
+
+.coral-toolbar-btn-ico {
+	font-size: 12px;
+	padding: 0 4px;
+}
+
+.coral-toolbar-btn.coral-toolbar-hover {
+	color: #428bca;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.coral-toolbar-child-btn {
+	color: #5b5b5b;
+}
+
+.coral-toolbar-child-btn.coral-toolbar-hover>.coral-toolbar-btn-border {
+	background: #428bca;
+	color: #fff;
+}
+
+.coral-toolbar-btn-ico-downArrow {
+	background-position: -2px -421px;
+}
+
+.coral-toolbar-btn-ico-rightArrow {
+	background-position: -18px -421px;
+}
+
+.coral-toolbar-btn-ico-item1 {
+	background-position: -212px -231px;
+}
+
+.coral-toolbar-btn-ico-item2 {
+	background-position: -168px -288px;
+}
+
+/* .coral-toolbar-btn.coral-toolbar-hover>.coral-toolbar-btn-dropdown>.coral-toolbar-btn-ico-downArrow {
+	background-position: -148px -219px;
+} */
+.coral-toolbar-btn.coral-toolbar-hover>.coral-toolbar-btn-border>.coral-toolbar-btn-ico-item1
+	{
+	background-position: -213px -252px;
+}
+
+.coral-toolbar-child-btn.coral-toolbar-hover>.coral-toolbar-btn-border>.coral-toolbar-btn-ico-rightArrow
+	{
+	background-position: 7px -443px;
+}
+
+.coral-toolbar-child-btn.coral-toolbar-hover>.coral-toolbar-btn-border>.coral-toolbar-btn-ico-item1
+	{
+	background-position: -213px -252px;
+}

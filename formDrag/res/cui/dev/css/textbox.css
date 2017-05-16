@@ -1,0 +1,154 @@
+.coral-textbox {
+	height: 26px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.coral-textboxlist {
+	height: auto;
+}
+
+.coral-textbox-textarea {
+	height: 60px;
+}
+
+.coral-textbox-textarea .coral-textbox-default{
+	height: 100%;
+	resize: none;
+	overflow: auto;
+}
+
+.coral-textbox-textarea .coral-textbox-border{
+	height: 100%;
+}
+ 
+.coral-readonly .coral-textbox-default {
+	color: #9a9a9a;
+}
+.coral-textbox .uploadify {
+	opacity: 0;
+	filter:alpha(opacity=0);  
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.coral-textbox-close {
+	padding: 0;
+	right: 5px;
+	top: 6px;
+	display: none;
+	width: 18px;
+	height: 22px;
+	overflow: hidden;
+	vertical-align: middle;
+	cursor: pointer;
+	opacity: 0.6;
+	position: absolute;
+	z-index: 1;
+	filter: alpha(opacity = 60);
+}
+.coral-textbox-hover .coral-textbox-close {
+	display: inline;
+}
+.coral-textbox-hasButton.coral-textbox {
+	display: inline-flex;
+}
+.coral-textbox-hasButton .coral-textbox-border {
+	/* display: inline-block; */
+	width: 100%;
+	float: left;
+}
+.coral-textbox-hasButton .coral-button {
+	float: right;
+}
+.coral-textbox-hasButton .coral-button.coral-textbox-button {
+	margin-left: 5px;
+	margin-top: 0px;
+}
+.coral-textbox-hasButton .coral-button.coral-textbox-button .coral-button-text {
+	padding: 3px 1.7em 3px 1.7em;
+}
+.coral-textbox .coral-file{
+	width:90%;
+	white-space: pre;
+	display: inline;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+}
+.coral-textbox-tips .coral-textbox-default {
+	color: #999999;
+}
+
+.coral-isLabel {
+	border: 0 none;
+	background: none;
+}
+
+.coral-textbox-border {
+	background-color: #fff;
+}
+
+.coral-isLabel .coral-textbox-border {
+	border: 0 none;
+	background: none;
+	box-shadow: none;
+}
+
+.coral-textbox-default-error .coral-textbox-border {
+	border: 1px solid #B94A48;
+}
+
+.coral-isLabel .coral-textbox-textarea {
+	resize: none;
+}
+
+.coral-textbox-btn-icons {
+	width: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.coral-textbox-btn-ico {
+	cursor: pointer;
+	border-left: 1px solid #c9caca;
+	padding: 6px;
+	display: inline-block;
+}
+
+.coral-textbox .coral-textbox-btn-textico {
+	line-height: 20px;
+	padding: 2px 6px;
+	font-size: 12px;
+}
+
+.coral-textbox-btn-ico-search {
+	background-repeat: no-repeat;
+	background-position: -87px -285px;
+	background-color: #428bca;
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+
+.coral-textbox-btn-ico-setting {
+	background-repeat: no-repeat;
+	background-position: -123px -285px;
+	background-color: #428bca;
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+
+.coral-textbox-placeholder-label {
+	color: #6d6d6d;
+	left: 0;
+	top: 0;
+	position: absolute;
+	padding: 5px 2px 0px 12px;
+}
+
+.coral-textbox .innerLeft .coral-button{
+	border-left:0;
+}
+
+.coral-textbox .innerRight .coral-button{
+	border-right:0;
+}

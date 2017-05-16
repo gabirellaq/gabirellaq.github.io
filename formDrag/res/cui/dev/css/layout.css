@@ -1,0 +1,204 @@
+.coral-layout {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+}
+
+.coral-layout-panel {
+	position: absolute;
+	overflow: hidden;
+}
+
+.coral-layout-split-west, .coral-layout-split-east {
+	width: 5px;
+}
+
+.coral-layout-split-south, .coral-layout-split-north {
+	width: 100%;
+	height: 5px;
+}
+
+.layout-split {
+	overflow: hidden;
+	position: absolute;
+}
+
+.layout-split .splitIcon {
+	font-size: 12px;
+	position: absolute;
+	background: #E5E5E5;
+	cursor: pointer;
+}
+
+.layout-split .cui-icon-arrow-up5, .layout-split .cui-icon-arrow-down5 {
+	left: 50%;
+	margin-top: -4px;
+	width: 40px;
+	text-indent: 14px;
+	margin-left: -17px
+}
+
+.layout-split .cui-icon-arrow-right5, .layout-split .cui-icon-arrow-left5
+	{
+	top: 50%;
+	margin-left: -5px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: -17px
+}
+
+.coral-layout-panel-east, .coral-layout-panel-west {
+	z-index: 2;
+}
+
+.coral-layout-panel-north, .coral-layout-panel-south {
+	z-index: 3;
+}
+
+.coral-layout-expand {
+	position: absolute;
+	padding: 0px;
+	font-size: 1px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.coral-layout-panel-center>.coral-panel-header {
+	background: #219bd6;
+    border-color: #219bd6;
+}
+
+.coral-layout-expand .coral-panel-header, .coral-layout-expand .coral-panel-body
+	{
+	background: #36a9e1;
+	border-color: #36a9e1;
+	filter: none;
+	overflow: hidden;
+}
+
+.coral-layout-expand .coral-panel-header {
+	border-bottom-width: 0px;
+}
+
+.coral-layout-split-proxy-h, .coral-layout-split-proxy-v {
+	position: absolute;
+	font-size: 1px;
+	display: none;
+	z-index: 5;
+}
+
+.coral-layout-split-proxy-h {
+	width: 5px;
+	cursor: e-resize;
+}
+
+.coral-layout-split-proxy-v {
+	height: 5px;
+	cursor: n-resize;
+}
+
+.coral-layout-mask {
+	position: absolute;
+	background: #fafafa;
+	filter: alpha(opacity = 10);
+	opacity: 0.10;
+	z-index: 4;
+}
+
+.coral-layout-button-up {
+	background: url('images/layout_arrows.png') no-repeat -16px -16px;
+}
+
+.coral-layout-button-down {
+	background: url('images/layout_arrows.png') no-repeat -16px 0;
+}
+
+.coral-layout-button-left {
+	background: url('images/layout_arrows.png') no-repeat 0 0;
+}
+
+.coral-layout-button-right {
+	background: url('images/layout_arrows.png') no-repeat 0 -16px;
+}
+
+.coral-layout-split-proxy-h, .coral-layout-split-proxy-v {
+	background-color: #aac5e7;
+}
+
+.coral-layout-expand {
+	background-color: #f7f7f7;
+}
+
+.coral-layout-expand-over {
+	background-color: #f7f7f7;
+}
+
+.coral-layout .coral-resizable {
+	position: absolute;
+}
+
+/* Layout helper */
+.coral-helper-hidden {
+	display: none;
+}
+
+.coral-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.coral-helper-reset {
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+
+.coral-helper-clearfix:before, .coral-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+
+.coral-helper-clearfix:after {
+	clear: both;
+}
+
+.coral-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+
+.coral-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter: Alpha(Opacity = 0);
+}
+
+.coral-layout-button-up {
+	background: url('images/layout_arrows.png') no-repeat -16px -16px;
+}
+
+.coral-layout-button-left {
+	background: url('images/layout_arrows.png') no-repeat 0 0;
+}
+
+.coral-layout-button-right {
+	background: url('images/layout_arrows.png') no-repeat 0 -16px;
+}
+
+.coral-layout-button-down {
+	background: url('images/layout_arrows.png') no-repeat -16px 0;
+}

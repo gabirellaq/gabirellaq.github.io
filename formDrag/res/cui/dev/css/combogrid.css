@@ -1,0 +1,24 @@
+.coral-combogrid-hasButton.coral-combo {
+	display: inline-flex;
+}
+.coral-combogrid-hasButton .coral-combo-border {
+	/* display: inline-block; */
+	width: 100%;
+	float: left;
+}
+.coral-combogrid-hasButton .coral-button {
+	float: right;
+}
+.coral-combogrid-hasButton .coral-button.coral-combogrid-button {
+	margin-left: 5px;
+	margin-top: 0px;
+}
+.coral-combogrid-hasButton .coral-button.coral-combogrid-button .coral-button-text {
+	padding: 3px 1.7em 3px 1.7em;
+}
+.coral-combogrid-hasButton {
+	width: auto;
+}
+.coral-combogrid-hasButton.coral-combo-arrow-hover {
+	background-color: transparent;
+}

@@ -1,0 +1,545 @@
+//参数定义
+//通用参数
+$brand-primary: #337ab7;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$gray-light: #ccc;
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-small: 3px;
+
+//button 参数
+$btn-font-weight: normal;
+$btn-default-color: #333;
+$btn-default-bg: #fff;
+$btn-default-border: #ccc;
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border:darken($btn-primary-bg, 5%);
+$btn-success-color: #fff;
+$btn-success-bg: $brand-success;
+$btn-success-border:darken($btn-success-bg, 5%);
+$btn-info-color: #fff;
+$btn-info-bg: $brand-info;
+$btn-info-border:darken($btn-info-bg, 5%);
+$btn-warning-color: #fff;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border:darken($btn-warning-bg, 5%);
+$btn-danger-color: #fff;
+$btn-danger-bg: $brand-danger;
+$btn-danger-border:darken($btn-danger-bg, 5%);
+$btn-link-disabled-color: $gray-light;
+$btn-border-radius-base: $border-radius-base;
+$btn-border-radius-large: $border-radius-large;
+$btn-border-radius-small: $border-radius-small;
+
+//默认白色按钮
+.coral-button {
+	display: inline-block;
+    padding: 6px 12px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: $btn-font-weight;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: $btn-default-bg;
+    border: 1px solid $btn-default-border;
+    border-radius: $border-radius-base;
+    color: $btn-default-color;
+    overflow: visible;
+}
+
+.coral-button:hover,
+.coral-button:focus,
+.coral-button.coral-state-hover {
+    color: $btn-default-color;
+    text-decoration: none;
+    box-shadow: none;
+    background-color:darken($btn-default-bg, 7%);
+    border-color: $btn-default-border;
+    outline:0;
+}
+.coral-button.disabled,
+.coral-button.disabled.active,
+.coral-button.disabled.focus,
+.coral-button.disabled:active,
+.coral-button.disabled:focus,
+.coral-button.disabled:hover,
+.coral-button.disabled.coral-state-hover,
+.coral-button[disabled],
+.coral-button[disabled].active,
+.coral-button[disabled].focus,
+.coral-button[disabled]:active,
+.coral-button[disabled]:focus,
+.coral-button[disabled]:hover,
+fieldset[disabled] .coral-button,
+fieldset[disabled] .coral-button.active,
+fieldset[disabled] .coral-button.focus,
+fieldset[disabled] .coral-button:active,
+fieldset[disabled] .coral-button:focus,
+fieldset[disabled] .coral-button:hover {
+    background-color: $btn-default-bg;
+    border-color: $btn-default-border;
+}
+
+//蓝色按钮
+.btn-primary,
+.btn-primary .coral-button {
+    color: $btn-primary-color;
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-border;
+}
+@mixin primaryHover{
+    color: $btn-primary-color;
+    background-color: $btn-primary-border;
+    border-color:darken($btn-primary-border, 5%);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.coral-state-hover {
+    @include primaryHover();
+}
+.btn-primary .coral-button:hover,
+.btn-primary .coral-button:focus,
+.btn-primary .coral-button.coral-state-hover{
+    @include primaryHover();
+}
+
+@mixin primaryDisabled{
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-border;
+}
+.btn-primary.disabled,
+.btn-primary.disabled.active,
+.btn-primary.disabled.focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary.disabled.coral-state-hover,
+.btn-primary[disabled],
+.btn-primary[disabled].active,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    @include primaryDisabled();
+    .coral-button {
+        @include primaryDisabled();
+    }
+}
+
+//成功按钮
+.btn-success,
+.btn-success .coral-button {
+    color: $btn-success-color;
+    background-color: $btn-success-bg;
+    border-color: $btn-success-border;
+}
+@mixin successHover{
+    color: $btn-success-color;
+    background-color: $btn-success-border;
+    border-color:darken($btn-success-border, 5%);
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.coral-state-hover {
+    @include successHover();
+}
+.btn-success .coral-button:hover,
+.btn-success .coral-button:focus,
+.btn-success .coral-button.coral-state-hover{
+    @include successHover();
+}
+@mixin successDisabled{
+    background-color: $btn-success-bg;
+    border-color: $btn-success-border;
+}
+.btn-success.disabled,
+.btn-success.disabled.active,
+.btn-success.disabled.focus,
+.btn-success.disabled:active,
+.btn-success.disabled:focus,
+.btn-success.disabled:hover,
+.btn-success.disabled.coral-state-hover,
+.btn-success[disabled],
+.btn-success[disabled].active,
+.btn-success[disabled].focus,
+.btn-success[disabled]:active,
+.btn-success[disabled]:focus,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success,
+fieldset[disabled] .btn-success.active,
+fieldset[disabled] .btn-success.focus,
+fieldset[disabled] .btn-success:active,
+fieldset[disabled] .btn-success:focus,
+fieldset[disabled] .btn-success:hover {
+    @include successDisabled();
+    .coral-button {
+        @include successDisabled();
+    }
+}
+
+//一般信息
+.btn-info,
+.btn-info .coral-button {
+    color: $btn-info-color;
+    background-color: $btn-info-bg;
+    border-color: $btn-info-border;
+}
+@mixin infoHover{
+    color: $btn-info-color;
+    background-color: $btn-info-border;
+    border-color:darken($btn-info-border, 5%);
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.coral-state-hover {
+    @include infoHover();
+}
+.btn-info .coral-button:hover,
+.btn-info .coral-button:focus,
+.btn-info .coral-button.coral-state-hover{
+    @include infoHover();
+}
+@mixin infoDisabled{
+    background-color: $btn-info-bg;
+    border-color: $btn-info-border;
+}
+.btn-info.disabled,
+.btn-info.disabled.active,
+.btn-info.disabled.focus,
+.btn-info.disabled:active,
+.btn-info.disabled:focus,
+.btn-info.disabled:hover,
+.btn-info.disabled.coral-state-hover,
+.btn-info[disabled],
+.btn-info[disabled].active,
+.btn-info[disabled].focus,
+.btn-info[disabled]:active,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info,
+fieldset[disabled] .btn-info.active,
+fieldset[disabled] .btn-info.focus,
+fieldset[disabled] .btn-info:active,
+fieldset[disabled] .btn-info:focus,
+fieldset[disabled] .btn-info:hover {
+    @include infoDisabled();
+    .coral-button {
+        @include infoDisabled();
+    }
+}
+
+//警告
+.btn-warning,
+.btn-warning .coral-button {
+    color: $btn-warning-color;
+    background-color: $btn-warning-bg;
+    border-color: $btn-warning-border;
+}
+@mixin warningHover{
+    color: $btn-warning-color;
+    background-color: $btn-warning-border;
+    border-color:darken($btn-warning-border, 5%);
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.coral-state-hover {
+    @include warningHover();
+}
+.btn-warning .coral-button:hover,
+.btn-warning .coral-button:focus,
+.btn-warning .coral-button.coral-state-hover{
+    @include warningHover();
+}
+@mixin warningDisabled{
+    background-color: $btn-warning-bg;
+    border-color: $btn-warning-border;
+}
+.btn-warning.disabled,
+.btn-warning.disabled.active,
+.btn-warning.disabled.focus,
+.btn-warning.disabled:active,
+.btn-warning.disabled:focus,
+.btn-warning.disabled:hover,
+.btn-warning.disabled.coral-state-hover,
+.btn-warning[disabled],
+.btn-warning[disabled].active,
+.btn-warning[disabled].focus,
+.btn-warning[disabled]:active,
+.btn-warning[disabled]:focus,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning,
+fieldset[disabled] .btn-warning.active,
+fieldset[disabled] .btn-warning.focus,
+fieldset[disabled] .btn-warning:active,
+fieldset[disabled] .btn-warning:focus,
+fieldset[disabled] .btn-warning:hover {
+    @include warningDisabled();
+    .coral-button {
+        @include warningDisabled();
+    }
+}
+
+
+//危险
+.btn-danger,
+.btn-danger .coral-button {
+    color: $btn-danger-color;
+    background-color: $btn-danger-bg;
+    border-color: $btn-danger-border;
+}
+@mixin dangerHover{
+    color: $btn-danger-color;
+    background-color: $btn-danger-border;
+    border-color:darken($btn-danger-border, 5%);
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger.coral-state-hover {
+    @include dangerHover();
+}
+.btn-danger .coral-button:hover,
+.btn-danger .coral-button:focus,
+.btn-danger .coral-button.coral-state-hover{
+    @include dangerHover();
+}
+@mixin dangerDisabled{
+    background-color: $btn-danger-bg;
+    border-color: $btn-danger-border;
+}
+.btn-danger.disabled,
+.btn-danger.disabled.active,
+.btn-danger.disabled.focus,
+.btn-danger.disabled:active,
+.btn-danger.disabled:focus,
+.btn-danger.disabled:hover,
+.btn-danger.disabled.coral-state-hover,
+.btn-danger[disabled],
+.btn-danger[disabled].active,
+.btn-danger[disabled].focus,
+.btn-danger[disabled]:active,
+.btn-danger[disabled]:focus,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger,
+fieldset[disabled] .btn-danger.active,
+fieldset[disabled] .btn-danger.focus,
+fieldset[disabled] .btn-danger:active,
+fieldset[disabled] .btn-danger:focus,
+fieldset[disabled] .btn-danger:hover {
+    @include dangerDisabled();
+    .coral-button {
+        @include dangerDisabled();
+    }
+}
+
+
+//link
+.btn-link {
+    font-weight: $btn-font-weight;
+    color: $btn-primary-bg;
+    border-radius: 0;
+}
+.btn-link,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    border-color: transparent;
+}
+.btn-link:focus,
+.btn-link:hover,
+.btn-link.coral-state-hover {
+    color: $btn-primary-border;
+    text-decoration: underline;
+    background-color: transparent;
+}
+.btn-link,
+.btn-link.active,
+.btn-link:active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+    background-color: transparent;
+    box-shadow: none;
+}
+.btn-link.disabled,
+.btn-link.disabled.active,
+.btn-link.disabled.focus,
+.btn-link.disabled:active,
+.btn-link.disabled:focus,
+.btn-link.disabled:hover,
+.btn-link.disabled.coral-state-hover,
+.btn-link[disabled],
+.btn-link[disabled].active,
+.btn-link[disabled].focus,
+.btn-link[disabled]:active,
+.btn-link[disabled]:focus,
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link,
+fieldset[disabled] .btn-link.active,
+fieldset[disabled] .btn-link.focus,
+fieldset[disabled] .btn-link:active,
+fieldset[disabled] .btn-link:focus,
+fieldset[disabled] .btn-link:hover {
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: none;
+    outline:0;
+}
+
+//清除杂余
+.btn-primary:active,
+.btn-success:active,
+.btn-info:active,
+.btn-warning:active,
+.btn-danger:active,
+.btn-primary.active,
+.btn-success.active,
+.btn-info.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-primary.disabled,
+.btn-success.disabled,
+.btn-info.disabled,
+.btn-warning.disabled,
+.btn-danger.disabled,
+.btn-primary[disabled],
+.btn-success[disabled],
+.btn-info[disabled],
+.btn-warning[disabled],
+.btn-danger[disabled],
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-success,
+fieldset[disabled] .btn-info,
+fieldset[disabled] .btn-warning,
+fieldset[disabled] .btn-danger {
+	box-shadow: none;
+}
+
+//按钮中图标
+.coral-button > .icon{
+	margin:0 3px;
+}
+
+@mixin btnSize($padding:1px 5px,$font-size: 12px,$line-height: 1.5,$border-radius: $btn-border-radius-small){
+    padding: $padding;
+    font-size: $font-size;
+    line-height: $line-height;
+    border-radius: $border-radius;
+}
+
+//超小按钮
+.btn-xs {
+    @include btnSize;
+    .coral-button {
+        @include btnSize();
+    }
+    .icon{
+        @include btnSize(0,$line-height:1,$border-radius:0);
+    }
+}
+
+//小按钮
+.btn-sm {
+    @include btnSize($padding:5px 10px);
+    .coral-button {
+        @include btnSize($padding:5px 10px);
+    }
+    .icon{
+        @include btnSize(0,$line-height:1,$border-radius:0);
+    }
+}
+
+//大按钮
+.btn-lg,
+.btn-lg .coral-button {
+    @include btnSize(10px 16px,18px,1.3333,$btn-border-radius-large);
+    .coral-button{
+        @include btnSize(10px 16px,18px,1.3333,$btn-border-radius-large);
+    }
+    .icon{
+        @include btnSize(0,18px,1,0);
+    }
+}
+
+
+//将button改为块级元素
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-block + .btn-block{
+    margin-top:5px;
+}
+
+
+//coral-splitbutton
+.coral-splitbutton{
+
+}
+.coral-splitbutton.btn-xs,
+.coral-splitbutton.btn-sm,
+.coral-splitbutton.btn-lg{
+    padding:0;
+}
+
+.coral-splitbutton .coral-button:first-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.coral-splitbutton .coral-splitbutton-dropdownbutton{
+    margin-left: -1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.coral-splitbutton .coral-splitbutton-dropdownbutton .coral-button-text{
+    display:none;
+}
+
+
+//按钮组
+.btn-group{
+    display:inline-block;
+    padding:0;
+    border-radius:$btn-border-radius-base;
+    overflow: hidden;
+}
+.btn-group:hover,
+.btn-group:focus{
+    background: transparent;
+    border-color:transparent;
+}
+.btn-group.btn-xs,
+.btn-group.btn-sm{
+    border-radius:$btn-border-radius-small;
+}
+.btn-group.btn-lg{
+    border-radius:$btn-border-radius-large;
+}
+.btn-group .coral-button{
+    float:left;
+    margin-left: -1px;
+    border-radius:0;
+}
+.btn-group .coral-button:first-child {
+    margin-left: 0;
+}

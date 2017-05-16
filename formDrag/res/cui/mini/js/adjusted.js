@@ -1,0 +1,2 @@
+/*! cui 2016-11-08 */
+$.component("coral.adjusted",{_create:function(){this.element.addClass("ctrl-fit-element coral-scroll").removeClass("coral-adjusted"),this.element.hasClass("fill")&&this.element.removeClass("fill").addClass("coral-fill")},refresh:function(){var a,b=this.element,c=b.parent();a=c.height(),b.siblings(":visible").each(function(){var b=$(this),c=b.css("position");"absolute"!==c&&"fixed"!==c&&(a-=b.outerHeight(!0))}),b.height(Math.max(0,a-b.innerHeight()+b.height())).addClass("coral-scroll"),$.coral.refreshChild(this.element),$.coral.fitParent(c,!0)}});

@@ -1,0 +1,40 @@
+.breadcrumb > li {
+    *display: block;/* support: IE7 */
+    *float: left;/* support: IE7 */
+    display: inline-block;
+    position: relative;
+    line-height: 22px;
+}
+
+.breadcrumb>li+li:before{
+	padding: 0 5px;
+	color: #ccc;
+	content: "/\00a0";
+}
+
+.splitline{
+	padding: 0 5px;
+	color: #ccc;
+}
+
+.breadcrumb {
+	*min-height: 0px;/* support: IE7 */
+    padding: 8px 15px;
+    margin-bottom: 0;
+    list-style: outside none none;
+}
+
+.breadcrumb > .coral-state-highlight {
+    color: #777;
+}
+
+.breadcrumb:before,.breadcrumb:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+
+.breadcrumb:after {
+	clear: both;
+}
+

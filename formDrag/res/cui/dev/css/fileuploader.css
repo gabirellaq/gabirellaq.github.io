@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/*
+ * jQuery File Upload Demo CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+.files a {
+	color: orange;
+	text-decoration: none;
+}
+
+.files img {
+	border: 0;
+	vertical-align: middle;
+}
+
+.files h1 {
+	line-height: 1em;
+}
+
+.files blockquote {
+	padding: 0 0 0 15px;
+	margin: 0 0 20px;
+	border-left: 5px solid #eee;
+}
+
+.fileupload-progress {
+	margin: 10px 0;
+}
+
+.fileupload-progress .progress-extended {
+	margin-top: 5px;
+}
+
+.error {
+	color: red;
+}
+
+@media ( min-width : 481px) {
+	.navigation {
+		list-style: none;
+		padding: 0;
+	}
+	.navigation li {
+		display: inline-block;
+	}
+	.navigation li:not (:first-child ):before {
+		content: "| ";
+	}
+}
+
+.fileinput-button {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.fileinput-button input, .fileinput-button .swfuploader {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 200px;
+	direction: ltr;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+	.fileinput-button input {
+		filter: alpha(opacity = 0);
+		font-size: 100%;
+		height: 100%;
+	}
+}
+
+.fileupload-buttonbar .btn, .fileupload-buttonbar .toggle {
+	margin-bottom: 5px;
+}
+
+.progress-animated .progress-bar, .progress-animated .bar {
+	background: url("../img/progressbar.gif") !important;
+	filter: none;
+}
+
+.fileupload-process {
+	float: right;
+	display: none;
+}
+
+.fileupload-processing .fileupload-process, .files .processing .preview
+	{
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url("../img/loading.gif") center no-repeat;
+	background-size: contain;
+}
+
+.files audio, .files video {
+	max-width: 300px;
+}
+
+@media ( max-width : 767px) {
+	.fileupload-buttonbar .toggle, .files .toggle, .files .btn span {
+		display: none;
+	}
+	.files .name {
+		width: 80px;
+		word-wrap: break-word;
+	}
+	.files audio, .files video {
+		max-width: 80px;
+	}
+	.files img, .files canvas {
+		max-width: 100%;
+	}
+}
+
+.files .fileItem {
+	padding: 5px 5px 0 5px;
+	list-style: none;
+}
+
+.files .fileContent {
+	position: relative;
+	background: #F5F5F5;
+	padding: 5px;
+}
+
+.files .progress {
+	height: 5px;
+	background: #e6e6e6;
+}
+
+.files .progress .progressbar-value {
+	height: 100%;
+    background: #B0DCFB;
+}
+.template-upload .progressbar-value{
+	width: 0;
+}
+.files .fileThumb {
+	display: none;
+}
+
+.files .fileAction {
+	position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+.files {
+	height: 240px;
+	/* border: 1px solid #d3d3d3; */
+}
+
+.list-files .progress{
+	display: none;
+}
+
+.card-files .progressbar-text{
+	display: none;
+}
+
+.card-files .fileItem {
+	width: 20%;
+    display: inline-block;
+    float: left;
+}
+
+.card-files .fileThumb {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-files .fileContent {
+	height: 105px;
+	padding: 5px;
+}
+
+.card-files .fileThumb {
+	display: block;
+}
+.card-files .fileError{
+	position: absolute;
+	top: 4px;
+    left: 4px;
+}
+.card-files .fileContent>span, .card-files .fileContent>span{
+	display: block;
+	overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+}

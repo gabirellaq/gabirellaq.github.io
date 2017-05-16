@@ -1,0 +1,42 @@
+.coral-autocomplete-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+	overflow:auto
+}
+
+.coral-autocomplete-tree {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.coral-autocomplete-tree a:hover{
+	background: #ddd;
+}
+
+.coral-autocomplete-tree.coral-tree li ul{
+	padding: 0;
+	margin: 0;
+}
+
+.coral-autocomplete-tree a{
+	width: 100%;
+}
+
+.coral-autocomplete-panel .coral-menu-item{
+	padding: 5px 10px;
+	border-bottom: 1px solid #ddd;
+}
+.coral-autocomplete .coral-button{
+	border: 0 none;
+	border-left: 1px solid #d8d8d8;
+}
+
+.coral-label-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+}

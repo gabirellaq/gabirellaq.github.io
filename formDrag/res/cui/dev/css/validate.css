@@ -1,0 +1,227 @@
+/* .coral-grid .coral-validate-required {
+	display: none;
+} */
+.coral-validate-required {
+	color: #f60;
+	font-size: 16px;
+	position: absolute;
+	top: 6px;
+	left: -6px;
+	height: 18px;
+}
+/* add label and required star before function @lhb @2015-04-27 */
+.coral-validate-label-required {
+	color: #f00;
+}
+.coral-validate-starBefore .coral-validate-required {
+	position: relative;
+}
+.coral-validate-starBefore .coral-validate-required,
+.coral-validate-starBefore .coral-label {
+	float: left;
+	margin-right: 10px;
+	line-height: 28px;	
+	right: 0px;
+	margin-left: 0px;
+}
+.coral-hasLabel .coral-validate-required,
+.coral-hasLabel .coral-label {
+	float: left;
+	margin-right: 10px;
+	line-height: 28px;
+}
+.coral-hasLabel .coral-validate-required {
+	position: relative;
+	float: none;
+}
+.coral-validate-starBefore.coral-combo-arrow-hover,
+.coral-hasLabel.coral-combo-arrow-hover {
+	background-color: #fff;
+}
+.coral-hasLabel.coral-radiolist .coral-validate-required ,
+.coral-hasLabel.coral-radio .coral-validate-required ,
+.coral-hasLabel.coral-checkbox .coral-validate-required ,
+.coral-hasLabel.coral-checkboxlist .coral-validate-required {
+	position: absolute;
+	float: none;
+}
+.coral-validate-starBefore.coral-radiolist .coral-validate-required,
+.coral-validate-starBefore.coral-radio .coral-validate-required,
+.coral-validate-starBefore.coral-checkbox .coral-validate-required,
+.coral-validate-starBefore.coral-checkboxlist .coral-validate-required {
+	position: relative;
+}
+.coral-hasLabel .coral-radio-label,
+.coral-validate-starBefore .coral-radio-label
+.coral-hasLabel .coral-checkbox-label,
+.coral-validate-starBefore .coral-checkbox-label {
+	margin-top: 5px;
+}
+.coral-validate-starBefore .coral-corner-all {
+	float: left;
+	line-height: 28px;	
+	right: 0px;
+	margin-right: 0px;
+	display: block;
+}
+.coral-hasLabel .coral-corner-all  {
+	float: left;
+	margin-right: 0px;
+	line-height: 28px;
+  	display: block;
+}
+
+/*
+.coral-hasLabel .coral-textbox-border,
+.coral-hasLabel .coral-combo-border,
+.coral-validate-starBefore .coral-textbox-border,
+.coral-validate-starBefore .coral-combo-border,
+.coral-validate-starBefore .coral-datepicker-border,
+.coral-hasLabel .coral-datepicker-border {
+	width: 300px;
+} */
+/* add label and required star before function @lhb @2015-04-27 */
+.coral-validate-state-error {
+	white-space: pre;
+	position: absolute;
+	color: #fff;
+	padding: 2px 14px;
+	display: block;
+	border: 1px solid #ea5504;
+	background: #ea5504;
+	z-index: 1099;
+	line-height: 24px;
+	border-radius: 0;
+	font-family: arial;
+	font-size: 10px;
+}
+
+.coral-validate-error {		
+	color: #cf4c35;
+}
+.hasErrorIcon.coral-validate-error .coral-textbox-border{
+	margin-right:18px;
+}
+
+.hasErrorIcon .coral-errorIcon{
+	position:absolute;
+	top:6px;
+	right:1px;
+}
+.coral-validate-tooltip {
+	position: absolute;
+	color: #999999;
+	padding: 5px 10px;
+	display: block;
+	border: 1px solid #999999;
+	background: #ffffff;
+	z-index: 102;
+	border-radius: 5px;
+	font-family: arial;
+	font-size: 13px;
+}
+
+.coral-validate-errorArrow div {
+    background: none repeat scroll 0 0 #F2DEDE;
+    border-left: 2px solid #EED3D7;
+    border-right: 2px solid #EED3D7;
+    box-shadow: 0 2px 3px #EED3D7;
+    display: block;
+    font-size: 0;
+    height: 1px;
+    line-height: 0;
+    margin: 0 auto;
+}
+
+.coral-validate-errorArrow {
+    margin: -2px 0 -9px 0;
+    z-index: 102;
+	border-left: 4px solid  transparent;
+	border-right: 4px solid  transparent;
+	border-top: 4px solid #ea5504;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	bottom: 4px;
+}
+
+.coral-validate-errorArrow-right {
+	border-bottom: 4px solid transparent;
+	border-top: 4px solid transparent;
+	border-right: 4px solid #EA5504;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	left: -5px;
+	bottom: 18px;
+	margin: -2px 0px -9px;
+	z-index: 102;
+}
+.coral-validate-errorArrow-top {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #EA5504;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	bottom: 4px;
+	margin: -2px 0px -9px;
+	z-index: 102;
+}
+.coral-validate-errorArrow-bottom {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid #EA5504;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	top: -3px;
+	margin: -2px 0px -9px;
+	z-index: 102;
+}
+.coral-validate-errorArrow .line10 {
+    border: medium none;
+    width: 13px;
+}
+.coral-validate-errorArrow .line9 {
+    border: medium none;
+    width: 11px;
+}
+.coral-validate-errorArrow .line8 {
+    width: 11px;
+}
+.coral-validate-errorArrow .line7 {
+    width: 9px;
+}
+.coral-validate-errorArrow .line6 {
+    width: 7px;
+}
+.coral-validate-errorArrow .line5 {
+    width: 5px;
+}	
+.coral-validate-errorArrow .line4 {
+    width: 3px;
+}
+.coral-validate-errorArrow .line3 {
+    border-bottom: 0 solid #EED3D7;
+    border-left: 2px solid #EED3D7;
+    border-right: 2px solid #EED3D7;
+    width: 1px;
+}	
+.coral-validate-errorArrow .line2 {
+    background: none repeat scroll 0 0 #EED3D7;
+    border: medium none;
+    width: 3px;
+}	
+.coral-validate-errorArrow .line1 {
+    background: none repeat scroll 0 0 #EED3D7;
+    border: medium none;
+    width: 1px;
+}

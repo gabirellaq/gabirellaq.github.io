@@ -1,0 +1,29 @@
+.coral-radio {
+	position: relative;
+	display: inline-block;
+	outline: none;
+}
+
+.coral-radio-label {
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 6px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+.coral-radio-icon {
+	margin-right: 1px;
+}
+.coral-radio input {
+	position: absolute;
+	left: -9999px;
+}
+.coral-radio.coral-isLabel{
+	color : #9a9a9a;
+}
+.coral-radio-highlight .coral-radio-icon {
+	color: #1277c8;
+}
+.coral-radio-hover .coral-radio-icon {
+	box-shadow: 0 0 5px rgba(48, 131, 235, 0.18), 0 1px rgba(255, 255, 255, 0.6), 1px 1px 5px rgba(199, 202, 204, 0.74) inset;
+}

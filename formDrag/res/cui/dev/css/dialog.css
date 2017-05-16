@@ -1,0 +1,233 @@
+/* .coral-dialog {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0;
+	outline: 0;
+}  */
+.coral-dialog {
+	border: solid 1px #e8edf3;
+	border-width: 1px 0 0 0;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .2);;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);;
+    background: #fff;
+    overflow: hidden;
+	position: fixed;
+	z-index: 100;
+}
+/* .coral-dialog-loading {
+	background: url('images/gridloading.gif') no-repeat 50% 0;
+	display: none;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	height: 50px;
+	width: 160px;
+	text-align: center;
+	line-height: 69px;
+} */
+.coral-front {
+	z-index: 100;
+}
+.coral-dialog .coral-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+	text-align:center;
+}
+
+.coral-dialog .coral-dialog-title {
+	position: absolute;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #fff;
+	left:10px; 
+}
+
+.coral-dialog-subTitle {
+	text-align:center;
+	color: #fff;
+}
+
+ .coral-dialog-mainTitle {
+	float:left;
+	width:80%;
+	text-align:left;
+}
+
+.coral-dialog .coral-dialog-content {
+	position: relative;
+	border: 0;
+	/* padding: 0;  会覆盖combo的dialog里的padding*/ 
+	background: none;
+	overflow: auto;
+}
+
+.coral-dialog .coral-dialog-buttonpane {
+	text-align: center;
+	border-width: 1px 0 0 0;
+	background-image: none;
+}
+
+.coral-dialog .coral-dialog-buttonpane .coral-dialog-buttonset {
+	float: none;
+}
+
+.coral-dialog .coral-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+
+.coral-dialog .coral-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+
+.coral-draggable .coral-dialog-titlebar {
+	cursor: move;
+}
+
+.coral-dialog-buttonset .coral-btn-primary {
+	background: none repeat scroll 0 0 #428bca;
+	color: #fff;
+}
+
+.coral-dialog-buttonset .coral-state-default {
+	padding: 0.3em 1em;
+}
+
+.coral-dialog-buttonset .coral-state-default .coral-button-text {
+	padding: 0em 1em;
+}
+
+.coral-dialog.coral-component-content, .coral-dialog .coral-component-content
+	{
+	border: 0;
+}
+
+.coral-dialog .coral-dialog-buttonpane {
+	margin: 0;
+}
+
+.coral-dialog  .coral-dialog-toolbar .coral-button {
+	color: #d6ebf8;
+	background: transparent;
+	border: 0 none;
+}
+
+.coral-dialog .coral-dialog-titlebar {
+	color: #666;
+	border-radius: 0;
+	background: none repeat scroll 0 0 #36a9e1;
+	border-bottom: 1px solid #36a9e1;
+	padding: 6px 12px;
+}
+
+.coral-dialog  .coral-dialog-toolbar .coral-button{
+	border-radius: 0;
+}
+
+.coral-dialog-toolbar {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+}
+
+.coral-dialog .coral-dialog-toolbar .coral-button-icon-only .coral-button-text{
+	padding: 5px;
+}
+
+.coral-dialog .coral-dialog-toolbar .coral-button.coral-state-hover{
+	background: #1e8fc6;
+}
+
+.coral-dialog .coral-dialog-toolbar .coral-dialog-toolbar-close.coral-state-hover{
+	color: #fff;
+	background: #e81123;
+}
+
+.coral-dialog.slideRight{
+	right: 0;
+    top: 0;
+    -webkit-transform: translateX(700px);
+    -ms-transform: translateX(700px);
+    -o-transform: translateX(700px);
+    transform: translateX(700px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    /* visibility: hidden; */
+}
+
+.coral-dialog.slideLeft{
+	right: auto;
+	top: 0;
+	left: 0;
+	webkit-transform: translateX(-700px);
+    -ms-transform: translateX(-700px);
+    -o-transform: translateX(-700px);
+    transform: translateX(-700px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+.coral-dialog.slideLeft.in,
+.coral-dialog.slideRight.in{
+	webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+
+.coral-dialog.slideTop {
+	left: 0;
+	top: 0;
+    -webkit-transform: translateY(-700px);
+    -ms-transform: translateY(-700px);
+    -o-transform: translateY(-700px);
+    transform: translateY(-700px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.coral-dialog.slideBottom{
+	top: auto;
+	left: 0;
+	bottom: 0;
+	-webkit-transform: translateY(700px);
+    -ms-transform: translateY(700px);
+    -o-transform: translateY(700px);
+    transform: translateY(700px);
+     -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.coral-dialog.slideTop.in,
+.coral-dialog.slideBottom.in{
+	webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}

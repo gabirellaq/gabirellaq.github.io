@@ -1,0 +1,19 @@
+.coral-combobox-item {
+  padding: 2px;
+  height: 26px;
+  padding: 5px;
+  padding-right: 0px;
+  background-color: #fff;
+}
+.coral-combobox-item-hover {
+  background-color: #eaf2ff;
+  color: #000000;
+}
+.coral-combobox-item-selected {
+  background-color: #FBEC88;
+  color: #000000;
+}
+.coral-combobox-item-highlight {
+	background-color: #fff;
+	color: #428bca;
+}

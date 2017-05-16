@@ -1,0 +1,18 @@
+.coral-subfield {
+	margin: 10px 0 0 0;
+}
+.coral-subfield-fieldset {
+	border:0;
+	border-top: 1px solid #85b4ff; 
+	margin:0; 
+	padding-left:0;
+	height: 35px;
+}
+.coral-subfield-legend { 
+	text-align:left; 
+	padding-left:20px;
+	padding-right:20px;
+	color: #0b6aff;
+	font-size: 120%;
+	width: auto;
+}

@@ -1,0 +1,30 @@
+.coral-radiolist {
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+.coral-radiolist .coral-radio {
+	padding: 0px;
+}
+.coral-radioboxlist .coral-checkbox-label {
+	min-height: 20px;
+	padding-left: 25px;
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
+.coral-readonly .coral-radio-label {
+	cursor: default;
+}
+
+.coral-radiolist-border {
+	white-space: normal;
+}
+
+.coral-radiolist .coral-state-highlight{
+	border: 0 none;
+	background: transparent;
+}

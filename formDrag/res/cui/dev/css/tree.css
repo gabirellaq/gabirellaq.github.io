@@ -1,0 +1,393 @@
+/*-------------------------------------
+coral-tree Style
+
+
+-------------------------------------*/
+.coral-tree * {
+	/* padding: 0; 
+	margin: 0; */
+}
+
+.coral-tree {
+	position: relative;
+}
+
+.coral-tree .coral-tree-icon-parent {
+	/* color: #F4E592; */
+	
+}
+
+.coral-tree .coral-tree-icon-leaf {
+	/* color: #BADDFF; */
+	
+}
+.coral-tree .treeIndent{
+	display: inline-block;
+	float: left;
+	height: 16px;
+}
+.coral-tree .tree-disabled {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pdding: 0;
+	margin: 0;
+}
+
+.coral-tree.coral-tree-fit li a {
+	width: 100%;
+	padding: 0 10px 0 6px;
+	height: 24px;
+}
+
+.coral-tree.coral-tree-fit li span {
+	line-height: 21px;
+}
+
+.coral-tree.coral-tree-fit li ul {
+	margin: 0;
+	padding: 0;
+}
+
+.coral-tree .treeLine {
+	font-size: 20px;
+	height: 20px;
+	vertical-align: top;
+	float: left;
+}
+
+.coral-tree {
+	margin: 0;
+	padding: 0;
+	color: #333
+}
+
+.coral-tree li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: left;
+	white-space: nowrap;
+	outline: 0
+}
+
+.coral-tree li ul {
+	margin: 0;
+	padding: 0 0 0 0
+}
+/* .coral-tree li ul.line{ background:url(./images/line_conn.gif) 0 0 repeat-y;} */
+.coral-tree li a {
+	padding: 0 3px 0 0;
+	margin: 0;
+	cursor: pointer;
+	line-height: 20px;
+	color: #333;
+	background-color: transparent;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+}
+
+.coral-tree li a:hover {
+	text-decoration: underline
+}
+/*.coral-tree li a.curSelectedNode {padding-top:0px; background-color:#FFE6B0; color:black; height:16px; border:1px #FFB951 solid; opacity:0.8;}*/
+.coral-tree li a.coral-state-hover {
+	background: #f8f8f8;
+	background-image: none;
+	color: #333;
+}
+
+.coral-tree li a.curSelectedNode {
+	background-color: #d5d5d5;
+	color: #333;
+	opacity: 0.8;
+}
+
+.coral-tree li a.curSelectedNode_Edit {
+	padding-top: 0px;
+	background-color: #FFE6B0;
+	color: black;
+	opacity: 0.8;
+}
+
+.coral-tree li a.tmpTargetNode_inner {
+	padding-top: 0px;
+	background-color: #316AC5;
+	color: white;
+	height: 16px;
+	border: 1px #316AC5 solid;
+	opacity: 0.8;
+	filter: alpha(opacity = 80)
+}
+
+.coral-tree li a.tmpTargetNode_prev {
+	
+}
+
+.coral-tree li a.tmpTargetNode_next {
+	
+}
+
+.coral-tree li a input.rename {
+	height: 20px;
+	width: 80px;
+	padding: 0;
+	margin: 0;
+	border: 1px #7EC4CC solid;
+}
+
+.coral-tree li span {
+	margin-left: 2px
+}
+
+.coral-tree li span.button {
+	width: 16px; 
+	height:16px; 
+	display: inline-block;
+	vertical-align: middle;
+	border: 0 none;
+	cursor: pointer;
+	outline: none;
+}
+
+.coral-tree li span.button.chk {
+	width: 13px;
+	height: 13px;
+	margin: 0 3px 0 0;
+	cursor: auto
+}
+
+.coral-tree li span.button.chk.checkbox_false_full {
+	background-position: 0 0
+}
+
+.coral-tree li span.button.chk.checkbox_false_full_focus {
+	background-position: 0 -14px
+}
+
+.coral-tree li span.button.chk.checkbox_false_part {
+	background-position: 0 -28px
+}
+
+.coral-tree li span.button.chk.checkbox_false_part_focus {
+	background-position: 0 -42px
+}
+
+.coral-tree li span.button.chk.checkbox_false_disable {
+	background-position: 0 -56px
+}
+
+.coral-tree li span.button.chk.checkbox_true_full {
+	background-position: -14px 0
+}
+
+.coral-tree li span.button.chk.checkbox_true_full_focus {
+	background-position: -14px -14px
+}
+
+.coral-tree li span.button.chk.checkbox_true_part {
+	background-position: -14px -28px
+}
+
+.coral-tree li span.button.chk.checkbox_true_part_focus {
+	background-position: -14px -42px
+}
+
+.coral-tree li span.button.chk.checkbox_true_disable {
+	background-position: -14px -56px
+}
+
+.coral-tree li span.button.chk.radio_false_full {
+	background-position: -28px 0
+}
+
+.coral-tree li span.button.chk.radio_false_full_focus {
+	background-position: -28px -14px
+}
+
+.coral-tree li span.button.chk.radio_false_part {
+	background-position: -28px -28px
+}
+
+.coral-tree li span.button.chk.radio_false_part_focus {
+	background-position: -28px -42px
+}
+
+.coral-tree li span.button.chk.radio_false_disable {
+	background-position: -28px -56px
+}
+
+.coral-tree li span.button.chk.radio_true_full {
+	background-position: -42px 0
+}
+
+.coral-tree li span.button.chk.radio_true_full_focus {
+	background-position: -42px -14px
+}
+
+.coral-tree li span.button.chk.radio_true_part {
+	background-position: -42px -28px
+}
+
+.coral-tree li span.button.chk.radio_true_part_focus {
+	background-position: -42px -42px
+}
+
+.coral-tree li span.button.chk.radio_true_disable {
+	background-position: -42px -56px
+}
+
+.coral-tree li span.switch {
+	width: 18px;
+	height: 20px;
+	font-size: 19px;
+    float: left;
+}
+
+.coral-tree li span.button.root_open {
+	background-position: -92px -54px
+}
+
+.coral-tree li span.button.root_close {
+	background-position: -74px -54px
+}
+
+.coral-tree li span.button.roots_open {
+	background-position: -92px 0
+}
+
+.coral-tree li span.button.roots_close {
+	background-position: -74px 0
+}
+
+.coral-tree li span.button.center_open {
+	background-position: -92px -18px
+}
+
+.coral-tree li span.button.center_close {
+	background-position: -74px -18px
+}
+
+.coral-tree li span.button.bottom_open {
+	background-position: -92px -36px
+}
+
+.coral-tree li span.button.bottom_close {
+	background-position: -74px -36px
+}
+
+.coral-tree li span.button.noline_open {
+	background-position: -92px -74px
+}
+
+.coral-tree li span.button.noline_close {
+	background-position: -74px -74px
+}
+
+.coral-tree li span.button.root_docu {
+	background: none;
+}
+
+.coral-tree li span.button.roots_docu {
+	background-position: -56px 0
+}
+
+.coral-tree li span.button.center_docu {
+	background-position: -56px -18px
+}
+
+.coral-tree li span.button.bottom_docu {
+	background-position: -56px -36px
+}
+
+.coral-tree li span.button.noline_docu {
+	background: none;
+}
+
+.coral-tree li span.button.ico_open {
+	margin-right: 2px;
+	background-position: -110px -16px;
+}
+
+.coral-tree li span.button.ico_close {
+	margin-right: 2px;
+	background-position: -110px 0;
+}
+
+.coral-tree li span.button.ico_docu {
+	margin-right: 2px;
+	background-position: -110px -32px;
+}
+
+.coral-tree li span.button.edit {
+	margin-right: 2px;
+	background-position: -110px -48px;
+}
+
+.coral-tree li span.button.remove {
+	margin-right: 2px;
+	background-position: -110px -64px;
+}
+
+.coral-tree li span.button.ico_loading {
+	margin-right: 2px;
+	background: url(./images/loading.gif) no-repeat scroll 0 0 transparent;
+}
+
+ul.tmpTargetTree {
+	background-color: #FFE6B0;
+	opacity: 0.8;
+	filter: alpha(opacity = 80)
+}
+
+span.tmpTreeMove_arrow {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	padding: 0;
+	margin: 2px 0 0 1px;
+	border: 0 none;
+	position: absolute;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: -110px -80px;
+	background-image: url("./images/treeStandard.png");
+}
+
+span.tmpTreeMove_arrow.preNext_line {
+	width: 200px;
+	height: 0px;
+	margin: 0px 0 0 150px;
+	border-bottom: 1px solid #f60;
+}
+
+span.tmpTreeMove_arrow.inner_line {
+	width: 200px;
+	height: 0px;
+	margin: 0px 0 0 150px;
+	border-bottom: 0px solid #f60;
+}
+
+ul.coral-tree.treeDragUL {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	background-color: #cfcfcf;
+	border: 1px #00B83F dotted;
+	opacity: 0.8;
+	filter: alpha(opacity = 80)
+}
+
+.treeMask {
+	z-index: 10000;
+	background-color: #cfcfcf;
+	opacity: 0.0;
+	filter: alpha(opacity = 0);
+	position: absolute
+}

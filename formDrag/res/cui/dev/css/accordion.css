@@ -1,0 +1,92 @@
+.coral-accordion .coral-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+	font-size: 100%;
+}
+
+.coral-accordion .coral-accordion-icons {
+	padding-left: 2.2em;
+}
+
+.coral-accordion .coral-accordion-icons .coral-accordion-icons {
+	padding-left: 2.2em;
+}
+
+.coral-accordion .coral-accordion-header .coral-accordion-header-icon {
+	vertical-align: middle;
+}
+
+.coral-accordion .coral-accordion-content {
+	padding: 1em 2.2em;
+	border-width: 0;
+	overflow: auto;
+}
+
+.coral-accordion-header{
+	border-width: 0;
+}
+
+.coral-accordion .coral-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0;
+	min-height: 0;
+	padding: 9px;
+}
+
+.coral-accordion-header.coral-state-default, .coral-accordion-header.coral-accordion-header-active
+	{
+	font-weight: normal;
+	color: #fff;
+}
+
+.coral-accordion-header.coral-state-default {
+	background: #36a9e1;
+}
+
+.coral-accordion-header.coral-state-hover {
+	background: #36a9e1;
+}
+
+.coral-accordion-header.coral-accordion-header-active {
+	background: #1e8fc6;
+}
+
+.coral-accordion .coral-accordion-content {
+	padding: 0;
+	border-top: 0;
+	overflow: auto;
+	background: #fff;
+}
+
+.coral-accordion .coral-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 27px;
+}
+
+.coral-accordion .coral-icon-triangle-1-s {
+	background-position: 0px -284px;
+}
+
+.coral-accordion .coral-icon-triangle-1-e {
+	background-position: 0px -249px;
+}
+
+.coral-accordion .coral-state-default .coral-icon, .coral-accordion .coral-state-active .coral-icon
+	{
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+
+.coral-accordion .coral-accordion-header .coral-accordion-header-icon {
+	float: right;
+	vertical-align: middle;
+}

@@ -1,0 +1,129 @@
+.queueMessage .coral-messager {
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.queueMessage {
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	margin-left: -200px;
+	width: 400px;
+}
+
+.coral-dialog .hasIcon.alert-box {
+	padding: 15px 15px 15px 50px;
+	margin: 0;
+}
+
+.coral-dialog .alert-box {
+	padding: 15px;
+	margin: 0;
+}
+
+.coral-dialog .hasIcon .icon-control {
+	font-size: 30px;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.coral-dialog .danger, .coral-dialog .error {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}
+
+.alert-box .coral-control-danger, .alert-box .coral-control-error {
+	color: #a94442;
+}
+
+.coral-dialog .warning {
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+}
+
+.alert-box .coral-control-warning {
+	color: #8a6d3b;
+}
+
+.coral-dialog .question {
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+}
+
+.alert-box .coral-control-question {
+	color: #8a6d3b;
+}
+
+.coral-dialog .info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #31708f;
+	overflow-x:hidden;
+}
+
+.alert-box .coral-control-info {
+	color: #31708f;
+}
+
+.coral-dialog .success {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #3c763d;
+}
+
+.alert-box .coral-control-success {
+	color: #3c763d;
+}
+
+.coral-dialog .coral-messager-body {
+	padding: 25px 15px 20px 15px;
+	overflow-x: hidden;
+	background: transparent;
+}
+
+.coral-dialog .coral-messager-info-body {
+	padding: 5px 10px;
+	overflow: hidden;
+	background: #fff;
+}
+
+.coral-messager-box-content>.icon-control {
+	padding: 0 10px 10px 0;
+}
+
+.hasIcon>.icon-control {
+	padding: 0 10px 0 0;
+}
+
+.coral-messager-icon {
+	float: left;
+	width: 32px;
+	height: 32px;
+}
+
+.coral-dialog .coral-messager-content {
+	margin-top: 5px;
+}
+
+.coral-dialog .coral-messager-box {
+	float: left;
+	left: 50%;
+	position: relative;
+}
+
+.coral-dialog .messager-only {
+	padding-top: 0;
+}
+
+.coral-messager-box-content {
+	float: left;
+	position: relative;
+	right: 50%;
+	padding-left: 45px;
+	margin-left: -10px;
+}

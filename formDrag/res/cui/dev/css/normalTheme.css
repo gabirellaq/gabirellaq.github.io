@@ -1,0 +1,161 @@
+body {
+	font-size: 14px;
+}
+.coral-textbox{
+	height:34px;
+}
+.coral-textbox-textarea {
+	height: 60px;
+}
+.coral-textbox-border{
+	height: 34px;
+}
+.coral-textbox-default {
+	height: 32px;
+}
+.coral-dialog .coral-messager-box {
+	left: 55%;
+}
+.coral-combo-arrow {
+    top: 7px;
+}
+.coral-button {
+	padding: 4px;
+}
+.coral-icon-calendar {
+    top: 3px;
+}
+.coral-panel-title {
+    height: 19px;
+}
+.coral-panel-tool a {
+    height: 19px;
+}
+.coral-tabs>.coral-tabs-nav>li>.coral-tabs-anchor {
+	padding: 9px 14px;
+}
+.coral-splitbutton {
+	height: 34px;
+}
+.coral-splitbutton .coral-splitbutton-element {
+    height: 34px;
+}
+.coral-splitbutton .coral-button.coral-splitbutton-dropdownbutton {
+    height: 34px;
+}
+.coral-combo-wrapper .coral-combobox-item {
+	padding: 8px 12px;
+}
+.coral-menu .coral-menuitem-link {
+	padding: 8px 14px;
+}
+.coral-toolbar-border {
+    height: 36px;
+}
+.coral-checkbox-label {
+	line-height: 34px;
+}
+.coral-toolbar-html {
+	line-height: 30px;
+}
+.coral-button-text-icon-primary .coral-button-text, .coral-button-text-icons .coral-button-text {
+    padding: 2px 22px 2px 22px;
+}
+.coral-button-icon-only .coral-button-text, .coral-button-icons-only .coral-button-text {
+    padding: 2px 4px 2px 4px;
+}
+.coral-datepicker-time .datepicker-timeinput, .coral-datepicker-time .coral-datepicker-time-tm {
+	height: 34px;
+}
+.coral-autocomplete-panel .coral-menu-item {
+	padding: 8px 14px;
+}
+.coral-textboxlist-ul {
+	padding: 2px 12px;
+}
+.coral-textboxlist .coral-textboxlist-item {
+	height:22px;
+}
+.coral-textboxlist li { 
+	margin: 0px 3px 2px 0;
+}
+.coral-slider-horizontal {
+    height: 15px;
+}
+.coral-slider .coral-slider-handle {
+	height: 21px;
+}
+.coral-dialog .coral-dialog-titlebar {
+	padding: 8px 14px;
+}
+.coral-grid tbody td, .coral-grid tfoot td {
+    height: 42px;
+}
+.coral-grid thead th {
+    height: 48px;
+}
+.coral-textbox-close {
+	top: 8px;
+}
+.coral-tree li a {
+    line-height: 24px;
+}
+.coral-tree .treeLine {
+    font-size: 24px;
+    margin-left: -3px;
+}
+.coral-tree li span.switch.cui-icon-bottomDottedLine {
+	font-size: 24px;
+    margin-left: -3px;
+    margin-top: 1px;
+    margin-right: 4px;
+}
+.coral-tree li span.switch.cui-icon-centerDottedLine {
+	font-size: 24px;
+    margin-left: -3px;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+.coral-progressbar {
+	height: 19px;
+}
+.card-files .fileContent {
+	height: 110px;
+}
+.coral-accordion .coral-accordion-header {
+	padding: .8em .7em .8em .7em;
+}
+.coral-spinner-button {
+	width: 20px;
+}
+.coral-splitbutton-menu .coral-menuitem-text {
+    margin-right: 4px;
+}
+.coral-toolbar .coral-toolbar-separator-horizontal {
+	height: 32px;
+}
+.coral-spinner a.coral-spinner-button {
+	padding-top: 1px;
+}
+.coral-validate-required,.hasErrorIcon .coral-errorIcon {
+	top: 8px;
+}
+.coral-textbox .coral-textbox-btn-textico {
+	padding: 6px 6px;
+}
+.coral-menu .menu-rightArrow {
+	padding-left: 3px;
+	line-height: 16px;
+}
+/* .coral-combo-wrapper .coral-combobox-item { 
+	padding: 8px 14px;
+} */
+.coral-combo-filter {
+	padding: 8px 0;
+}
+.coral-combo-filterbox {
+	height: 25px;
+}
+.coral-combo-search {
+	top: 8px;
+}

@@ -1,0 +1,904 @@
+.coral-grid .row-editable {
+	position: absolute;
+	border: 1px solid #efefef;
+	/*border-top: 0; */
+}
+
+.coral-grid .row-editable-btns {
+	padding: 4px 8px;
+	border: 0;
+}
+
+.coral-grid .coral-grid-caption {
+	height: 32px;
+}
+
+.coral-grid .coral-grid-resize-ltr {
+	float: right;
+	margin: -2px 0 -2px 0;
+}
+
+.coral-grid .coral-grid-resize {
+	cursor: e-resize;
+	display: inline;
+	/* 	height: 30px !important;
+ */
+	overflow: hidden;
+	position: relative;
+}
+
+.coral-grid .coral-grid-btable {
+	min-height: 1px;
+	margin-bottom: 1px;
+	height: 1px; /*fixed in chrome*/
+}
+
+.coral-grid-columns-view {
+	position: relative;
+	overflow-x: hidden;
+}
+
+.coral-grid .coral-grid-htable th div {
+	overflow: hidden;
+	position: relative;
+}
+
+.coral-grid .coral-grid-ico-sort {
+	cursor: pointer !important;
+	display: inline;
+	overflow: hidden;
+	position: absolute;
+}
+
+.coral-grid .coral-icon-asc {
+	height: 12px;
+	margin-top: 1px;
+}
+
+.coral-grid .coral-icon-desc {
+	height: 12px;
+	margin-top: 6px;
+}
+
+.coral-grid-pager {
+	padding-top: 2px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.coral-grid-pager .coral-textbox {
+	vertical-align: middle;
+	width: 35px;
+}
+.rn .coral-combo-arrow{
+	padding: 0;
+	right: 2px;
+    top: 2px;
+}
+.coral-grid-pager .coral-textbox-border,
+.coral-grid-pager .coral-textbox {
+	height: auto;
+}
+
+.coral-grid-pager .coral-corner-all {
+	border-radius: 0;
+}
+
+.coral-paginator {
+	text-align: center;
+	height: 28px;
+	position: relative;
+}
+
+.coral-paginator .coral-paginator-combobox, .coral-paginator .coral-paginator-pages,
+	.coral-paginator .coral-paginator-page, .coral-paginator .coral-paginator-next,
+	.coral-paginator .coral-paginator-last, .coral-paginator .coral-paginator-first,
+	.coral-paginator .coral-paginator-prev, .coral-paginator .coral-paginator-current
+	{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1px;
+	margin-right: 1px;
+	padding: 0 4px;
+	outline: medium none;
+	text-decoration: none;
+	cursor: pointer;
+}
+.coral-paginator .coral-paginator-next>span,
+	.coral-paginator .coral-paginator-last>span, .coral-paginator .coral-paginator-first>span,
+	.coral-paginator .coral-paginator-prev>span, .coral-paginator .coral-paginator-current>span
+	{
+	display: inline-block;
+	vertical-align: middle;
+}
+.coral-paginator .coral-paginator-next .coral-icon, .coral-paginator .coral-paginator-last .coral-icon,
+	.coral-paginator .coral-paginator-first .coral-icon, .coral-paginator .coral-paginator-prev .coral-icon,
+	.coral-paginator .coral-paginator-current {
+	height: auto;
+	overflow: inherit;
+}
+
+.coral-paginator-combobox .coral-combo {
+	height: 26px;
+}
+/* ����ʽ */
+.coral-grid .coral-row-ltr td {
+	overflow: hidden;
+	white-space: pre;
+	text-overflow: ellipsis;
+}
+
+.coral-grid tbody td {
+	border-color: inherit;
+}
+
+.coral-grid table {
+	border-collapse: collapse;
+	margin: 0;
+}
+
+.coral-grid .coral-grid-htable {
+	table-layout: fixed;
+	margin: 0;
+}
+/**safari and chrome bug*/
+table.coral-grid-btable-frozen {
+	table-layout: inherit;
+}
+
+.coral-grid thead th, .coral-grid tfoot td {
+	text-align: center;
+}
+
+.coral-grid {
+	/* margin:10px; */
+	
+}
+
+.coral-grid table {
+	/* width: 100%; */
+	
+}
+
+.coral-grid-columns-view {
+	border: 0;
+}
+
+.coral-grid-columns {
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+	
+}
+
+.coral-grid-htable {
+	z-index: 1;
+}
+
+.coral-grid-topRightCell {
+	border: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	height: 100%;
+	left: 0;
+	margin-left: -2px;
+	position: absolute;
+	top: 0;
+	width: 8000px;
+	z-index: 0;
+	border-width: 1px 0 1px 0;
+}
+.frozen-div-right {
+	border-left: 1px solid #E5E5E5;
+}
+.coral-grid-columns {
+	padding: 0;
+}
+.coral-grid .coral-search-table {
+	width: 100%;
+}
+.coral-grid .coral-grid-htable .coral-search-table td {
+	border:0 none;
+}
+.coral-grid-rows {
+	
+}
+
+.coral-grid-view {
+	overflow: hidden;
+	position: relative;
+}
+
+.coral-grid-rows-view {
+	overflow: auto;
+	height: 200px;
+	background: #fff;
+}
+
+.coral-grid-rows {
+	padding: 0;
+}
+
+.coral-grid-view2 {
+	width: 700px;
+}
+
+.coral-grid-view2, .coral-grid-view1 {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.coral-grid {
+	position: relative;
+}
+
+.coral-grid .jqg-first-row-header th, .coral-grid tbody .jqgfirstrow td
+	{
+	padding: 0;
+	border-right: 1px solid #e5e5e5;
+	border-collapse: collapse;
+}
+
+.coral-grid tbody td, .coral-grid tfoot td {
+	border-bottom: 1px solid #ededed;
+	padding: 0 5px;
+	height: 35px;
+}
+
+.coral-grid thead th, .coral-grid tbody td, .coral-grid tfoot td {
+	border-collapse: collapse;
+	overflow: hidden;
+	border-right: 1px solid transparent;
+}
+
+.table-bordered.coral-grid tbody td, .table-bordered.coral-grid tfoot td {
+	border-right: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+
+.table-bordered.coral-grid .coral-grid-view,
+.table-bordered.coral-grid .coral-grid-pager{
+	border-right: 1px solid #ededed;
+	border-left: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.coral-grid tbody td.coral-gridcell-error, .coral-grid tfoot td.coral-gridcell-error
+	{
+	background: #fee2f0;
+}
+
+.coral-grid thead th {
+	border-bottom: 1px solid #e5e5e5;
+	height: 40px;
+}
+
+.coral-grid thead th.coral-state-hover {
+	border-left: 0;
+}
+
+.coral-grid tbody .jqgfirstrow td {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.coral-grid .coral-grid-resize-mark {
+	background-color: #777777;
+	border: 0 none;
+	cursor: col-resize;
+	display: none;
+	height: 100px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 2px;
+	z-index: 99999;
+}
+
+.coral-grid .coral-grid-sortable {
+	cursor: default;
+}
+
+.coral-grid, .coral-grid:before, .coral-grid:after {
+	/* box-sizing: content-box; */
+	
+}
+
+.coral-sortable-placeholder {
+	
+}
+
+.coral-grid thead th {
+	border-top: 1px solid transparent;
+	white-space: pre;
+	overflow: hidden;
+}
+
+.coral-grid .coral-component-header .coral-state-hover {
+	border: 1px solid transparent;
+}
+
+.coral-grid-btable .coral-component-content, .coral-grid-btable-frozen .coral-component-content
+	{
+	background: #fff;
+	border: 0;
+	outline: 0;
+}
+
+.coral-grid-btable .coral-priority-secondary {
+	background: #fafafa;
+}
+
+.coral-pic ul, .coral-pic li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.coral-pic li.gridModel2 {
+	height: 50px;
+}
+
+ul.coral-pic {
+	margin: 0;
+	padding: 0;
+}
+
+li.gridPanel {
+	float: left;
+	width: 25%;
+	list-style: none;
+	position: relative;
+	outline: 0;
+}
+
+li.gridPanel:HOVER .gridModel {
+	display: block;
+}
+
+.coral-pic .rowgridWraper {
+	margin: 5px;
+}
+
+.coral-pic .rowgrid {
+	padding: 5px;
+	margin: 5px;
+	position: relative;
+}
+
+.coral-pic .gridModel {
+	position: relative;
+	display: block;
+}
+
+.coral-pic .gridModel1 {
+	display: block;
+	height: 102px;
+	line-height: 102px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.coral-pic .gridModel1 img {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.coral-pic .gridModel2 {
+	padding: 10px;
+}
+
+.coral-pic .gridModel3 {
+	padding: 0px 10px 5px 10px;
+}
+
+.coral-pic .griditem {
+	overflow: hidden;
+}
+
+.coral-pic .gridCheckbox {
+	float: left;
+}
+
+.coral-pic .gridbuttons {
+	float: right;
+}
+
+.coral-pic .gridtoolbars {
+	position: absolute;
+	width: 100%;
+	height: 33px;
+	line-height: 33px;
+	bottom: -40px;
+}
+
+.coral-pic .coral-state-hover .gridtoolbars {
+	bottom: 0;
+}
+
+.coral-pic .bgopacity {
+	background: #000;
+	opacity: 0.6;
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+}
+
+.coral-pic .gridtoolbars {
+	color: #fff;
+}
+
+.coral-pic .gridtoolbars .coral-button {
+	float: left;
+	display: inline;
+	margin-left: 10px;
+}
+
+.coral-pic .valigh-fix {
+	display: none;
+	width: 1px;
+	margin-left: -1px;
+}
+
+.coral-pic .valigh-fix, .valign-center {
+	*display: inline-block;
+	*vertical-align: middle;
+}
+
+.coral-pic .valigh-fix {
+	*height: 100%;
+}
+
+.coral-pic .valigh-fix, .valign-center {
+	*display: inline;
+}
+
+.coral-paginator .coral-paginator-page {
+	background: none repeat scroll 0 0 #ffffff;
+	padding: 0 10px;
+	display: inline-block;
+	outline: medium none;
+	text-decoration: none;
+	cursor: pointer;
+	color: #333;
+	font-weight: normal;
+}
+
+.coral-paginator .pager-description, .coral-paginator em,
+	.coral-paginator .coral-paging-info {
+	line-height: 22px;
+	vertical-align: middle;
+	font-style: normal;
+}
+
+.coral-paginator .coral-paging-totalpage {
+	line-height: 22px;
+	vertical-align: middle;
+	font-style: normal;
+	padding-left: 16px;
+}
+
+.coral-paginator .coral-button-text-only .coral-button-text {
+	padding: 2px 10px;
+}
+.coral-paginator .coral-toolbar-html {
+	padding: 2px 10px; 
+}
+.coral-paginator .coral-button{
+	background: transparent;
+}
+.coral-paginator .coral-button.coral-state-hover{
+	background: transparent;
+	border-color: #ededed;
+	color: #000;
+}
+.coral-paginator .coral-toolbar .coral-button-icon-only .coral-button-text
+	{
+	padding: 2px 10px;
+}
+
+.coral-paginator .coral-button-icon-only .icon,
+	.coral-button-text-icon-primary .icon,
+	.coral-button-text-icon-secondary .icon, .coral-button-text-icons .icon,
+	.coral-button-icons-only .icon {
+	margin-top: -6px;
+}
+
+.coral-paginator .coral-page-pointer {
+	background: transparent;
+	padding: 0 10px;
+	display: inline-block;
+	outline: medium none;
+	text-decoration: none;
+	cursor: default;
+	color: #333;
+	font-weight: normal;
+}
+
+.coral-paginator .coral-state-default {
+	border-color: transparent;
+}
+
+.coral-paginator .coral-state-hover {
+	/* border: 0 none; */
+}
+
+.coral-paginator .coral-textbox {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.coral-paginator .coral-textbox-default {
+	text-align: left;
+}
+
+.coral-paginator .coral-textbox-default, .coral-paginator .coral-textbox-btn-textico
+	{
+	height: 18px;
+	line-height: 18px;
+}
+
+.coral-paginator .paginator-right {
+	position: absolute;
+	right: 5px;
+	top: 0;
+}
+
+.coral-paginator .paginator-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-left: 5px;
+}
+
+.coral-paginator .paginator-center {
+	float: none;
+	padding: 0 5px;
+}
+
+.coral-paginator-pages .coral-state-active, .coral-paginator-pages .coral-state-hover
+	{
+	background: #3a5bd5;
+}
+
+.coral-paginator .coral-toolbar-btn-border {
+	line-height: 20px;
+}
+
+.coral-paginator .coral-toolbar-btn {
+	height: 22px;
+	line-height: 22px;
+}
+
+/* .coral-paginator .pg .coral-textbox-btn-icons {
+	display: none;
+}
+
+.coral-paginator .pg.coral-textbox-hover .coral-textbox-btn-icons {
+	display: inline;
+} */
+/* .pg.coral-textbox .coral-button-icon-only .coral-button-text{
+	padding: 0;
+}
+.pg button.coral-button-icon-only{
+	width: 14px;
+} */
+.coral-paginator-pages .coral-textbox-btn-ico-search {
+	background-color: #898989;
+	border-right-color: #898989;
+}
+
+.coral-icon-goto, .coral-icon-sure {
+	border-right-color: #898989;
+	background: #898989 url("./images/globalicon.png") no-repeat 0 0;
+}
+
+.coral-icon-goto {
+	background-position: -375px -53px;
+}
+
+.coral-icon-sure {
+	background-position: -375px -94px;
+}
+
+.coral-grid td>.coral-textbox, .coral-grid  td select, .coral-grid  td .coral-combo,
+	.coral-grid  td .coral-datepicker {
+	width: 100%;
+}
+
+.coral-grid td>a>.coral-icon{
+	text-indent:-2px;
+}
+
+.rn-panel.coral-combo-p .coral-combobox-item {
+	padding: 2px;
+}
+/**flex pager begin*/
+.coral-paginator .coral-rn-input {
+	padding: 0 0 0 3px;
+}
+
+.coral-paginator .coral-pg-input {
+	padding: 0 0 0 3px;
+}
+
+/**flex pager end*/
+/**tradition pager begin*/
+/**pager*/
+.coral-pager-flex .coral-textbox .coral-textbox-btn-textico {
+	line-height: 12px;
+}
+
+.coral-pager-flex .coral-pg-input {
+	padding: 0 0 0 3px;
+}
+
+/**rownum*/
+.coral-pager-flex .rn .coral-textbox-default {
+	padding: 0 0 0 3px;
+}
+
+/**tradition pager end*/
+/**pager*/
+.coral-pager-tradition .coral-pg-input {
+	padding: 0 0 0 3px;
+}
+
+.coral-pager-tradition .pg .coral-textbox-border {
+	padding-right: 0;
+}
+
+.coral-pager-tradition .coral-textbox.pg {
+	width: 40px;
+}
+/**rownum*/
+.coral-pager-tradition .coral-paginator {
+	padding-top: 6px;
+}
+
+.coral-pager-tradition .coral-rn-input {
+	padding: 0 0 0 3px;
+}
+
+.coral-pager-tradition .rn .coral-textbox-default {
+	padding: 0 0 0 3px;
+}
+
+.coral-pager-tradition .coral-pg-selbox {
+	padding: 0 0 0 3px;
+}
+
+.coral-grid-pager .coral-textbox.rn {
+	width: 30px;
+}
+
+.coral-grid-pager .coral-combo.coral-textbox.rn{
+	width: 50px;
+}
+
+.coral-paginator .coral-combo-arrow.icon {
+	top: 0;
+	padding: 2px;
+	font-size: 16px;
+}
+
+/**tree grid**/
+.coral-grid .tree-wrap-ltr {
+	font-size: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.coral-grid .tree-wrap {
+	float: left;
+	height: 18px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+}
+
+.coral-grid .treeclick {
+	cursor: pointer;
+}
+
+.coral-grid .tree-plus, .coral-grid .tree-minus {
+	position: absolute;
+	top: 2px;
+}
+
+.coral-grid .tree-leaf {
+	position: absolute;
+	top: 2px;
+}
+
+.coral-grid .treeclick {
+	cursor: pointer;
+}
+
+.coral-paginator .coral-paginator-combobox, .coral-paginator .coral-paginator-pages
+	{
+	margin: 0;
+}
+
+.coral-paginator .coral-icon, .coral-state-disabled .coral-icon-seek-next,
+	.coral-state-disabled .coral-icon-seek-prev {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+}
+
+.coral-icon-seek-prev {
+	background-position: 0 -321px;
+}
+
+.coral-icon-seek-next {
+	background-position: -6px -359px;
+}
+
+.coral-icon-seek-first {
+	background-position: 0 -321px;
+}
+
+.coral-icon-seek-last {
+	background-position: -6px -359px;
+}
+
+.coral-state-disabled .coral-icon-seek-next {
+	background-position: -6px -377px;
+}
+
+.coral-state-disabled .coral-icon-seek-prev {
+	background-position: 0 -339px;
+}
+
+.coral-paginator-pages .coral-state-active, .coral-paginator-pages .coral-state-hover
+	{
+	background: #fff;
+	color: #428bca;
+}
+
+.coral-paginator-combobox .coral-combo {
+	height: auto;
+}
+/**
+	grid 大图列表
+**/
+.grid-edit, .grid-del {
+	background-image: url("images/ui-icons_ef8c08_256x240.png");
+	display: inline-block;
+	width: 30px;
+	height: 27px;
+	cursor: pointer;
+	margin-left: 3px;
+	float: left;
+	display: inline;
+}
+
+.grid-edit {
+	background-position: -45px -248px;
+}
+
+.grid-edit:hover {
+	background-position: -128px -249px;
+}
+
+.grid-del {
+	background-position: -86px -248px;
+}
+
+.grid-del:hover {
+	background-position: -167px -248px;
+}
+
+.coral-pic .rowgrid {
+	padding: 0;
+	margin: 5px;
+	position: relative;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 0;
+}
+
+.coral-pic .bgopacity {
+	background: #000;
+}
+
+.grid-title {
+	color: #428bca;
+}
+
+.gridPanel .coral-state-hover {
+	border: 1px solid #428bca;
+	color: #428bca;
+	font-weight: normal;
+}
+
+.gridtoolbars a {
+	position: relative;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: normal;
+	color: #fff;
+	padding: 5px;
+	float: left;
+	display: inline;
+	margin-left: 10px;
+}
+
+.coral-grid-columns .coral-state-default {
+	background: #fff;
+	border-color: #e5e5e5;
+	color: #140001;
+	font-size: 16px;
+	font-weight: normal;
+}
+.coral-grid-rows .coral-grid-cell-focus{
+	border:2px solid blue;
+}
+.coral-grid-rows .coral-state-highlight, .coral-grid-rows .coral-state-hover
+	{
+	background: #f8f8f8;
+	background-image: none;
+	color: #333;
+}
+
+.coral-grid-rows .coral-state-target {
+	background: #cfcfcf;
+}
+
+.rowgrid.coral-state-highlight {
+	border: 1px solid #0034c9;
+}
+
+.coral-paginator-current .coral-textbox-border {
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.coral-grid-loading {
+	background: url('images/gridloading.gif') no-repeat 50% 0;
+	display: none;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	height: 50px;
+	width: 160px;
+	text-align: center;
+	line-height: 69px;
+}
+
+.coral-grid-noRecordsTips {
+	display: none;
+	text-align: center;
+}
+
+.coral-grid-pager .coral-textbox-btn-icons {
+	background: transparent;
+}
+
+.coral-grid-pager .icon {
+	font-size: 12px;
+	line-height: 12px;
+	color: #62abf7;
+	border: 0 none;
+}
+
+.coral-grid-pager .icon-arrow-first,
+.coral-grid-pager .icon-arrow-right,
+.coral-grid-pager .icon-arrow-left,
+ .coral-grid-pager .icon-arrow-right2
+	{
+	line-height: 21px;
+}
+
+.coral-grid-pager .pg .coral-textbox-btn-ico {
+	padding: 3px;
+}

@@ -1,0 +1,41 @@
+.syntax-container {
+	background: #FCFCFC;
+	-webkit-border-radius: 7px;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 7px;
+	-moz-background-clip: padding;
+	border-radius: 7px;
+	background-clip: padding-box;
+	border: 1px solid #e3e3e3;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.loading-wrapper.loading-right {
+	margin-left: 10px;
+}
+
+.coral-loading {
+	position: relative;
+	text-align: center;
+}
+
+.coral-loading .loading-wrapper {
+	background: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	top: 10%;
+	position: relative;
+}
+
+.coral-icon-loading {
+    background: url("./images/ajax-loader.gif");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}

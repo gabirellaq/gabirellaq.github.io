@@ -1,0 +1,33 @@
+.coral-checkboxlist {
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+.coral-checkboxlist .coral-checkbox {
+	padding: 0px;
+}
+.coral-checkboxlist .coral-checkbox-label {
+	min-height: 20px;
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: default;
+}
+
+.coral-checkboxlist-border {
+	white-space: normal;
+}
+.coral-checkbox-text{
+    display:inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    vertical-align: middle;
+}
+.coral-checkbox-icon {
+	margin-right: 2px;
+	position: relative;
+	vertical-align: middle;
+}

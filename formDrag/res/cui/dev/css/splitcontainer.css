@@ -1,0 +1,145 @@
+.coral-splitcontainer {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.coral-splitcontainer .coral-nav-item>.coral-panel>.coral-panel-header {
+	/* padding: 10px 5px;
+	border-width:0;
+	border-bottom:1px solid #dddddd; */
+	background-color: #219bd6;
+}
+
+.coral-splitcontainer .coral-nav-item>.coral-panel>.coral-panel-header>.coral-panel-title
+	{
+	text-align: center;
+	color: #666666;
+}
+
+.coral-splitcontainer .coral-splitcontainer-master .coral-nav-item>.coral-panel>.coral-panel-header:before
+	{
+	border-right: 1px solid #f2f2f2;
+}
+
+.coral-splitcontainer .coral-nav-item>.coral-panel>.coral-panel-body {
+	border: 0;
+	border-bottom: 1px solid #f2f2f2;
+	border-top: 1px solid #f2f2f2;
+}
+
+.coral-splitcontainer-master {
+	background-color: #ffffff;
+	box-sizing: border-box;
+	width: 153px;
+	float: left;
+	left: 0
+}
+
+.coral-splitcontainer .coral-splitcontainer-master:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	right: 0;
+	height: 100%;
+	bottom: 0;
+	border-right: 1px solid #f2f2f2;
+	z-index: 5;
+}
+
+.coral-nav {
+	overflow: hidden;
+	position: relative;
+	height: 100%
+}
+
+.coral-splitcontainer-detail {
+	box-sizing: border-box;
+	height: 100%;
+	touch-action: pan-y;
+	-ms-touch-action: pan-y;
+}
+
+.coral-nav {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+.coral-nav-item, .coral-nav-item.coral-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+}
+
+.coral-page {
+	width: 100%;
+}
+
+.coral-splitcontainer-portrait.coral-splitcontainer-showhide>.coral-splitcontainer-master,
+	.coral-splitcontainer-hidemode>.coral-splitcontainer-master {
+	box-shadow: rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
+	border-right: #dddddd;
+	background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	-ms-background-clip: padding-box;
+	-moz-background-clip: padding-box
+}
+
+.coral-splitcontainer-portrait.coral-splitcontainer-showhide>.coral-splitcontainer-master,
+	.coral-splitcontainer-hidemode>.coral-splitcontainer-master {
+	display: inline-block;
+	position: absolute;
+	transform: translate3d(-330px, 0, 0);
+	transition: all 0ms;
+	-webkit-transform: translate3d(-330px, 0, 0);
+	-webkit-transition: all 0ms;
+	-moz-transform: translate3d(-330px, 0, 0);
+	-moz-transition: all 0ms;
+	z-index: 5;
+	top: 0;
+	height: 100%;
+	border-right: none
+}
+
+.coral-splitcontainer-portrait.coral-splitcontainer-showhide>.coral-splitcontainer-mastervisible,
+	.coral-splitcontainer-hidemode>.coral-splitcontainer-mastervisible {
+	transform: translate3d(0, 0, 0);
+	transition: all 300ms;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: all 300ms;
+	-moz-transform: translate3d(0, 0, 0);
+	-moz-transition: all 300ms
+}
+
+.coral-splitcontainer-portrait.coral-splitcontainer-showhide>.coral-splitcontainer-masterhidden,
+	.coral-splitcontainer-hidemode>.coral-splitcontainer-masterhidden {
+	transform: translate3d(-330px, 0, 0);
+	transition: all 300ms;
+	-webkit-transform: translate3d(-330px, 0, 0);
+	-webkit-transition: all 300ms;
+	-moz-transform: translate3d(-330px, 0, 0);
+	-moz-transition: all 300ms
+}
+
+.coral-splitcontainer-portrait.coral-splitcontainer-showhide>.coral-splitcontainer-masterhidden.showMaster,
+	.coral-splitcontainer-hidemode>.coral-splitcontainer-masterhidden.showMaster
+	{
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-o-transform: none !important;
+	-ms-transform: none !important;
+	transform: none !important;
+	overflow: visible;
+	max-height: 2000px;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s
+}
