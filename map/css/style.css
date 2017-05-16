@@ -1014,7 +1014,8 @@ html {
     border: 0;
     margin-left: 0.4rem;
     outline: 0;
-    height: 0.8rem; }
+    height: 0.8rem;
+    border-right: 1px solid #ddd; }
   #mapSearchBox .chooseDistance {
     font-size: 0.3rem;
     border: 0;
@@ -1023,7 +1024,6 @@ html {
     display: inline-block;
     text-align: right;
     margin-left: -4px;
-    border-left: 1px solid #ddd;
     padding-bottom: 0.1rem;
     position: relative; }
     #mapSearchBox .chooseDistance .iconfont {

@@ -470,6 +470,7 @@ html{
 	    margin-left: $listul-padding;
 	    outline:0;
 	    height: 0.8rem;
+	    border-right: 1px solid $border-color;
 	}
 	.chooseDistance {
 		font-size: $font-size + 0.06;
@@ -479,7 +480,6 @@ html{
 	    display: inline-block;
 	    text-align: right;
 	    margin-left: -4px;
-	    border-left: 1px solid $border-color;
 	    padding-bottom: $listul-padding / 4;
 	    position:relative;
 	    .iconfont {
