@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/>
+<title>地图</title>
+<link rel="stylesheet" href="//at.alicdn.com/t/font_ifcrga84lpb0ggb9.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="mapWrap" id="mapWrap">
+		<div id="allmap"></div>
+		<!--result-->
+		<div class="resultWrap">
+			<div class="searchListHead">
+				<span class="iconfont icon-jiantouBack iconBack"></span>
+				<div class="headlist" id="headList">
+					<ul>
+						<li><label>商品</label> <span class="iconfont icon-kongdown"></span></li>
+						<li><label>商家</label> <span class="iconfont icon-kongdown"></span></li>
+						<li><label>距离最近</label> <span class="iconfont icon-kongdown"></span></li>
+					</ul>					
+				</div>
+				<div class="categoriesBox" id="categoriesBox">
+					<div class="categoriesList">
+						<span>猪肉</span>
+						<span>牛肉</span>
+						<span>羊肉</span>
+						<span>猪肉</span>
+						<span>牛肉</span>
+						<span>羊肉</span>
+						<span>猪肉</span>
+						<span>牛肉</span>
+						<span>羊肉</span>
+					</div>
+				</div>
+			</div>
+			<div class="searchListBody r-result" id="r-result"></div>
+		</div>
+		<!--/result-->
+		<!--检索框-->
+		<div id="mapSearchBox">
+			<div class="mapSearchTextG">
+				<span class="iconfont icon-zuobiao iconZuobiao"></span>
+				<input type="text" id="mapSearchText" placeholder="输入地址搜索……">
+				<span class="chooseDistance">
+					<span><span id="kmsum" data="2000">2KM</span> <lable class="iconfont icon-kongdown" id="chooseKmButton"></lable></span>
+					<span class="chooseKm" id="chooseKm">
+						<span data="1000">1KM</span>
+						<span data="2000">2KM</span>
+						<span data="3000">3KM</span>
+					</span>
+				</span>
+			</div>
+			<div class="mapserachResultBox clearfix">
+				<div class="mapserachResult">
+					<span id="mapserachResultSum"></span>
+				</div>
+				<div class="mapserachResultShow">
+					<span>
+						<span class="iconfont icon-zuobiao1"></span>
+						<label>超市</label>
+					</span>
+					<span>
+						<span class="iconfont icon-zuobiao11"></span>
+						<label>菜场</label>
+					</span>
+					<span>
+						<span class="iconfont icon-zuobiao2"></span>
+						<label>批发市场</label>
+					</span>
+					<span>
+						<span class="iconfont icon-xiaoshuidifuzhi"></span>
+						<label>餐饮企业</label>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--/检索框-->
+	</div>
+	<script src="js/requirejs/require.min.js" defer async="true" data-main="js/main"></script>
+</body>
+</html>
