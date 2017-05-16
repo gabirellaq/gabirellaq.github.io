@@ -3,6 +3,7 @@
 $searchListBox-zindex:99;
 $searchListHead-height:1.04rem;
 $listul-padding:0.4rem;
+$font-size-common:12px;
 
 @mixin icon($bg-color:$green-color,$text-color:$white-color,$width:0.34rem){
 	background:$bg-color;
@@ -513,11 +514,11 @@ html{
 	}
 	padding:0 ($listul-padding / 2);
 	padding-top:$listul-padding / 4;
-	font-size:12px;
+	font-size:$font-size-common;
 	.mapserachResult {
 		float: left;
 		padding-bottom:$listul-padding / 2;
-		font-size:12px;
+		font-size:$font-size-common;
 	}
 	.mapserachResultShow {
 		float: right;
@@ -539,13 +540,13 @@ html{
 .searchSort {
 	position:absolute;
 	left:5%;
-	top:4rem;
+	top:3.5rem;
     z-index: 3;
     background: $white-color;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     border-radius: $border-radius;
     text-align: center;
-    font-size: $font-size - 0.1;
+    font-size: $font-size-common;
     width: 1rem;
     span{
 		display: block;	
@@ -575,7 +576,7 @@ html{
 	right:0;
 	z-index:4;
 	background: $white-color;
-	font-size:12px;
+	font-size:$font-size-common;
 	height:55px;
 	overflow:hidden;
 	> h1 {

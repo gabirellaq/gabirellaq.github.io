@@ -1071,13 +1071,13 @@ html {
 .searchSort {
   position: absolute;
   left: 5%;
-  top: 4rem;
+  top: 3.5rem;
   z-index: 3;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.1rem;
   text-align: center;
-  font-size: 0.14rem;
+  font-size: 12px;
   width: 1rem; }
   .searchSort span {
     display: block; }
