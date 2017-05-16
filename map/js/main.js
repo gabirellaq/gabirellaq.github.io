@@ -16,7 +16,7 @@ require.config({
 		text: 'js/requirejs/plugins/text',
 		json: 'js/requirejs/plugins/json',
 		async: 'js/requirejs/plugins/async',
-		BMap: 'http://api.map.baidu.com/api?v=2.0&ak=eM1XK6ESgAmeTi6WrMSZeXVd'
+		BMap: 'https://api.map.baidu.com/api?v=2.0&ak=eM1XK6ESgAmeTi6WrMSZeXVd'
 	}
 });
 
