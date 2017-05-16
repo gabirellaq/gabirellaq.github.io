@@ -650,12 +650,12 @@ html {
   height: 100%;
   margin: 0 auto;
   position: relative;
-  font-size: 0.3rem;
+  font-size: 0.24rem;
   color: #666;
   line-height: 1.4;
   overflow: hidden; }
   .mapWrap .iconfont {
-    font-size: 0.36rem; }
+    font-size: 0.3rem; }
   .mapWrap #allmap {
     width: 100%;
     height: 100%;
@@ -702,7 +702,7 @@ html {
     top: -4px; }
 .r-result > div {
   border: 0 !important;
-  font-size: 0.3rem !important; }
+  font-size: 0.24rem !important; }
   .r-result > div > div {
     background: transparent !important; }
     .r-result > div > div li {
@@ -711,14 +711,14 @@ html {
       border-bottom: 1px solid #ddd;
       position: relative;
       line-height: 1.8 !important;
-      font-size: 0.3rem; }
+      font-size: 0.24rem; }
       .r-result > div > div li > div {
         padding: 0 0.2rem !important; }
         .r-result > div > div li > div > div {
           line-height: inherit !important;
-          font-size: 0.3rem !important; }
+          font-size: 0.24rem !important; }
           .r-result > div > div li > div > div:first-child {
-            font-size: 0.36rem !important; }
+            font-size: 0.3rem !important; }
             .r-result > div > div li > div > div:first-child + div b {
               display: none; }
           .r-result > div > div li > div > div > span {
@@ -753,11 +753,11 @@ html {
   left: 0;
   right: 0;
   z-index: 3;
-  font-size: 0.32rem; }
+  font-size: 0.26rem; }
   .searchListHead .iconBack {
     padding: 0 0.4rem;
     display: inline-block;
-    font-size: 0.36rem;
+    font-size: 0.3rem;
     color: #23A340;
     vertical-align: top; }
     .searchListHead .iconBack:active {
@@ -775,7 +775,7 @@ html {
       .searchListHead .headlist > ul > li span {
         vertical-align: middle; }
       .searchListHead .headlist > ul > li .iconfont {
-        font-size: 0.3rem; }
+        font-size: 0.24rem; }
       .searchListHead .headlist > ul > li.current {
         color: #23A340; }
   .searchListHead .categoriesBox {
@@ -804,7 +804,7 @@ html {
   .searchListHead .headName {
     color: #333;
     font-weight: bold;
-    font-size: 0.36rem; }
+    font-size: 0.3rem; }
   .searchListHead .headAddress {
     color: #666;
     margin-left: 0.4rem; }
@@ -816,7 +816,7 @@ html {
   left: 0;
   right: 0;
   background: #fff;
-  font-size: 0.32rem;
+  font-size: 0.26rem;
   padding: 0.2rem;
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
@@ -825,16 +825,16 @@ html {
     border-bottom: 1px solid #ddd;
     position: relative;
     line-height: 1.8;
-    font-size: 0.3rem; }
+    font-size: 0.24rem; }
     .searchListBody .listUl li .iconfont,
     .searchListBody .listUl li .distance {
       position: absolute; }
     .searchListBody .listUl li .iconfont {
       color: #23A340; }
     .searchListBody .listUl li .icon-yuandian {
-      font-size: 0.41rem; }
+      font-size: 0.35rem; }
     .searchListBody .listUl li .storeName {
-      font-size: 0.36rem;
+      font-size: 0.3rem;
       color: #333; }
     .searchListBody .listUl li .address {
       width: 65%;
@@ -871,7 +871,7 @@ html {
         width: 100%; }
       .searchListBody .searchThumblist li a .thumbname {
         color: #333;
-        font-size: 0.4rem; }
+        font-size: 0.34rem; }
       .searchListBody .searchThumblist li a .thumbname,
       .searchListBody .searchThumblist li a .thumbcodename,
       .searchListBody .searchThumblist li a .thumbcode {
@@ -891,7 +891,7 @@ html {
         padding: 0.1rem;
         margin-right: 0.25rem;
         position: relative;
-        font-size: 0.3rem;
+        font-size: 0.24rem;
         width: 0.34rem;
         height: 0.34rem;
         line-height: 0.34rem;
@@ -902,8 +902,8 @@ html {
           position: absolute;
           right: -0.25rem;
           color: #999;
-          font-size: 0.3rem;
-          top: 0.15rem; }
+          font-size: 0.24rem;
+          top: 0.12rem; }
         .searchListBody .searchThumblist li a .thumbline .iconfont:last-child:after {
           content: ""; }
       .searchListBody .searchThumblist li a:active {
@@ -926,7 +926,7 @@ html {
   margin-left: auto;
   margin-right: auto; }
 #searchThumbDetailBox .tName {
-  font-size: 0.46rem;
+  font-size: 0.4rem;
   color: #333; }
 #searchThumbDetailBox .tCode {
   color: #23A340; }
@@ -941,7 +941,7 @@ html {
     padding: 0.1rem;
     margin-right: 0.25rem;
     position: relative;
-    font-size: 0.3rem;
+    font-size: 0.24rem;
     width: 0.44rem;
     height: 0.44rem;
     line-height: 0.44rem;
@@ -953,7 +953,7 @@ html {
       position: absolute;
       top: 1rem;
       color: #999;
-      font-size: 0.56rem;
+      font-size: 0.5rem;
       left: 0.2rem; }
   .tLineTool:last-child .iconfont:after {
     content: ""; }
@@ -980,7 +980,7 @@ html {
     .tLineTool .tooltipsbox h1 {
       font-weight: normal;
       margin-bottom: 0.2rem;
-      font-size: 0.36rem;
+      font-size: 0.3rem;
       color: #23A340; }
     .tLineTool .tooltipsbox span {
       position: absolute;
@@ -1003,20 +1003,20 @@ html {
   #mapSearchBox .iconZuobiao {
     position: absolute;
     left: 0.3rem;
-    top: 0.1rem;
-    font-size: 0.5rem;
+    top: 0.2rem;
+    font-size: 0.44rem;
     color: #23A340; }
   #mapSearchBox #mapSearchText {
     width: calc(100% - 2.2rem );
     padding-left: 0.4rem;
-    font-size: 0.36rem;
+    font-size: 0.3rem;
     box-sizing: border-box;
     border: 0;
     margin-left: 0.4rem;
     outline: 0;
     height: 0.8rem; }
   #mapSearchBox .chooseDistance {
-    font-size: 0.36rem;
+    font-size: 0.3rem;
     border: 0;
     outline: 0;
     width: 1.5rem;
@@ -1077,7 +1077,7 @@ html {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.1rem;
   text-align: center;
-  font-size: 0.2rem;
+  font-size: 0.14rem;
   width: 1rem; }
   .searchSort span {
     display: block; }
@@ -1086,7 +1086,7 @@ html {
     border-bottom: 1px solid #ddd; }
     .searchSort > span span[class*="SUM"] {
       color: #23A340;
-      font-size: 0.4rem; }
+      font-size: 0.34rem; }
     .searchSort > span:active, .searchSort > span.current {
       background: #23A340;
       border-radius: 0.1rem; }
