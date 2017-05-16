@@ -997,24 +997,24 @@ html {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.1rem; }
   #mapSearchBox .mapSearchTextG {
-    padding: 0.4rem 0 0 0;
-    margin: 0 0.4rem;
+    padding: 0.1rem 0 0 0;
+    margin: 0 0.2rem;
     border-bottom: 1px solid #ddd; }
   #mapSearchBox .iconZuobiao {
     position: absolute;
-    left: 0.6rem;
-    top: 0.2rem;
-    font-size: 0.66rem;
+    left: 0.3rem;
+    top: 0.1rem;
+    font-size: 0.5rem;
     color: #23A340; }
   #mapSearchBox #mapSearchText {
     width: calc(100% - 2.2rem );
-    padding-left: 0.6rem;
+    padding-left: 0.4rem;
     font-size: 0.36rem;
     box-sizing: border-box;
     border: 0;
     margin-left: 0.4rem;
     outline: 0;
-    padding-bottom: 0.2rem; }
+    height: 0.8rem; }
   #mapSearchBox .chooseDistance {
     font-size: 0.36rem;
     border: 0;
@@ -1024,7 +1024,7 @@ html {
     text-align: right;
     margin-left: -4px;
     border-left: 1px solid #ddd;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.1rem;
     position: relative; }
     #mapSearchBox .chooseDistance .iconfont {
       color: #23A340;
@@ -1046,20 +1046,23 @@ html {
           background: #f2f2f2; }
 
 .mapserachResultBox {
-  padding: 0 0.4rem;
-  padding-top: 0.4rem; }
+  padding: 0 0.2rem;
+  padding-top: 0.1rem;
+  font-size: 12px; }
   .mapserachResultBox span,
   .mapserachResultBox label {
     vertical-align: middle; }
   .mapserachResultBox .mapserachResult {
     float: left;
-    padding-bottom: 0.4rem; }
+    padding-bottom: 0.2rem;
+    font-size: 12px; }
   .mapserachResultBox .mapserachResultShow {
     float: right;
-    padding-bottom: 0.4rem; }
+    padding-bottom: 0.2rem; }
   .mapserachResultBox .mapSearchSum,
   .mapserachResultBox .iconfont {
-    color: #23A340; }
+    color: #23A340;
+    font-size: inherit; }
   .mapserachResultBox .icon-zuobiao1 {
     color: #F2600C; }
   .mapserachResultBox .icon-zuobiao11 {
@@ -1073,7 +1076,9 @@ html {
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.1rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 0.2rem;
+  width: 1rem; }
   .searchSort span {
     display: block; }
   .searchSort > span {
@@ -1081,7 +1086,7 @@ html {
     border-bottom: 1px solid #ddd; }
     .searchSort > span span[class*="SUM"] {
       color: #23A340;
-      font-size: 0.56rem; }
+      font-size: 0.4rem; }
     .searchSort > span:active, .searchSort > span.current {
       background: #23A340;
       border-radius: 0.1rem; }
@@ -1095,8 +1100,8 @@ html {
   right: 0;
   z-index: 4;
   background: #fff;
-  font-size: 0.4rem;
-  height: 1.7rem;
+  font-size: 12px;
+  height: 55px;
   overflow: hidden; }
   .traceList > h1 {
     text-align: center;

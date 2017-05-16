@@ -449,26 +449,26 @@ html{
 	box-shadow:0 1px 5px rgba(0,0,0,.3);
 	border-radius:$border-radius;
 	.mapSearchTextG {
-		padding: $listul-padding 0 0 0;
-		margin:0 $listul-padding;
+		padding: ($listul-padding / 4) 0 0 0;
+		margin:0 ($listul-padding / 2);
 		border-bottom: 1px solid $border-color;
 	}
 	.iconZuobiao {
 		position: absolute;
-	    left: $listul-padding + 0.2;
-	    top: $listul-padding - 0.2;
-	    font-size: $font-size + 0.36;
+	    left: 0.3rem;
+	    top: 0.1rem;
+	    font-size: $font-size + 0.2;
 	    color:$green-color;
 	}
 	#mapSearchText {
 		width: calc(100% - 2.2rem );
-	    padding-left:$listul-padding + 0.2;
+	    padding-left:0.4rem;
 	    font-size: $font-size + 0.06;
 	    box-sizing: border-box;
 	    border: 0;	    
 	    margin-left: $listul-padding;
 	    outline:0;
-	    padding-bottom: $listul-padding - 0.2;
+	    height: 0.8rem;
 	}
 	.chooseDistance {
 		font-size: $font-size + 0.06;
@@ -479,7 +479,7 @@ html{
 	    text-align: right;
 	    margin-left: -4px;
 	    border-left: 1px solid $border-color;
-	    padding-bottom: $listul-padding - 0.1;
+	    padding-bottom: $listul-padding / 4;
 	    position:relative;
 	    .iconfont {
 	    	color: $green-color;
@@ -511,19 +511,22 @@ html{
 	label {
 		vertical-align: middle;
 	}
-	padding:0 $listul-padding;
-	padding-top:$listul-padding;
+	padding:0 ($listul-padding / 2);
+	padding-top:$listul-padding / 4;
+	font-size:12px;
 	.mapserachResult {
 		float: left;
-		padding-bottom:$listul-padding;
+		padding-bottom:$listul-padding / 2;
+		font-size:12px;
 	}
 	.mapserachResultShow {
 		float: right;
-		padding-bottom:$listul-padding;
+		padding-bottom:$listul-padding / 2;
 	}
 	.mapSearchSum,
 	.iconfont {
 		color: $green-color;
+		font-size: inherit;
 	}
 	.icon-zuobiao1 {
 		color:$orange-color;
@@ -542,6 +545,8 @@ html{
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     border-radius: $border-radius;
     text-align: center;
+    font-size: $font-size - 0.1;
+    width: 1rem;
     span{
 		display: block;	
 	}
@@ -550,7 +555,7 @@ html{
 		border-bottom:1px solid $border-color;
 		span[class*="SUM"] {
 			color: $green-color;
-			font-size: $font-size + 0.26;
+			font-size: $font-size + 0.1;
 		}
 		&:active,
 		&.current {
@@ -570,8 +575,8 @@ html{
 	right:0;
 	z-index:4;
 	background: $white-color;
-	font-size:$font-size + 0.1;
-	height:1.7rem;
+	font-size:12px;
+	height:55px;
 	overflow:hidden;
 	> h1 {
 		text-align: center;
