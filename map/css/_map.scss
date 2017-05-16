@@ -471,6 +471,7 @@ html{
 	    outline:0;
 	    height: 0.8rem;
 	    border-right: 1px solid $border-color;
+	    border-radius:0;
 	}
 	.chooseDistance {
 		font-size: $font-size + 0.06;

@@ -1015,7 +1015,8 @@ html {
     margin-left: 0.4rem;
     outline: 0;
     height: 0.8rem;
-    border-right: 1px solid #ddd; }
+    border-right: 1px solid #ddd;
+    border-radius: 0; }
   #mapSearchBox .chooseDistance {
     font-size: 0.3rem;
     border: 0;
