@@ -792,7 +792,11 @@ html {
       border-top: 1px solid #ddd; }
       .searchListHead .categoriesBox .categoriesList span {
         border: 1px solid #ddd;
-        padding: 0.2rem 0.4rem; }
+        padding: 0.1rem 0.2rem;
+        margin: 0.1rem;
+        display: inline-block;
+        line-height: normal;
+        float: left; }
         .searchListHead .categoriesBox .categoriesList span:active, .searchListHead .categoriesBox .categoriesList span.current {
           border-color: #23A340;
           color: #23A340; }
@@ -1072,14 +1076,14 @@ html {
 .searchSort {
   position: absolute;
   left: 5%;
-  top: 3.5rem;
+  top: 2.8rem;
   z-index: 3;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.1rem;
   text-align: center;
   font-size: 12px;
-  width: 1rem; }
+  width: 44px; }
   .searchSort span {
     display: block; }
   .searchSort > span {
@@ -1104,11 +1108,10 @@ html {
   z-index: 4;
   background: #fff;
   font-size: 12px;
-  height: 55px;
   overflow: hidden; }
   .traceList > h1 {
     text-align: center;
-    margin: 0.2rem; }
+    margin: 5px; }
   .traceList .traceBox {
     position: relative;
     overflow: hidden;
@@ -1118,7 +1121,7 @@ html {
       white-space: nowrap;
       display: inline-block;
       width: 100%;
-      margin-bottom: 0.2rem;
+      margin-bottom: 5px;
       overflow: auto; }
       .traceList .traceBox .tracepro > a {
         margin: 0 0.4rem;

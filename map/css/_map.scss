@@ -207,7 +207,11 @@ html{
 			border-top:1px solid $border-color;
 			span {
 				border:1px solid $border-color;
-				padding: ($listul-padding / 2) $listul-padding;
+				padding: ($listul-padding / 4) ($listul-padding / 2);
+				margin:$listul-padding / 4;
+				display: inline-block;
+				line-height: normal;
+				float: left;
 				&:active,
 				&.current {
 					border-color:$green-color;
@@ -541,14 +545,14 @@ html{
 .searchSort {
 	position:absolute;
 	left:5%;
-	top:3.5rem;
+	top:2.8rem;
     z-index: 3;
     background: $white-color;
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     border-radius: $border-radius;
     text-align: center;
     font-size: $font-size-common;
-    width: 1rem;
+    width: 44px;
     span{
 		display: block;	
 	}
@@ -581,11 +585,10 @@ html{
 	z-index:4;
 	background: $white-color;
 	font-size:$font-size-common;
-	height:55px;
 	overflow:hidden;
 	> h1 {
 		text-align: center;
-		margin:$listul-padding / 2;
+		margin:5px;
 	}
 	.traceBox {
 		position:relative;
@@ -596,7 +599,7 @@ html{
 			white-space: nowrap;
 			display: inline-block;
 			width: 100%;
-			margin-bottom: $listul-padding / 2;						
+			margin-bottom: 5px;						
 			overflow: auto;
 			> a {
 				margin:0 ( $listul-padding);
