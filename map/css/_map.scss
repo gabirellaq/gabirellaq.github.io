@@ -559,6 +559,9 @@ html{
 			color: $green-color;
 			font-size: $font-size + 0.1;
 		}
+		&:last-child {
+			border-bottom:0;
+		}
 		&:active,
 		&.current {
 			background:$green-color;

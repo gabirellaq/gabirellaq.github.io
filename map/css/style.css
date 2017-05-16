@@ -1088,6 +1088,8 @@ html {
     .searchSort > span span[class*="SUM"] {
       color: #23A340;
       font-size: 0.34rem; }
+    .searchSort > span:last-child {
+      border-bottom: 0; }
     .searchSort > span:active, .searchSort > span.current {
       background: #23A340;
       border-radius: 0.1rem; }
