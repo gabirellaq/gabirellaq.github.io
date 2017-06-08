@@ -1,0 +1,779 @@
+@charset "utf-8";
+
+$searchListBox-zindex:99;
+$searchListHead-height:1.04rem;
+$listul-padding:0.4rem;
+$font-size-common:12px;
+
+@mixin icon($bg-color:$green-color,$text-color:$white-color,$width:0.34rem){
+	background:$bg-color;
+	border-radius:50px;
+	color:$text-color;
+	padding:0.1rem;
+	margin-right: 0.25rem;
+	position:relative;
+	font-size: $font-size;
+    width: $width;
+    height: $width;
+    line-height: $width;
+    display: inline-block;
+    text-align: center;
+}
+
+@mixin iconfont{
+	background:none !important;
+	color:$green-color;
+	font-family: "iconfont" !important;
+    font-size: 0.4rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html{
+	height:100%;
+}
+.mapWrap {
+	height:100%;
+	margin:0 auto;
+	position:relative;
+	font-size:$font-size;
+	color:$font-color;
+	line-height:1.4;
+	overflow:hidden;
+	.iconfont{
+		font-size: $font-size + 0.06;
+	}
+	#allmap {
+		width: 100%;
+	    height: 100%;
+	    overflow: hidden;
+	    margin: 0;
+	    font-family: "微软雅黑";
+	}
+	#showDetailList2 {
+		position:absolute;
+		left:15px;
+		top:15px;
+		z-index: 2;
+	}
+	#showDetailList2 {
+		top: 100px;
+	}
+	
+}
+.secondWrap,
+.resultWrap{
+	position:absolute;
+	left:100%;
+	top:0;
+	bottom: 0;
+	background:$second-bg-color;
+	z-index: $searchListBox-zindex;
+	width: 100%;
+	transform:  translateX(0);
+	&[id*="Box"]{
+		width: 100%;
+	}
+}
+.r-result {
+	li {
+		> span:first-child {
+			@include iconfont;
+			position:relative;
+			&:before {			
+				content: "\e628"; /*圆点*/
+				position: absolute;
+    			top: -4px;
+			}
+		}
+	}
+	> div {
+		border:0 !important;
+		font-size:$font-size !important;
+		> div {
+			background: transparent !important;
+			li {
+				margin:0 !important;
+				padding:($listul-padding / 2)  0!important;
+				border-bottom: 1px solid $border-color;
+				position:relative;
+				line-height: 1.8 !important;
+				font-size: $font-size;
+				> div {
+					padding:0 ($listul-padding / 2) !important;
+					> div {
+						line-height: inherit!important;
+    					font-size: $font-size !important;
+    					&:first-child {
+    						font-size: $font-size + 0.06 !important;
+    						& + div{
+    							b {
+	    							display: none;
+	    						}
+    						}
+    					}
+    					> span{
+    						color: $font-title-color !important;
+    					}
+    					> a {
+    						color:$green-color !important;
+    						display: none;
+    					}
+					}
+				}
+			}
+		}
+	}
+	a[title*="更多结果"]{
+		display: none;
+	}
+	#showDetailThumb {
+		position:absolute;
+		right: 0.4rem;
+    	bottom: 0.4rem;
+    	color: $green-color;
+	}
+}
+
+.fixed {
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	background:rgba(0,0,0,.3);
+}
+
+.searchListHead {
+	height:$searchListHead-height;
+	line-height:$searchListHead-height;
+	background:$second-bg-color;
+	width:100%;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:3;
+	font-size: $font-size + 0.02;
+	.iconBack{
+		padding: 0 $listul-padding;
+	    display: inline-block;
+	    font-size: $font-size + 0.06;
+	    color:$green-color;
+	    vertical-align: top;
+	    &:active {
+	    	background:$second-bg-hover-color;
+	    }
+	}
+	.headlist {
+		position:absolute;
+		left:$listul-padding * 2 + 0.2;
+		right:0;
+		top:5px;
+		line-height: 1.5;
+		> ul {
+			> li {
+				float:left;
+				width: 48%;
+				text-align: center;				
+				label,
+				span {
+					vertical-align: middle;
+				}
+				.iconfont {
+					font-size: $font-size;
+				}
+				&.current {
+					color: $green-color;
+				}
+			}
+		}
+	}
+	.categoriesBox {
+		position:absolute;
+		top:100%;
+		left:0;
+		right:0;
+		z-index: 2;
+		background:$white-color;
+		display: none;
+		border-bottom:1px solid $border-color;
+		.categoriesList {
+			margin:$listul-padding / 2;
+			margin-top: 0;
+			border-top:1px solid $border-color;
+			display: table;
+			span {
+				border:1px solid $border-color;
+				padding: ($listul-padding / 4) ($listul-padding / 2);
+				margin:$listul-padding / 4;
+				display: inline-block;
+				line-height: normal;
+				float: left;
+				&:active,
+				&.current {
+					border-color:$green-color;
+					color: $green-color;
+				}
+			}
+		}
+	}
+	.headtance {
+		position: absolute;
+		top: 0.2rem;;
+		right: $listul-padding;
+		.iconfont{
+			color: $green-color;
+		}
+	}
+	.headName {
+		color:$font-title-color;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: normal;
+
+	}
+	.headAddress{
+	    color: $font-color;
+	    font-size:12px;
+	    line-height: normal;
+	}
+	.headName,
+	.headAddress {
+		 width: 70%;
+	    display: inline-block;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	    white-space: nowrap;
+	}
+}
+.resultWrap{
+	.searchListHead {
+		.headlist {
+			line-height: 3;
+		}
+	}
+}
+
+
+.searchListBody {
+	position:absolute;
+	top:$searchListHead-height;
+	bottom:0;
+	left:0;
+	right:0;
+	background:$second-bg-color;
+	font-size:$font-size + 0.02;
+	padding:$listul-padding / 2;
+	overflow: auto;
+    -webkit-overflow-scrolling: touch;
+	.listUl {
+		li {
+			padding:$listul-padding / 2;
+			border-bottom: 1px solid $border-color;
+			position:relative;
+			line-height: 1.8;
+			font-size: $font-size;
+			.iconfont,
+			.distance {
+				position:absolute;
+			}
+			.iconfont {
+				color:$green-color;
+			}
+			.icon-yuandian {
+				font-size: $font-size + 0.11;
+			}
+			.storeName {
+				font-size: $font-size + 0.06;
+				color:$font-title-color;
+			}
+			.address{
+				width:65%;
+				color:$font-des-color;
+				@include textoverflow;
+			}
+			.storeName,
+			.address {
+				display: block;
+				margin-left: $listul-padding;
+			}
+			.distance {
+				color:$font-des-color;
+				bottom:$listul-padding;
+				right:$listul-padding * 3;
+			}
+			.icon-liebiao {
+				bottom:$listul-padding;
+				right:$listul-padding;
+			}
+			&:active {
+				background:$second-bg-hover-color;
+			}
+		}
+	}
+	.searchThumblist {
+		li{
+			float: left;
+			width: 50%;
+			a {
+				display: block;
+				margin:$listul-padding / 2;
+				margin-right: $listul-padding / 4;
+				margin-left: 0;
+				margin-top: 0;
+				background:$second-bg-color;
+				padding:$listul-padding / 4;
+				img{					
+					height:2.2rem;
+					width: 100%;
+				}
+				.thumbname {
+					color:$font-title-color;
+					font-size: $font-size + 0.1;
+				}
+				.thumbname,
+				.thumbcodename,
+				.thumbcode {
+					@include textoverflow;
+				}
+				img,
+				.thumbname,
+				.thumbcodename,
+				.thumbcode,
+				.thumbline
+				{
+					margin-bottom: $listul-padding / 4;
+				}
+				.thumbline {
+					.iconfont {
+						@include icon;
+						&:after {
+							content:" → ";
+							    position: absolute;
+							    right: -0.25rem;
+							    color: $font-des-color;
+							    font-size: $font-size;
+							    top: $font-size / 2;
+						}
+						&:last-child {
+							&:after {
+								content: "";
+							}
+						}
+					}
+				}
+				&:active {
+					background:$second-bg-hover-color;
+					box-shadow: 0 1px 5px rgba(0,0,0,.3);
+				}
+			}
+			&:nth-child(even) {
+				a {
+					margin-left: $listul-padding / 4;
+					margin-right: 0;
+				}
+			}			
+		}		
+	}
+}
+
+#searchThumbBox{
+	.searchListBody {
+		background:$darkenSecongBg;
+	}
+}
+
+#searchThumbDetailBox {
+	.tImg,
+	.tName,
+	.tCodeName {
+		margin-bottom: $listul-padding;
+	}
+	.tImg{
+		max-height: 6rem;
+    	max-width: 100%;
+    	margin-left: auto;
+    	margin-right: auto;		
+	}
+	.tName {
+		font-size: $font-size + 0.16;
+		color: $font-title-color;
+	}
+	.tCodeName {}
+	.tCode {
+		color: $green-color;
+	}
+}
+
+.tLineTool {
+	position:relative;
+	margin-bottom:$listul-padding;
+	.iconfont {
+		@include icon($width:0.44rem);
+		margin-top: $listul-padding;
+		&:after {
+			content: "↓";
+			position:absolute;
+			top: 1rem;
+		    color: $font-des-color;
+		    font-size: $font-size + 0.26;
+		    left: 10px;
+		}
+	}
+	&:last-child {
+		.iconfont{
+			&:after {
+				content: "";
+			}
+		}
+	}
+	.tooltipsbox{
+		width:-webkit-calc(100% - 1.5rem);
+		width: calc(100% - 1.5rem);
+		float: right;
+		padding:$listul-padding / 2;
+		background:$second-bg-hover-color;
+		position:relative;
+		border-radius:$border-radius;
+		&:before {
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			border-color:transparent $second-bg-hover-color transparent transparent;
+			border-style:solid;
+			border-width:($listul-padding / 2) ($listul-padding / 2) ($listul-padding / 2) 0;
+			content: "";
+			position:absolute;
+			left: -0.19rem;
+			top:24px;
+		}
+		h1 {
+			font-weight: normal;
+			margin-bottom: $listul-padding / 2;
+			font-size:$font-size + 0.06;
+			color: $green-color;
+		}
+		span {
+			position:absolute;
+			right: $listul-padding / 2;
+			bottom:$listul-padding / 2;
+			width: 40%;
+		}
+		.addressInfo {
+			width: 55%;
+		}
+	}
+}
+
+#mapSearchBox {
+	position:absolute;
+	z-index:3;
+	width:90%;
+	left:5%;
+	top:$listul-padding;
+	background:$white-color;
+	box-shadow:0 1px 5px rgba(0,0,0,.3);
+	border-radius:$border-radius;
+	.mapSearchTextG {
+		padding: ($listul-padding / 4) 0 0 0;
+		margin:0 ($listul-padding / 2);
+		border-bottom: 1px solid $border-color;
+	}
+	.iconZuobiao {
+		position: absolute;
+	    left: 0.3rem;
+	    top: 0.2rem;
+	    font-size: $font-size + 0.2;
+	    color:$green-color;
+	}
+	#mapSearchText {
+		width: calc(100% - 2.2rem );
+	    padding-left:0.4rem;
+	    font-size: $font-size + 0.06;
+	    box-sizing: border-box;
+	    border: 0;	    
+	    margin-left: $listul-padding;
+	    outline:0;
+	    height: 0.8rem;
+	    border-right: 1px solid $border-color;
+	    border-radius:0;
+	}
+	.chooseDistance {
+		font-size: $font-size + 0.06;
+	    border: 0;
+	    outline: 0;
+	    width: 1.5rem;
+	    display: inline-block;
+	    text-align: right;
+	    margin-left: -4px;
+	    padding-bottom: $listul-padding / 4;
+	    position:relative;
+	    .iconfont {
+	    	color: $green-color;
+	    	font-size: inherit;
+	    }
+	    .chooseKm {
+	    	position:absolute;
+	    	left:0;
+	    	top:100%;
+	    	background:$second-bg-color;
+	    	box-shadow:0 0 5px rgba(0,0,0,.5);
+	    	width: 100%;
+    		text-align: center;	
+    		display: none;
+	    	> span {
+	    		display: block;
+	    		padding:0.2rem;
+	    		border-bottom:1px solid $border-color;
+	    		&:active {
+	    			background:$second-bg-hover-color;
+	    		}
+	    	}
+	    }
+	}
+}
+
+.mapserachResultBox {
+	span,
+	label {
+		vertical-align: middle;
+	}
+	padding:0 ($listul-padding / 2);
+	padding-top:$listul-padding / 4;
+	font-size:$font-size-common;
+	.mapserachResult {
+		float: left;
+		padding-bottom:$listul-padding / 2;
+		font-size:$font-size-common;
+	}
+	.mapserachResultShow {
+		float: right;
+		padding-bottom:$listul-padding / 2;
+	}
+	.mapSearchSum,
+	.iconfont {
+		color: $green-color;
+		font-size: inherit;
+	}
+	.icon-zuobiao1 {
+		color:$orange-color;
+	}
+	.icon-zuobiao11 {
+		color: $yellow-color;
+	}
+}
+
+.searchSort {
+	position:absolute;
+	left:5%;
+	top:2.8rem;
+    z-index: 3;
+    background: $white-color;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    border-radius: $border-radius;
+    text-align: center;
+    font-size: $font-size-common;
+    width: 44px;
+    span{
+		display: block;	
+	}
+	> span {
+		padding:0.1rem;
+		border-bottom:1px solid $border-color;
+		span[class*="SUM"] {
+			color: $green-color;
+			font-size: $font-size + 0.1;
+		}
+		&:last-child {
+			border-bottom:0;
+		}
+		&:active,
+		&.current {
+			background:$green-color;
+			span { 
+				color: $white-color;
+			}
+			border-radius:$border-radius;
+		}
+	}
+}
+
+.traceList{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:4;
+	background: $white-color;
+	font-size:$font-size-common;
+	overflow:hidden;
+	> h1 {
+		text-align: center;
+		margin:5px;
+	}
+	.traceBox {
+		position:relative;
+		overflow: hidden;
+		display: inline-block;
+    	width: 100%;
+		.tracepro {
+			white-space: nowrap;
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 5px;						
+			overflow: auto;
+			> a {
+				margin:0 ( $listul-padding);
+				position:relative;
+				&:before {
+					content: "|";
+					position:absolute;
+					right:-( $listul-padding);
+				}
+				&:last-child {
+					&:before {
+						content: "";
+					}
+				}
+				&.current {
+					color:$green-color;
+				}			
+			}
+		}
+	}
+}
+
+a[href*="http://api.map.baidu.com/place/detail"]{
+	display:none;
+}
+#searchThumblistBox {
+	padding:$listul-padding ;
+}
+
+/*.BMap_Marker{
+	&[title*="超市"]{
+		@include iconfont;
+		color:$orange-color;
+		&:before {			
+			content: "\e689";
+		}
+	}
+	&[title*="菜场"]{
+		@include iconfont;
+		color:$yellow-color;
+		&:before {			
+			content: "\e61f";
+		}
+	}
+	&[title*="批发市场"]{
+		@include iconfont;
+		&:before {			
+			content: "\e6de";
+		}
+	}
+	&[title*="餐饮企业"]{
+		@include iconfont;
+		&:before {			
+			content: "\e603";
+		}
+	}
+}*/
+
+/**
+ * infowindow css
+ */
+.BMap_pop{
+	& > div{
+		display:none;
+	}
+	& > div:nth-child(9){
+		display:block;
+		left:-0.04rem !important;
+		top:0.80rem !important;
+		.BMap_bubble_title{
+			display:none;
+		}
+		.infoWindow{
+			height: 120px;
+			padding:0.16rem 0.28rem;
+			border-radius: 0.06rem;
+			background-color: #FFF;
+			-webkit-box-shadow: 0.01rem 0.01rem 0.01rem 0.01rem rgba(0,0,0,.3);
+			box-shadow: 0.01rem 0.01rem 0.01rem 0.01rem rgba(0,0,0,.3);
+			padding: 0.16rem 0.28rem 0;
+			position: relative;
+			
+			.head{
+				h2{
+					font-size: $font-size + 0.06;
+					line-height: $font-size + 0.06;
+					font-weight: normal;
+				}
+				h3{
+					font-size: $font-size-common;
+					margin-top: 0.04rem;
+					padding-bottom: 0.14rem;
+					border-bottom:#C8C8C8 solid 1px;
+					font-weight: normal;
+					.iconfont{
+						color: $green-color;
+						margin-left: 0.06rem;
+						font-size: $font-size;
+					}
+				}
+			}
+
+			.list{
+				li{
+					font-size:$font-size;
+					.iconfont{
+						color:$green-color;
+						font-size: $font-size + 0.10;
+					}
+				}
+			}
+			.detail{
+				float:right;
+				font-size: 16px;
+				line-height: 16px;
+				color:$green-color;
+				text-decoration: none;
+				position: absolute;
+			    right: 10px;
+			    bottom: 7px;
+			}
+			.arrow{
+				    position: absolute;
+				    border-left: transparent solid 10px;
+				    border-right: transparent solid 10px;
+				    border-top: rgba(0,0,0,.3) solid 10px;
+				    left: 50%;
+				    bottom: -11px;
+				    margin-left: -10px;
+
+				    i{
+			    	    position: absolute;
+					    border-left: transparent solid 10px;
+					    border-right: transparent solid 10px;
+					    border-top: #fff solid 10px;
+					    left: 50%;
+					    bottom: 1px;
+					    margin-left: -11px;
+				    }
+			}
+		}
+	}
+
+	img:nth-of-type(1){
+	    top: 44px !important;
+	    left: 228px !important;
+	}
+}
+
+.BMap_shadow img {
+    display: none;
+}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$second-bg-color:#fff;
+$second-bg-hover-color:darken($second-bg-color,5%);
+$darkenSecongBg:#f1f1f1;
+
+$font-size:0.24rem;
+$font-color:#666;
+$font-title-color:#333;
+$font-des-color:#999;
+
+$green-color:#23A340;
+$white-color:#fff;
+$orange-color:#F2600C;
+$yellow-color:#ED9900;
+
+$border-color:#ddd;
+$border-radius:0.1rem;
+
+
+@mixin textoverflow{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+@import "base";
+@import "map";
