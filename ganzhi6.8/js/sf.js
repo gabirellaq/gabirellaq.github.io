@@ -18,9 +18,7 @@ $(window).resize(function(){
 
 	$mapWrap = $('#mapWrap');
 	$searchSort = $('#searchSort');
-	if (window.localStorage) {
-	    localStorage.setItem("initRadius", 3000);	
-	}
+	var initRadius = 3000; //默认3公里检索
 	var initCenter = new BMap.Point(108.30658044894886,22.873883384337855);
 	bmapInit();
 	
