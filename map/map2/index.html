@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/>
+<title>地图</title>
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1qc6gk4dyuwn4s4i.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="mapWrap" id="mapWrap">
+		<div id="allmap"></div>
+		<!--result-->
+		<div class="resultWrap">
+			<div class="searchListHead">
+				<span class="iconfont icon-jiantouBack iconBack"></span>
+				<div class="headlist" id="headList">
+					<ul>
+						<li onclick="getProductSort(this);"><label>商品</label> <span class="iconfont icon-kongdown"></span></li>
+						<li onclick="getDistanceSort(this);"><label>距离最近</label> <span class="iconfont icon-kongdown"></span></li>
+					</ul>					
+				</div>
+				<div class="categoriesBox" id="categoriesBox"></div>
+			</div>
+			<div class="searchListBody r-result" id="r-result"></div>
+		</div>
+		<!--/result-->
+		<!--检索框-->
+		<div id="mapSearchBox">
+			<div class="mapSearchTextG">
+				<span class="iconfont icon-zuobiao iconZuobiao"></span>
+				<input type="text" id="mapSearchText" placeholder="输入地址搜索……" readonly>
+				<!-- <span class="chooseDistance">
+					<span><span id="kmsum" data="2000">2KM</span> <lable class="iconfont icon-kongdown" id="chooseKmButton"></lable></span>
+					<span class="chooseKm" id="chooseKm">
+						<span data="1000">1KM</span>
+						<span data="2000">2KM</span>
+						<span data="3000">3KM</span>
+						<span data="4000">4KM</span>
+						<span data="5000">5KM</span>
+						<span data="6000">6KM</span>
+					</span>
+				</span>  -->
+			</div>
+			<div class="mapserachResultBox clearfix">
+				<div class="mapserachResult">
+					<span id="mapserachResultSum"></span>
+				</div>
+				<div class="mapserachResultShow">
+					<span>
+						<span class="iconfont icon-zuobiao1"></span>
+						<label>超市</label>
+					</span>
+					<span>
+						<span class="iconfont icon-zuobiao11"></span>
+						<label>集贸</label>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="choseDistance1">
+			<span class="distancePlus">
+				<span class="iconfont icon-plus" data="1000"></span>
+			</span>
+			<span class="distanceMinus">
+				<span class="iconfont icon-minus" data-class="icon-plus"></span>
+			</span>
+		</div>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="https://api.map.baidu.com/api?v=2.0&ak=eM1XK6ESgAmeTi6WrMSZeXVd"></script>
+	<script src="js/GeoUtils_min.js"></script>
+	<script src="js/sf.js"></script>
+</body>
+</html>
