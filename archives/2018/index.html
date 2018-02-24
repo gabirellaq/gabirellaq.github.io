@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hexo">
-    <title>Archiv: 2018 - Hexo</title>
+    <title>Archivos: 2018 - Hexo</title>
     <meta name="author" content="John Doe">
     
     
@@ -69,11 +69,11 @@
                         <a  class="sidebar-button-link "
                              href="/ "
                             
-                            title="Home"
+                            title="Inicio"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Home</span>
+                        <span class="sidebar-button-desc">Inicio</span>
                     </a>
             </li>
             
@@ -82,11 +82,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-categories"
                             
-                            title="Kategorien"
+                            title="Categorías"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Kategorien</span>
+                        <span class="sidebar-button-desc">Categorías</span>
                     </a>
             </li>
             
@@ -95,11 +95,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-tags"
                             
-                            title="Tags"
+                            title="Etiquetas"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Tags</span>
+                        <span class="sidebar-button-desc">Etiquetas</span>
                     </a>
             </li>
             
@@ -108,11 +108,11 @@
                         <a  class="sidebar-button-link "
                              href="/all-archives"
                             
-                            title="Archiv"
+                            title="Archivos"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Archiv</span>
+                        <span class="sidebar-button-desc">Archivos</span>
                     </a>
             </li>
             
@@ -121,11 +121,11 @@
                         <a  class="sidebar-button-link open-algolia-search"
                              href="#search"
                             
-                            title="Suche"
+                            title="Buscar"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Suche</span>
+                        <span class="sidebar-button-desc">Buscar</span>
                     </a>
             </li>
             
@@ -134,11 +134,11 @@
                         <a  class="sidebar-button-link "
                              href="#about"
                             
-                            title="Über"
+                            title="Acerca de"
                         >
                     
                         <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Über</span>
+                        <span class="sidebar-button-desc">Acerca de</span>
                     </a>
             </li>
             
@@ -175,6 +175,107 @@
                         ">
                 
     <section class="postShorten-group main-content-wrap">
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2018/02/23/nuxt/">
+                            nuxt
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2018-02-23T13:48:51+08:00">
+	
+		    23 Feb 2018
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p>记录一下初学nuxt.js的知识点📕</p>
+<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote>
+<p>官网：<a href="https://zh.nuxtjs.org/guide" target="_blank" rel="noopener">https://zh.nuxtjs.org/guide</a></p>
+<p>特性：</p>
+<ul>
+<li>基于 Vue.js</li>
+<li>自动代码分层</li>
+<li>服务端渲染</li>
+<li>强大的路由功能，支持异步数据</li>
+<li>静态文件服务</li>
+<li>ES6/ES7 语法支持</li>
+<li>打包和压缩 JS 和 CSS</li>
+<li>HTML头部标签管理</li>
+<li>本地开发支持热加载</li>
+<li>集成ESLint</li>
+<li>支持各种样式预处理器： SASS、LESS、 Stylus等等</li>
+</ul>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init nuxt-community/starter-template &lt;project-name&gt;</span><br></pre></td></tr></table></figure>
+<p>ps: 如果没有安装 <code>vue-cli</code> ,需先通过 <code>npm i -g vue-cli</code> 来安装</p>
+<p>安装依赖包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;project-name&gt;</span><br><span class="line">npm install</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">启动项目</span><br></pre></td></tr></table></figure></p>
+<p>npm run dev<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">应用运行在：`http://localhost:3000` ，后面讲如何修改默认端口。</span><br><span class="line"></span><br><span class="line">### 目录结构说明</span><br></pre></td></tr></table></figure></p>
+<p>├── assets //用于组织未编译的静态资源如 LESS、SASS 或 JavaScript。<br>├── components //用于组织应用的 Vue.js 组件。<br>├── layputs //用于组织应用的布局组件。<br>├── middleware //用于存放应用的中间件。<br>├── pages //用于组织应用的路由及视图。Nuxt.js 框架读取该目录下所有的 .vue 文件并自动生成对应的路由配置。<br>├── plugins //用于组织那些需要在 根vue.js应用 实例化之前需要运行的 Javascript 插件。<br>├── static //用于存放应用的静态文件。<br>├── store //用于组织应用的 Vuex 状态树 文件。<br>├── nuxt.config.js //用于组织Nuxt.js 应用的个性化配置，以便覆盖默认配置。<br>└── package.json //用于描述应用的依赖关系和对外暴露的脚本接口。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 路由</span><br><span class="line">&gt; Nuxt.js 依据 pages 目录结构自动生成 vue-router 模块的路由配置。</span><br><span class="line"></span><br><span class="line">假设 pages 的目录结构如下：</span><br></pre></td></tr></table></figure></p>
+<p>pages/<br>–| user/<br>—–| index.vue<br>—–| one.vue<br>–| index.vue<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">那么，Nuxt.js 自动生成的路由配置如下：</span><br></pre></td></tr></table></figure></p>
+<p>router: {<br>  routes: [<br>    {<br>      name: ‘index’,<br>      path: ‘/‘,<br>      component: ‘pages/index.vue’<br>    },<br>    {<br>      name: ‘user’,<br>      path: ‘/user’,<br>      component: ‘pages/user/index.vue’<br>    },<br>    {<br>      name: ‘user-one’,<br>      path: ‘/user/one’,<br>      component: ‘pages/user/one.vue’<br>    }<br>  ]<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 视图</span><br><span class="line">&gt; 模板</span><br><span class="line"></span><br><span class="line">你可以定制化 Nuxt.js 默认的应用模板。</span><br><span class="line"></span><br><span class="line">定制化默认的 html 模板，只需要在应用根目录下创建一个 app.html 的文件。</span><br><span class="line"></span><br><span class="line">默认模板为：</span><br></pre></td></tr></table></figure></p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html &gt;<br>  <head><br>    <br>  </head><br>  &lt;body &gt;<br>    <br>  <br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 布局</span><br><span class="line">* 默认布局</span><br></pre></td></tr></table></figure></p>
+<template><br>  <nuxt><br></nuxt></template><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* 个性化布局</span><br><span class="line"></span><br><span class="line">layouts 根目录下的所有文件都属于个性化布局文件，可以在页面组件中利用 layout 属性来引用。</span><br><span class="line"></span><br><span class="line">请确保在布局文件里面增加 `&lt;nuxt/&gt;` 组件用于显示页面非布局内容。</span><br><span class="line"></span><br><span class="line">for example: `layouts/default.vue`</span><br></pre></td></tr></table></figure><br><br><template><br>  <div><br>    <div>这里是导航内容</div><br>    <nuxt><br>  </nuxt></div><br></template><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在 pages/index.vue 里，可以指定页面组件使用该布局</span><br></pre></td></tr></table></figure><br><br><script><br>export default {<br>  layout: ‘blog’<br>}<br></script><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; 页面</span><br><span class="line"></span><br><span class="line">页面组件实际上是 Vue 组件，只不过 Nuxt.js 为这些组件添加了一些特殊的配置项（对应 Nuxt.js 提供的功能特性）以便你能快速开发通用应用。</span><br></pre></td></tr></table></figure><br><br><template><br>  <h1 class="red">Hello !</h1><br></template>
+
+<script>
+export default {
+  asyncData (context) {
+    // called every time before loading the component
+    return { name: 'World' }
+  },
+  fetch () {
+    // The fetch method is used to fill the store before rendering the page
+  },
+  head () {
+    // Set Meta Tags for this Page
+  },
+  // and more functionality to discover
+  ...
+}
+</script>
+
+<p><style><br>.red {<br>  color: red;<br>}<br></style><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 插件</span><br><span class="line"></span><br><span class="line">&gt; 使用 element UI</span><br><span class="line"></span><br><span class="line">首先增加文件 plugins/element-ui.js</span><br></pre></td></tr></table></figure></p>
+<p>import Vue from ‘vue’<br>import Element from ‘element-ui’<br>import ‘element-ui/lib/theme-chalk/index.css’<br>Vue.use(Element, { size: ‘small’ })<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">在 nuxt.config.js 中配置</span><br></pre></td></tr></table></figure></p>
+<p>plugins: [<br>    ‘~plugins/element-ui’<br>]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 只在浏览器里使用的插件</span><br><span class="line"></span><br><span class="line">nuxt.config.js</span><br></pre></td></tr></table></figure></p>
+<p>module.exports = {<br>  plugins: [<br>    { src: ‘~plugins/element-ui’, ssr: false }<br>  ]<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 异步数据</span><br><span class="line">&gt; asyncData</span><br><span class="line"></span><br><span class="line">在渲染组件之前异步获取数据。</span><br><span class="line"></span><br><span class="line">asyncData方法会在组件（限于页面组件）每次加载之前被调用。它可以在服务端或路由更新之前被调用。在这个方法被调用的时候，第一个参数被设定为当前页面的上下文对象，你可以利用 asyncData方法来获取数据并返回给当前组件。</span><br></pre></td></tr></table></figure></p>
+<p>export default {<br>    async asyncData (context) {<br>        let data = await axios.get(‘<a href="http://www.xxx" target="_blank" rel="noopener">http://www.xxx</a>);<br>        return {<br>            title: data.title<br>        }<br>    }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; fetch </span><br><span class="line"></span><br><span class="line">用于在渲染页面前填充应用的状态树（store）数据， 与 asyncData 方法类似，不同的是它不会设置组件的数据。</span><br><span class="line"></span><br><span class="line">如果页面组件设置了 fetch 方法，它会在组件每次加载前被调用（在服务端或切换至目标路由之前）。</span><br><span class="line"></span><br><span class="line">fetch 方法的第一个参数是页面组件的上下文对象 context，我们可以用 fetch 方法来获取数据填充应用的状态树。为了让获取过程可以异步，你需要返回一个 Promise，Nuxt.js 会等这个 promise 完成后再渲染组件。</span><br></pre></td></tr></table></figure></p>
+<p>export default {<br>    async fetch({store, params}) {<br>        let data = await axios.get(‘<a href="http://www.xxx" target="_blank" rel="noopener">http://www.xxx</a>‘)<br>        store.commit(‘setValues’, data);<br>    }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 配置项</span><br><span class="line">nuxt.config.js</span><br></pre></td></tr></table></figure></p>
+<p>module.exports = {<br>    head: {<br>        title: ‘douban’,<br>        meta: [<br>            {<br>                charset: ‘utf-8’<br>            },{<br>                name: ‘viewport’,<br>                content: ‘width=device-width,initial-scale=1’<br>            },{<br>                hid: ‘description’,<br>                name: ‘description’,<br>                content: ‘Meta description’<br>            }<br>        ],<br>        //ali iconfont<br>        link: [<br>            {<br>                ‘rel’: ‘stylesheet’,<br>                ‘href’: ‘//at.alicdn.com/t/font_562725_orktergz2etawcdi.css’<br>            }<br>        ]<br>    },<br>    css: [<br>        {<br>            src: ‘~assets/css/reset.scss’,<br>            lang: ‘scss’<br>        },{<br>            src: ‘~assets/css/style.scss’,<br>            lang: ‘scss’<br>        }<br>    ],<br>    loading: {<br>        color: ‘#00b600’,<br>        height: ‘2px’,<br>        failedColor: ‘red’<br>    },<br>    plugins: [<br>        ‘~plugins/filters’,<br>        ‘~plugins/element-ui’<br>    ],<br>    build: {<br>        vendor: [‘axios’]<br>    },<br>    router: {<br>        linkActiveClass: ‘active-link’,<br>    }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 常见问题</span><br><span class="line">&gt; 修改端口号</span><br><span class="line"></span><br><span class="line">package.json</span><br></pre></td></tr></table></figure></p>
+<p>“config”: {<br>    “nuxt”: {<br>        “host”: “0.0.0.0”,<br>        “port”: “4000”<br>        }<br>    },<br>    “scripts”: {<br>    “dev”: “nuxt”<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; 使用外部资源</span><br><span class="line"></span><br><span class="line">在 nuxt.config.js 中配置你想引用的资源文件：</span><br></pre></td></tr></table></figure></p>
+<p>module.exports = {<br>  head: {<br>    link: [<br>            {<br>                ‘rel’: ‘stylesheet’,<br>                ‘href’: ‘//at.alicdn.com/t/font_562725_orktergz2etawcdi.css’<br>            }<br>        ]<br>  }<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">局部配置</span><br><span class="line">可在 pages 目录内的 .vue 文件中引用外部资源，如下所示：</span><br></pre></td></tr></table></figure></p>
+<template><br>  <h1>使用 jQuery 和 Roboto 字体的关于页</h1><br></template>
+
+<p><script><br>export default {<br>  head: {<br>    script: [<br>        { src: ‘<a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js</a>‘ }<br>    ]<br>  }<br>}<br></script><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; meta 标签重复</span><br><span class="line"></span><br><span class="line">为了避免子组件中的meta标签不能正确覆盖父组件中相同的标签而产生重复的现象，建议利用 hid 键为meta标签配一个唯一的标识编号。</span><br></pre></td></tr></table></figure></p>
+<p>head: {<br>    title: ‘starter’,<br>    meta: [<br>        {<br>            charset: ‘utf-8’<br>        },<br>        {<br>            name: ‘viewport’,<br>            content: ‘width=device-width,<br>            initial-scale=1’<br>        },<br>        {<br>            hid: ‘description’,<br>            name: ‘description’,<br>            content: ‘This is the generic description.’<br>        }<br>    ],<br>  }<br>```</p>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2018/02/23/nuxt/#post-footer" class="postShorten-excerpt_link link">
+                                Comentar y compartir
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
     
     
     <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
@@ -239,7 +340,7 @@
                     
                         <p>
                             <a href="/2018/02/06/搭建博客/#post-footer" class="postShorten-excerpt_link link">
-                                Kommentieren und teilen
+                                Comentar y compartir
                             </a>
                         </p>
                     
@@ -341,7 +442,7 @@
                     
                         <p>
                             <a href="/2018/01/29/vue总结/#post-footer" class="postShorten-excerpt_link link">
-                                Kommentieren und teilen
+                                Comentar y compartir
                             </a>
                         </p>
                     
@@ -392,7 +493,7 @@
                     
                         <p>
                             <a href="/2018/01/26/hello-world/#post-footer" class="postShorten-excerpt_link link">
-                                Kommentieren und teilen
+                                Comentar y compartir
                             </a>
                         </p>
                     
@@ -406,7 +507,7 @@
     <ul class="pagination">
         
         
-        <li class="pagination-number">Seite 1 von 1</li>
+        <li class="pagination-number">página 1 de 1</li>
     </ul>
 </div>
 
