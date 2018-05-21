@@ -1,0 +1,175 @@
+@charset "utf-8"
+/* clearfix */
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+	overflow:hidden;
+}
+.clearfix{
+	zoom:1;
+}
+.customize{
+	margin:50px;
+	font-size:14px;
+}
+.customizeSlogan{
+	margin-bottom:30px;
+}
+.customizeSlogan h1{
+	margin-bottom:10px;
+}
+.customizeSlogan h4{
+	line-height:30px;
+}
+.commonset{
+	margin-bottom:20px;
+}
+.commonset .title{
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	font-size: 18px;
+}
+.commonset .title .coral-checkboxlist{
+	float:right;
+}
+.commonset > h5{
+	line-height:30px;
+	color:#666;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.checklistPara .coral-checkboxlist table{
+	width:100%;
+}
+.checklistPara .coral-checkboxlist td{
+	width:13%;
+	padding:6px;
+}
+.checklistPara > ul{
+	width:100%;
+	float:left;
+}
+.checklistPara > ul > li{
+	float:left;
+	width:33.33%;
+	*width:33%;
+	height:60px;
+	margin-top:10px;
+}
+.checklistPara > ul > li > span{
+	display:block;
+}
+.checklistPara > ul > li > input{
+	display: block;
+	margin-top: 5px;
+	width: 80%;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+.help {
+	color:#f19635;
+	cursor:pointer;
+}
+.sassSet .title span{
+	font-size:36px;
+}
+.sassSet h4{
+	font-size: 30px;
+	margin-top:30px;
+}
+
+.bs-docs-section {
+	margin-bottom:60px;
+}
+.bs-dropzone {
+	position: relative;
+	padding: 20px;
+	margin-bottom: 20px;
+	color: #777;
+	text-align: center;
+	border: 2px dashed #eee;
+	border-radius: 4px;
+}
+.bs-dropzone .import-header {
+	margin-bottom: 5px;
+}
+.bs-dropzone .glyphicon-download-alt {
+	font-size: 40px;
+}
+.bs-dropzone .lead {
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #333;
+}
+.bs-dropzone hr {
+	width: 100px;
+	border-color: #eee;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bs-docs-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    text-align: left;
+	outline:0;
+	background: #2c3e50 url(headerBg.jpg) no-repeat center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.bs-customizer label {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #555;
+}
+.bs-customizer .checkbox {
+	margin-left:20px;
+}
+
+.bs-customizer input[type=text] {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    background-color: #fafafa;
+}
+
+.bs-customizer .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.bs-callout{
+	margin-top:10px;
+}
+#import-manual-trigger{
+	cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.bs-callout-info button ,
+.bs-customizer-import button{
+	display:none;
+}
+.bs-customizer .toggle {
+    float: right;
+}
+.bs-customizer-import {
+	background: #f7f7f7;
+}

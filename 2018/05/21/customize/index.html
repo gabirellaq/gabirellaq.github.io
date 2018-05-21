@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>定制并下载 coral 文档</title>
+<link href="css/all.css" rel="stylesheet">
+<link href="css/customize.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Docs page layout -->
+    <div class="bs-docs-header" id="content" tabindex="-1">
+      <div class="container">
+        <h1>定制并下载 Coral</h1>
+        <p>通过自定义 Coral Less 变量，定制一份属于你自己的 Coral 版本吧。</p>        
+      </div>
+    </div>
+	
+	<div class="container bs-docs-container">
+
+		<!--上传config-->
+		<div class="bs-docs-section bs-customizer-import">
+		  <div id="import-drop-target" class="bs-dropzone">
+			<div class="import-header">
+			  <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+			</div>
+			<p class="lead">有现成的配置？上传并导入你的 <code>config.json</code> 文件。</p>
+			<p>将文件<label id="import-manual-trigger" class="btn-link">手动上传<input type="file" id="import-file-select" class="hidden"></label>。</p>
+			<hr>
+			<p><strong>没有现成的配置文件？</strong>没关系，从下面开始自定义各字段吧。</p>
+		  </div>
+		</div>
+		
+		<div class="row">
+			<div class="" role="main">
+				<form class="bs-customizer" style="display:none;">
+					<div class="bs-docs-section" id="less-section">
+						<h1 id="less" class="page-header">Less 文件</h1>
+						<div class="row">
+							<div class="col-xs-6 col-sm-4">
+								<h3>通用 CSS</h3>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" checked="" value="all.less"> all
+									</label>
+								</div>
+							</div><!-- .col-xs-6 .col-sm-4 -->						 
+						</div><!-- /.row -->
+					</div>
+				</form>
+				
+				<form class="bs-customizer">
+					<div class="bs-docs-section" id="less-variables-section">
+						<h1 id="less-variables" class="page-header">Less 变量</h1>
+						<p class="lead">通过 Less 变量可以自定义颜色、尺寸等，最终将会反映到你所下载的 CSS 样式表文件中。</p>
+						<button class="coral-button btn-primary toggle" type="button">重置为默认值</button>
+						<h2 id="all">全局参数</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局主色调，默认#3686e8(蓝色)"></span>
+								<label for="input-@common-color">@common-color</label>								
+								<input class="form-control" id="input-@common-color" type="text" value="#3686e8" data-var="@common-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局字体大小，默认12px"></span>
+								<label for="input-@font-size">@font-size</label>								
+								<input class="form-control" id="input-@font-size" type="text" value="12px" data-var="@font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局字体颜色，默认#666"></span>
+								<label for="input-@font-color">@font-color</label>								
+								<input class="form-control" id="input-@font-color" type="text" value="#666" data-var="@font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局边框圆角，默认4px"></span>
+								<label for="input-@border-radius">@border-radius</label>								
+								<input class="form-control" id="input-@border-radius" type="text" value="4px" data-var="@border-radius">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局边框颜色，默认#ddd"></span>
+								<label for="input-@border-color">@border-color</label>								
+								<input class="form-control" id="input-@border-color" type="text" value="#ddd" data-var="@border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局提示颜色，默认#c9302c(红色)"></span>
+								<label for="input-@red-color">@red-color</label>																
+								<input class="form-control" id="input-@red-color" type="text" value="#c9302c" data-var="@red-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="全局编辑颜色，默认#f0ad4e(黄色)"></span>
+								<label for="input-@yellow-color">@yellow-color</label>								
+								<input class="form-control" id="input-@yellow-color" type="text" value="#f0ad4e" data-var="@yellow-color">
+							</div>
+						</div>
+						<h2 id="accordion">accordion</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-accordion-font-size">@coral-accordion-font-size</label>				
+								<input class="form-control" id="input-@coral-accordion-font-size" type="text" value="@font-size" data-var="@coral-accordion-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-accordion-font-color">@coral-accordion-font-color</label>				
+								<input class="form-control" id="input-@coral-accordion-font-color" type="text" value="@font-color" data-var="@coral-accordion-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-accordion-bg-color">@coral-accordion-bg-color</label>					
+								<input class="form-control" id="input-@coral-accordion-bg-color" type="text" value="#fff" data-var="@coral-accordion-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件头部字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-accordion-head-font-size">@coral-accordion-head-font-size</label>		
+								<input class="form-control" id="input-@coral-accordion-head-font-size" type="text" value="@font-size" data-var="@coral-accordion-head-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件头部背景颜色，默认在全局设置的颜色基础上减淡7%"></span>
+								<label for="input-@coral-accordion-head-bg-color">@coral-accordion-head-bg-color</label>		
+								<input class="form-control" id="input-@coral-accordion-head-bg-color" type="text" value="lighten(@common-color,7%)" data-var="@coral-accordion-head-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件头部字体颜色，默认在其背景颜色的基础上减淡80%"></span>
+								<label for="input-@coral-accordion-head-font-color">@coral-accordion-head-font-color</label>	
+								<input class="form-control" id="input-@coral-accordion-head-font-color" type="text" value="lighten(@common-color,80%)" data-var="@coral-accordion-head-font-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件头部鼠标经过时背景颜色，默认在其背景颜色基础上减淡3%"></span>
+								<label for="input-@coral-accordion-head-hover-bg-color">@coral-accordion-head-hover-bg-color</label>		
+								<input class="form-control" id="input-@coral-accordion-head-hover-bg-color" type="text" value="lighten(@coral-accordion-head-bg-color,3%)" data-var="@coral-accordion-head-hover-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="accordion组件头部选中状态下背景颜色，默认继承全局颜色设置"></span>
+								<label for="input-@coral-accordion-head-active-bg-color">@coral-accordion-head-active-bg-color</label>	
+								<input class="form-control" id="input-@coral-accordion-head-active-bg-color" type="text" value="@common-color" data-var="@coral-accordion-head-active-bg-color">
+							</div>
+						</div>
+
+						<h2 id="layout">layout</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="layout组件头部背景颜色，默认继承全局颜色设置"></span>
+								<label for="input-@coral-layout-panel-head-bg-color">@coral-layout-panel-head-bg-color</label>				
+								<input class="form-control" id="input-@coral-layout-panel-head-bg-color" type="text" value="@common-color" data-var="@coral-layout-panel-head-bg-color">
+							</div>
+						</div>
+
+						<h2 id="panel">panel</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-panel-font-size">@coral-panel-font-size</label>				
+								<input class="form-control" id="input-@coral-panel-font-size" type="text" value="@font-size" data-var="@coral-panel-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-panel-font-color">@coral-panel-font-color</label>				
+								<input class="form-control" id="input-@coral-panel-font-color" type="text" value="@font-color" data-var="@coral-panel-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件头部背景颜色，默认继承全局设置(蓝色)"></span>
+								<label for="input-@coral-panel-head-bg-color">@coral-panel-head-bg-color</label>				
+								<input class="form-control" id="input-@coral-panel-head-bg-color" type="text" value="@common-color" data-var="@coral-panel-head-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件头部字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-panel-head-font-color">@coral-panel-head-font-color</label>		
+								<input class="form-control" id="input-@coral-panel-head-font-color" type="text" value="lighten(@coral-panel-head-bg-color,80%)" data-var="@coral-panel-head-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件头部边框颜色，默认和其背景颜色一致"></span>
+								<label for="input-@coral-panel-head-border-color">@coral-panel-head-border-color</label>		
+								<input class="form-control" id="input-@coral-panel-head-border-color" type="text" value="@coral-panel-head-bg-color" data-var="@coral-panel-head-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件内容块背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-panel-body-bg-color">@coral-panel-body-bg-color</label>	
+								<input class="form-control" id="input-@coral-panel-body-bg-color" type="text" value="#fff" data-var="@coral-panel-body-bg-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="panel组件内容块边框颜色，默认在其背景颜色的基础上加深15%"></span>
+								<label for="input-@coral-panel-body-border-color">@coral-panel-body-border-color</label>		
+								<input class="form-control" id="input-@coral-panel-body-border-color" type="text" value="darken(@coral-panel-body-bg-color,15%)" data-var="@coral-panel-body-border-color">
+							</div>
+						</div>
+
+						<h2 id="tabs">tabs</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-tabs-font-size">@coral-tabs-font-size</label>				
+								<input class="form-control" id="input-@coral-tabs-font-size" type="text" value="@font-size" data-var="@coral-tabs-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tabs-font-color">@coral-tabs-font-color</label>				
+								<input class="form-control" id="input-@coral-tabs-font-color" type="text" value="@font-color" data-var="@coral-tabs-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-tabs-bg-color">@coral-tabs-bg-color</label>				
+								<input class="form-control" id="input-@coral-tabs-bg-color" type="text" value="#fff" data-var="@coral-tabs-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tabs-border-color">@coral-tabs-border-color</label>		
+								<input class="form-control" id="input-@coral-tabs-border-color" type="text" value="@border-color" data-var="@coral-tabs-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件边框大小，默认1像素"></span>
+								<label for="input-@coral-tabs-border-width">@coral-tabs-border-width</label>		
+								<input class="form-control" id="input-@coral-tabs-border-width" type="text" value="1px" data-var="@coral-tabs-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件头部字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-tabs-head-font-size">@coral-tabs-head-font-size</label>	
+								<input class="form-control" id="input-@coral-tabs-head-font-size" type="text" value="@font-size" data-var="@coral-tabs-head-font-size">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件头部字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tabs-head-font-color">@coral-tabs-head-font-color</label>		
+								<input class="form-control" id="input-@coral-tabs-head-font-color" type="text" value="@font-color" data-var="@coral-tabs-head-font-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件头部边框大小，默认2像素"></span>
+								<label for="input-@coral-tabs-head-border-width">@coral-tabs-head-border-width</label>	
+								<input class="form-control" id="input-@coral-tabs-head-border-width" type="text" value="2px" data-var="@coral-tabs-head-border-width">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tabs组件头部选中状态字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tabs-head-active-font-color">@coral-tabs-head-active-font-color</label>		
+								<input class="form-control" id="input-@coral-tabs-head-active-font-color" type="text" value="@common-color" data-var="@coral-tabs-head-active-font-color">
+							</div>
+						</div>
+
+						<h2 id="dialog">dialog</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="dialog组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-dialog-font-size">@coral-dialog-font-size</label>				
+								<input class="form-control" id="input-@coral-dialog-font-size" type="text" value="@font-size" data-var="@coral-dialog-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="dialog组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-dialog-font-color">@coral-dialog-font-color</label>				
+								<input class="form-control" id="input-@coral-dialog-font-color" type="text" value="@font-color" data-var="@coral-dialog-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="dialog组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-dialog-bg-color">@coral-dialog-bg-color</label>				
+								<input class="form-control" id="input-@coral-dialog-bg-color" type="text" value="#fff" data-var="@coral-dialog-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="dialog组件头部背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-dialog-head-bg-color">@coral-dialog-head-bg-color</label>		
+								<input class="form-control" id="input-@coral-dialog-head-bg-color" type="text" value="@common-color" data-var="@coral-dialog-head-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="dialog组件头部字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-dialog-head-font-color">@coral-dialog-head-font-color</label>		
+								<input class="form-control" id="input-@coral-dialog-head-font-color" type="text" value="lighten(@coral-dialog-head-bg-color,80%)" data-var="@coral-dialog-head-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="dialog组件头部右侧按钮鼠标经过颜色，默认在其背景颜色的基础上减淡7%"></span>
+								<label for="input-@coral-dialog-toolbar-hover-bg-color">@coral-dialog-toolbar-hover-bg-color</label>	
+								<input class="form-control" id="input-@coral-dialog-toolbar-hover-bg-color" type="text" value="lighten(@coral-dialog-head-bg-color,7%)" data-var="@coral-dialog-toolbar-hover-bg-color">
+							</div>
+						</div>
+
+						<h2 id="message">message</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="message组件错误提示背景颜色，默认#f2dede(浅红)"></span>
+								<label for="input-@coral-message-error-bg-color">@coral-message-error-bg-color</label>				
+								<input class="form-control" id="input-@coral-message-error-bg-color" type="text" value="#f2dede" data-var="@coral-message-error-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="message组件警示提示背景颜色，默认#fcf8e3(浅黄)"></span>
+								<label for="input-@coral-message-warning-bg-color">@coral-message-warning-bg-color</label>				
+								<input class="form-control" id="input-@coral-message-warning-bg-color" type="text" value="#fcf8e3" data-var="@coral-message-warning-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="message组件问题提示背景颜色，默认#fcf8e3(浅黄)"></span>
+								<label for="input-@coral-message-question-bg-color">@coral-message-question-bg-color</label>				
+								<input class="form-control" id="input-@coral-message-question-bg-color" type="text" value="#fcf8e3" data-var="@coral-message-question-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="message组件信息提示背景颜色，默认#d9edf7(浅蓝)"></span>
+								<label for="input-@coral-message-info-bg-color">@coral-message-info-bg-color</label>		
+								<input class="form-control" id="input-@coral-message-info-bg-color" type="text" value="#d9edf7" data-var="@coral-message-info-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="message组件成功提示背景颜色，默认在#dff0d8(浅绿)"></span>
+								<label for="input-@coral-message-success-bg-color">@coral-message-success-bg-color</label>		
+								<input class="form-control" id="input-@coral-message-success-bg-color" type="text" value="#dff0d8" data-var="@coral-message-success-bg-color">
+							</div>
+						</div>
+
+						<h2 id="menu">menu</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-menu-bg-color">@coral-menu-bg-color</label>				
+								<input class="form-control" id="input-@coral-menu-bg-color" type="text" value="@common-color" data-var="@coral-menu-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-menu-font-size">@coral-menu-font-size</label>				
+								<input class="form-control" id="input-@coral-menu-font-size" type="text" value="@font-size" data-var="@coral-menu-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-menu-font-color">@coral-menu-font-color</label>				
+								<input class="form-control" id="input-@coral-menu-font-color" type="text" value="lighten(@coral-menu-bg-color,80%)" data-var="@coral-menu-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-menu-border-radius">@coral-menu-border-radius</label>		
+								<input class="form-control" id="input-@coral-menu-border-radius" type="text" value="@border-radius" data-var="@coral-menu-border-radius">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件边框颜色，默认在其背景颜色基础上减淡7%"></span>
+								<label for="input-@coral-menu-border-color">@coral-menu-border-color</label>		
+								<input class="form-control" id="input-@coral-menu-border-color" type="text" value="lighten(@coral-menu-bg-color,7%)" data-var="@coral-menu-border-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件边框大小，默认1像素"></span>
+								<label for="input-@coral-menu-border-width">@coral-menu-border-width</label>				
+								<input class="form-control" id="input-@coral-menu-border-width" type="text" value="1px" data-var="@coral-menu-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件一级菜单鼠标经过背景颜色，默认在其背景颜色基础上减淡5%"></span>
+								<label for="input-@coral-menu-hover-bg-color">@coral-menu-hover-bg-color</label>				
+								<input class="form-control" id="input-@coral-menu-hover-bg-color" type="text" value="lighten(@coral-menu-bg-color, 5%)" data-var="@coral-menu-hover-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件一级菜单鼠标经过字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-menu-hover-font-color">@coral-menu-hover-font-color</label>				
+								<input class="form-control" id="input-@coral-menu-hover-font-color" type="text" value="lighten(@coral-menu-bg-color, 80%)" data-var="@coral-menu-hover-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件一级菜单选中状态下字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-menu-avtive-font-color">@coral-menu-avtive-font-color</label>		
+								<input class="form-control" id="input-@coral-menu-avtive-font-color" type="text" value="@common-color" data-var="@coral-menu-avtive-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件二级菜单背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-menu-second-bg-color">@coral-menu-second-bg-color</label>		
+								<input class="form-control" id="input-@coral-menu-second-bg-color" type="text" value="#fff" data-var="@coral-menu-second-bg-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件二级菜单字体颜色，默认在其背景颜色基础上加深80%"></span>
+								<label for="input-@coral-menu-second-font-color">@coral-menu-second-font-color</label>				
+								<input class="form-control" id="input-@coral-menu-second-font-color" type="text" value="darken(@coral-menu-second-bg-color, 80%)" data-var="@coral-menu-second-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件二级菜单边框颜色，默认在其背景颜色基础上加深15%"></span>
+								<label for="input-@coral-menu-second-border-color">@coral-menu-second-border-color</label>		
+								<input class="form-control" id="input-@coral-menu-second-border-color" type="text" value="darken(@coral-menu-second-bg-color,15%)" data-var="@coral-menu-second-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="menu组件二级菜单鼠标经过时背景颜色，默认在其背景颜色基础上加深5%"></span>
+								<label for="input-@coral-menu-second-hover-bg-color">@coral-menu-second-hover-bg-color</label>		
+								<input class="form-control" id="input-@coral-menu-second-hover-bg-color" type="text" value="darken(@coral-menu-second-bg-color, 5%)" data-var="@coral-menu-second-hover-bg-color">
+							</div>
+						</div>
+
+						<h2 id="button">button</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-button-border-radius">@coral-button-border-radius</label>				
+								<input class="form-control" id="input-@coral-button-border-radius" type="text" value="@border-radius" data-var="@coral-button-border-radius">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件边框大小，默认1像素"></span>
+								<label for="input-@coral-button-border-width">@coral-button-border-width</label>				
+								<input class="form-control" id="input-@coral-button-border-width" type="text" value="1px" data-var="@coral-button-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件默认字体大小，默认继承全局大小"></span>
+								<label for="input-@coral-button-default-font-size">@coral-button-default-font-size</label>				
+								<input class="form-control" id="input-@coral-button-default-font-size" type="text" value="@font-size" data-var="@coral-button-default-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件小型按钮字体大小，默认在默认按钮字体大小的基础上+2"></span>
+								<label for="input-@coral-button-sm-font-size">@coral-button-sm-font-size</label>		
+								<input class="form-control" id="input-@coral-button-sm-font-size" type="text" value="@coral-button-default-font-size + 2" data-var="@coral-button-sm-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件中型按钮字体大小，默认在默认按钮字体大小的基础上+4"></span>
+								<label for="input-@coral-button-md-font-size">@coral-button-md-font-size</label>		
+								<input class="form-control" id="input-@coral-button-md-font-size" type="text" value="@coral-button-default-font-size + 4" data-var="@coral-button-md-font-size">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件大型按钮字体大小，默认在默认按钮字体大小的基础上+6"></span>
+								<label for="input-@coral-button-lg-font-size">@coral-button-lg-font-size</label>				
+								<input class="form-control" id="input-@coral-button-lg-font-size" type="text" value="@coral-button-default-font-size + 6" data-var="@coral-button-lg-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件默认按钮背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-button-default-bg-color">@coral-button-default-bg-color</label>				
+								<input class="form-control" id="input-@coral-button-default-bg-color" type="text" value="#fff" data-var="@coral-button-default-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件默认按钮字体颜色，默认在其背景颜色基础上加深60%"></span>
+								<label for="input-@coral-button-default-font-color">@coral-button-default-font-color</label>				
+								<input class="form-control" id="input-@coral-button-default-font-color" type="text" value="darken(@coral-button-default-bg-color,60%)" data-var="@coral-button-default-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件蓝色按钮背景颜色，默认#337ab7(蓝色)"></span>
+								<label for="input-@coral-button-primary-bg-color">@coral-button-primary-bg-color</label>		
+								<input class="form-control" id="input-@coral-button-primary-bg-color" type="text" value="#337ab7" data-var="@coral-button-primary-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件蓝色按钮字体颜色，默认在其背景颜色基础上减淡50%"></span>
+								<label for="input-@ccoral-button-primary-font-color">@ccoral-button-primary-font-color</label>		
+								<input class="form-control" id="input-@ccoral-button-primary-font-color" type="text" value="lighten(@coral-button-primary-bg-color,50%)" data-var="@ccoral-button-primary-font-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件绿色按钮背景颜色，默认#5cb85c(绿色)"></span>
+								<label for="input-@coral-button-success-bg-color">@coral-button-success-bg-color</label>				
+								<input class="form-control" id="input-@coral-button-success-bg-color" type="text" value="#5cb85c" data-var="@coral-button-success-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件绿色按钮字体颜色，默认在其背景颜色基础上减淡50%"></span>
+								<label for="input-@coral-button-success-font-color">@coral-button-success-font-color</label>		
+								<input class="form-control" id="input-@coral-button-success-font-color" type="text" value="lighten(@coral-button-success-bg-color,50%)" data-var="@coral-button-success-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件青色按钮背景颜色，默认#5bc0de(青色)"></span>
+								<label for="input-@coral-button-info-bg-color">@coral-button-info-bg-color</label>		
+								<input class="form-control" id="input-@coral-button-info-bg-color" type="text" value="#5bc0de" data-var="@coral-button-info-bg-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件青色按钮字体颜色，默认在其背景颜色基础上减淡50%"></span>
+								<label for="input-@coral-button-info-font-color">@coral-button-info-font-color</label>				
+								<input class="form-control" id="input-@coral-button-info-font-color" type="text" value="lighten(@coral-button-info-bg-color,50%)" data-var="@coral-button-info-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件橘黄色按钮背景颜色，默认#f0ad4e"></span>
+								<label for="input-@coral-button-warning-bg-color">@coral-button-warning-bg-color</label>		
+								<input class="form-control" id="input-@coral-button-warning-bg-color" type="text" value="#f0ad4e" data-var="@coral-button-warning-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件橘黄色按钮字体颜色，默认在其背景颜色基础上减淡50%"></span>
+								<label for="input-@coral-button-warning-font-color">@coral-button-warning-font-color</label>		
+								<input class="form-control" id="input-@coral-button-warning-font-color" type="text" value="lighten(@coral-button-warning-bg-color,50%)" data-var="@coral-button-warning-font-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件红色按钮背景颜色，默认#d9534f(红色)"></span>
+								<label for="input-@coral-button-danger-bg-color">@coral-button-danger-bg-color</label>				
+								<input class="form-control" id="input-@coral-button-danger-bg-color" type="text" value="#d9534f" data-var="@coral-button-danger-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件红色按钮字体颜色，默认在其背景颜色基础上减淡50%"></span>
+								<label for="input-@coral-button-danger-font-color">@coral-button-danger-font-color</label>		
+								<input class="form-control" id="input-@coral-button-danger-font-color" type="text" value="lighten(@coral-button-danger-bg-color,50%)" data-var="@coral-button-danger-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="button组件链接式按钮字体颜色，默认#337ab7(蓝色)"></span>
+								<label for="input-@coral-button-link-font-color">@coral-button-link-font-color</label>		
+								<input class="form-control" id="input-@coral-button-link-font-color" type="text" value="#337ab7" data-var="@coral-button-link-font-color">
+							</div>
+						</div>
+
+						<h2 id="autocomplete">autocomplete</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocomplete组件下拉面板字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-autocomplete-panel-font-size">@coral-autocomplete-panel-font-size</label>				
+								<input class="form-control" id="input-@coral-autocomplete-panel-font-size" type="text" value="@font-size" data-var="@coral-autocomplete-panel-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件下拉树背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-autocomplete-tree-bg-color">@coral-autocomplete-tree-bg-color</label>				
+								<input class="form-control" id="input-@coral-autocomplete-tree-bg-color" type="text" value="#fff" data-var="@coral-autocomplete-tree-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocomplete组件边框大小，默认1像素"></span>
+								<label for="input-@coral-autocomplete-border-width">@coral-autocomplete-border-width</label>				
+								<input class="form-control" id="input-@coral-autocomplete-border-width" type="text" value="1px" data-var="@coral-autocomplete-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocomplete组件边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-autocomplete-border-color">@coral-autocomplete-border-color</label>		
+								<input class="form-control" id="input-@coral-autocomplete-border-color" type="text" value="@border-color" data-var="@coral-autocomplete-border-color">
+							</div>
+						</div>
+
+						<h2 id="autocompleteTree">autocompleteTree</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocomplete组件autocompleteTree postMode示例字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-autocomplete-textboxlist-font-size">@coral-autocomplete-textboxlist-font-size</label>				
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-font-size" type="text" value="@font-size" data-var="@coral-autocomplete-textboxlist-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件autocompleteTree postMode示例背景颜色，默认#dee7f8(浅蓝)"></span>
+								<label for="input-@coral-autocomplete-textboxlist-bg-color">@coral-autocomplete-textboxlist-bg-color</label>				
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-bg-color" type="text" value="#dee7f8" data-var="@coral-autocomplete-textboxlist-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件autocompleteTree postMode示例背景颜色，默认在其背景色基础上加深25%"></span>
+								<label for="input-@coral-autocomplete-textboxlist-font-color">@coral-autocomplete-textboxlist-font-color</label>				
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-font-color" type="text" value="darken(@coral-autocomplete-textboxlist-bg-color,25%)" data-var="@coral-autocomplete-textboxlist-font-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件autocompleteTree postMode示例边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-autocomplete-textboxlist-border-radius">@coral-autocomplete-textboxlist-border-radius</label>		
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-border-radius" type="text" value="@border-radius" data-var="@coral-autocomplete-textboxlist-border-radius">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件autocompleteTree postMode示例鼠标经过时元素的字体颜色，默认在其背景颜色基础上加深45%"></span>
+								<label for="input-@coral-autocomplete-textboxlist-hover-font-color">@coral-autocomplete-textboxlist-hover-font-color</label>		
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-hover-font-color" type="text" value="darken(@coral-autocomplete-textboxlist-bg-color,45%)" data-var="@coral-autocomplete-textboxlist-hover-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件autocompleteTree postMode示例被选中元素的背景颜色，默认在其背景颜色基础上加深15%"></span>
+								<label for="input-@coral-autocomplete-textboxlist-active-bg-color">@coral-autocomplete-textboxlist-active-bg-color</label>	
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-active-bg-color" type="text" value="darken(@coral-autocomplete-textboxlist-bg-color,15%)" data-var="@coral-autocomplete-textboxlist-active-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="autocpmplete组件autocompleteTree autocpmplete组件autocompleteTree postMode示例被选中元素的字体颜色，默认在其背景颜色基础上加深45%"></span>
+								<label for="input-@coral-autocomplete-textboxlist-active-font-color">@coral-autocomplete-textboxlist-active-font-color</label>	
+								<input class="form-control" id="input-@coral-autocomplete-textboxlist-active-font-color" type="text" value="darken(@coral-autocomplete-textboxlist-bg-color,45%)" data-var="@coral-autocomplete-textboxlist-active-font-color">
+							</div>
+						</div>
+
+						<h2 id="checkbox">checkbox</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="checkbox组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-checkbox-font-color">@coral-checkbox-font-color</label>				
+								<input class="form-control" id="input-@coral-checkbox-font-color" type="text" value="@font-color" data-var="@coral-checkbox-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="checkbox组件选中状态下字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-checkbox-highlight-font-color">@coral-checkbox-highlight-font-color</label>				
+								<input class="form-control" id="input-@coral-checkbox-highlight-font-color" type="text" value="@common-color" data-var="@coral-checkbox-highlight-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="checkbox组件默认字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-checkbox-font-size">@coral-checkbox-font-size</label>				
+								<input class="form-control" id="input-@coral-checkbox-font-size" type="text" value="@font-size" data-var="@coral-checkbox-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="checkbox组件中型字体大小，默认在默认字体大小的基础上+2"></span>
+								<label for="input-@coral-checkbox-md-font-size">@coral-checkbox-md-font-size</label>		
+								<input class="form-control" id="input-@coral-checkbox-md-font-size" type="text" value="@coral-checkbox-font-size + 2" data-var="@coral-checkbox-md-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="checkbox组件中型字体大小，默认在默认字体大小的基础上+4"></span>
+								<label for="input-@coral-checkbox-lg-font-size">@coral-checkbox-lg-font-size</label>		
+								<input class="form-control" id="input-@coral-checkbox-lg-font-size" type="text" value="@coral-checkbox-font-size + 4" data-var="@coral-checkbox-lg-font-size">
+							</div>
+						</div>
+
+						<h2 id="radio">radio</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="radio组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-radio-font-color">@coral-radio-font-color</label>				
+								<input class="form-control" id="input-@coral-radio-font-color" type="text" value="@font-color" data-var="@coral-radio-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="radio组件选中状态下字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-radio-highlight-font-color">@coral-radio-highlight-font-color</label>				
+								<input class="form-control" id="input-@coral-radio-highlight-font-color" type="text" value="@common-color" data-var="@coral-radio-highlight-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="radio组件默认字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-radio-font-size">@coral-radio-font-size</label>				
+								<input class="form-control" id="input-@coral-radio-font-size" type="text" value="@font-size" data-var="@coral-radio-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="radio组件中型字体大小，默认在默认字体大小的基础上+2"></span>
+								<label for="input-@coral-radio-md-font-size">@coral-radio-md-font-size</label>		
+								<input class="form-control" id="input-@coral-radio-md-font-size" type="text" value="@coral-radio-font-size + 2" data-var="@coral-radio-md-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="radio组件中型字体大小，默认在默认字体大小的基础上+4"></span>
+								<label for="input-@coral-radio-lg-font-size">@coral-radio-lg-font-size</label>		
+								<input class="form-control" id="input-@coral-radio-lg-font-size" type="text" value="@coral-radio-font-size + 4" data-var="@coral-radio-lg-font-size">
+							</div>
+						</div>
+
+						<h2 id="combo">combo</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-combo-font-size">@coral-combo-font-size</label>				
+								<input class="form-control" id="input-@coral-combo-font-size" type="text" value="@font-size" data-var="@coral-combo-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件边框大小，默认1像素"></span>
+								<label for="input-@coral-combo-border-width">@coral-combo-border-width</label>				
+								<input class="form-control" id="input-@coral-combo-border-width" type="text" value="1px" data-var="@coral-combo-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-combo-border-color">@coral-combo-border-color</label>				
+								<input class="form-control" id="input-@coral-combo-border-color" type="text" value="@border-color" data-var="@coral-combo-border-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件鼠标经过时字体颜色，默认在全局设置的基础上减淡15%"></span>
+								<label for="input-@coral-combo-hover-font-color">@coral-combo-hover-font-color</label>		
+								<input class="form-control" id="input-@coral-combo-hover-font-color" type="text" value="lighten(@common-color,15%)" data-var="@coral-combo-hover-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件搜索功能字体大小，默认继承combo组件全局字体大小设置"></span>
+								<label for="input-@coral-combo-filter-font-size">@coral-combo-filter-font-size</label>		
+								<input class="form-control" id="input-@coral-combo-filter-font-size" type="text" value="@coral-combo-font-size" data-var="@coral-combo-filter-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件搜索功能背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-combo-filter-bg-color">@coral-combo-filter-bg-color</label>	
+								<input class="form-control" id="input-@coral-combo-filter-bg-color" type="text" value="#fff" data-var="@coral-combo-filter-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件搜索功能边框大小，默认1像素"></span>
+								<label for="input-@coral-combo-filter-border-width">@coral-combo-filter-border-width</label>	
+								<input class="form-control" id="input-@coral-combo-filter-border-width" type="text" value="1px" data-var="@coral-combo-filter-border-width">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件搜索功能边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-combo-filter-border-color">@coral-combo-filter-border-color</label>		
+								<input class="form-control" id="input-@coral-combo-filter-border-color" type="text" value="@common-color" data-var="@coral-combo-filter-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件下拉框内容字体大小，默认继承combo组件全局字体大小设置"></span>
+								<label for="input-@coral-combo-item-font-size">@coral-combo-item-font-size</label>	
+								<input class="form-control" id="input-@coral-combo-item-font-size" type="text" value="@coral-combo-font-size" data-var="@coral-combo-item-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="combo组件下拉框内容背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-combo-wrapper-bg-color">@coral-combo-wrapper-bg-color</label>	
+								<input class="form-control" id="input-@coral-combo-wrapper-bg-color" type="text" value="#fff" data-var="@coral-combo-wrapper-bg-color">
+							</div>
+						</div>
+
+						<h2 id="datapicker">datapicker</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datapicker组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-datepicker-font-size">@coral-datepicker-font-size</label>				
+								<input class="form-control" id="input-@coral-datepicker-font-size" type="text" value="@font-size" data-var="@coral-datepicker-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datepicker组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-datepicker-font-color">@coral-datepicker-font-color</label>				
+								<input class="form-control" id="input-@coral-datepicker-font-color" type="text" value="@font-color" data-var="@coral-datepicker-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datepicker组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-datepicker-bg-color">@coral-datepicker-bg-color</label>				
+								<input class="form-control" id="input-@coral-datepicker-bg-color" type="text" value="#fff" data-var="@coral-datepicker-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datepicker组件边框宽度，默认1像素"></span>
+								<label for="input-@coral-datepicker-border-width">@coral-datepicker-border-width</label>		
+								<input class="form-control" id="input-@coral-datepicker-border-width" type="text" value="1px" data-var="@coral-datepicker-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datepicker组件边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-datepicker-border-color">@coral-datepicker-border-color</label>		
+								<input class="form-control" id="input-@coral-datepicker-border-color" type="text" value="@border-color" data-var="@coral-datepicker-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datepicker组件鼠标经过时背景颜色，默认在其背景颜色基础上加深5%"></span>
+								<label for="input-@coral-datepicker-hover-bg-color">@coral-datepicker-hover-bg-color</label>		
+								<input class="form-control" id="input-@coral-datepicker-hover-bg-color" type="text" value="darken(@coral-datepicker-bg-color,5%)" data-var="@coral-datepicker-hover-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="datapicker组件选中状态下字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-datepicker-active-font-color">@coral-datepicker-active-font-color</label>		
+								<input class="form-control" id="input-@coral-datepicker-active-font-color" type="text" value="@common-color" data-var="@coral-datepicker-active-font-color">
+							</div>
+						</div>
+
+						<h2 id="slider">slider</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="slider组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-slider-bg-color">@coral-slider-bg-color</label>				
+								<input class="form-control" id="input-@coral-slider-bg-color" type="text" value="#fff" data-var="@coral-slider-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="slider组件边框大小，默认1像素"></span>
+								<label for="input-@coral-slider-border-width">@coral-slider-border-width</label>				
+								<input class="form-control" id="input-@coral-slider-border-width" type="text" value="1px" data-var="@coral-slider-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="slider组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-slider-border-radius">@coral-slider-border-radius</label>				
+								<input class="form-control" id="input-@coral-slider-border-radius" type="text" value="@border-radius" data-var="@coral-slider-border-radius">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="coral-slider-handle-width"></span>
+								<label for="input-@coral-slider-handle-width">@coral-slider-handle-width</label>		
+								<input class="form-control" id="input-@coral-slider-handle-width" type="text" value="12px" data-var="@coral-slider-handle-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="slider组件小圆圈背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-slider-handle-bg-color">@coral-slider-handle-bg-color</label>		
+								<input class="form-control" id="input-@coral-slider-handle-bg-color" type="text" value="@common-color" data-var="@coral-slider-handle-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="slider组件小圆圈边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-slider-handle-border-radius">@coral-slider-handle-border-radius</label>		
+								<input class="form-control" id="input-@coral-slider-handle-border-radius" type="text" value="@border-radius" data-var="@coral-slider-handle-border-radius">
+							</div>
+						</div>
+
+						<h2 id="textbox">textbox</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="textbox组件字体代销，默认继承全局设置"></span>
+								<label for="input-@coral-textbox-font-size">@coral-textbox-font-size</label>				
+								<input class="form-control" id="input-@coral-textbox-font-size" type="text" value="@font-size" data-var="@coral-textbox-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="textbox组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-textbox-font-color">@coral-textbox-font-color</label>				
+								<input class="form-control" id="input-@coral-textbox-font-color" type="text" value="@font-color" data-var="@coral-textbox-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="textbox组件背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-textbox-bg-color">@coral-textbox-bg-color</label>				
+								<input class="form-control" id="input-@coral-textbox-bg-color" type="text" value="#fff" data-var="@coral-textbox-bg-color">
+							</div>
+						</div>
+
+						<h2 id="grid">grid</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-grid-font-size">@coral-grid-font-size</label>				
+								<input class="form-control" id="input-@coral-grid-font-size" type="text" value="@font-size" data-var="@coral-grid-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-grid-bg-color">@coral-grid-bg-color</label>				
+								<input class="form-control" id="input-@coral-grid-bg-color" type="text" value="#fff" data-var="@coral-grid-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件边框大小，默认1像素"></span>
+								<label for="input-@coral-grid-border-width">@coral-grid-border-width</label>				
+								<input class="form-control" id="input-@coral-grid-border-width" type="text" value="1px" data-var="@coral-grid-border-width">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-grid-border-color">@coral-grid-border-color</label>		
+								<input class="form-control" id="input-@coral-grid-border-color" type="text" value="@border-color" data-var="@coral-grid-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件头部背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-grid-head-bg-color">@coral-grid-head-bg-color</label>		
+								<input class="form-control" id="input-@coral-grid-head-bg-color" type="text" value="@common-color" data-var="@coral-grid-head-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件头部字体大小，默认在整体大小的基础上+2个像素"></span>
+								<label for="input-@coral-grid-head-font-size">@coral-grid-head-font-size</label>	
+								<input class="form-control" id="input-@coral-grid-head-font-size" type="text" value="@coral-grid-font-size + 2" data-var="@coral-grid-head-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件头部字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-grid-head-font-color">@coral-grid-head-font-color</label>	
+								<input class="form-control" id="input-@coral-grid-head-font-color" type="text" value="lighten(@coral-grid-head-bg-color,80%)" data-var="@coral-grid-head-font-color">
+							</div>
+
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件头部边框大小，默认1像素"></span>
+								<label for="input-@coral-grid-head-border-width">@coral-grid-head-border-width</label>				
+								<input class="form-control" id="input-@coral-grid-head-border-width" type="text" value="1px" data-var="@coral-grid-head-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件头部边框颜色，默认在其背景颜色基础上减淡5%"></span>
+								<label for="input-@coral-grid-head-border-color">@coral-grid-head-border-color</label>				
+								<input class="form-control" id="input-@coral-grid-head-border-color" type="text" value="lighten(@coral-grid-head-bg-color,5%)" data-var="@coral-grid-head-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件头部字体是否加粗，默认不加粗"></span>
+								<label for="input-@coral-grid-head-font-weight">@coral-grid-head-font-weight</label>				
+								<input class="form-control" id="input-@coral-grid-head-font-weight" type="text" value="normal" data-var="@coral-grid-head-font-weight">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件内容块背景颜色，默认继承grid全局背景颜色(#fff)"></span>
+								<label for="input-@coral-grid-tbody-bg-color">@coral-grid-tbody-bg-color</label>		
+								<input class="form-control" id="input-@coral-grid-tbody-bg-color" type="text" value="#fff" data-var="@coral-grid-tbody-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件内容块边框颜色，默认继承grid全局边框颜色"></span>
+								<label for="input-@coral-grid-tbody-border-color">@coral-grid-tbody-border-color</label>		
+								<input class="form-control" id="input-@coral-grid-tbody-border-color" type="text" value="@coral-grid-border-color" data-var="@coral-grid-tbody-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件内容块边框大小，默认继承grid全局边框大小"></span>
+								<label for="input-@coral-grid-tbody-border-width">@coral-grid-tbody-border-width</label>	
+								<input class="form-control" id="input-@coral-grid-tbody-border-width" type="text" value="@coral-grid-border-width" data-var="@coral-grid-tbody-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件内容块字体大小，默认在其背景颜色基础上加深80%"></span>
+								<label for="input-@coral-grid-tbody-font-color">@coral-grid-tbody-font-color</label>	
+								<input class="form-control" id="input-@coral-grid-tbody-font-color" type="text" value="darken(@coral-grid-tbody-bg-color,80%)" data-var="@coral-grid-tbody-font-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件页码块鼠标经过时字体颜色，默认在其背景颜色基础上加深35%"></span>
+								<label for="input-@coral-grid-tfooter-hover-font-color">@coral-grid-tfooter-hover-font-color</label>				
+								<input class="form-control" id="input-@coral-grid-tfooter-hover-font-color" type="text" value="darken(@coral-grid-tbody-font-color, 35%)" data-var="@coral-grid-tfooter-hover-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件页码块选中状态下字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-grid-tfooter-active-font-color">@coral-grid-tfooter-active-font-color</label>				
+								<input class="form-control" id="input-@coral-grid-tfooter-active-font-color" type="text" value="@common-color" data-var="@coral-grid-tfooter-active-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每一个卡片的宽度，默认25%，也可以设置成具体的像素(如200px)"></span>
+								<label for="input-@coral-grid-pic-width">@coral-grid-pic-width</label>				
+								<input class="form-control" id="input-@coral-grid-pic-width" type="text" value="25%" data-var="@coral-grid-pic-width">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片的背景颜色，默认继承grid组件的全局背景颜色"></span>
+								<label for="input-@coral-grid-pic-bg-color">@coral-grid-pic-bg-color</label>		
+								<input class="form-control" id="input-@coral-grid-pic-bg-color" type="text" value="@coral-grid-bg-color" data-var="@coral-grid-pic-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片的边框颜色，默认继承gird组件的全局边框颜色"></span>
+								<label for="input-@coral-grid-pic-border-color">@coral-grid-pic-border-color</label>		
+								<input class="form-control" id="input-@coral-grid-pic-border-color" type="text" value="@coral-grid-border-color" data-var="@coral-grid-pic-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片的边框大小，默认继承gird组件的全局边框大小"></span>
+								<label for="input-@coral-grid-pic-border-width">@coral-grid-pic-border-width</label>	
+								<input class="form-control" id="input-@coral-grid-pic-border-width" type="text" value="@coral-grid-border-width" data-var="@coral-grid-pic-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片的边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-grid-pic-border-radius">@coral-grid-pic-border-radius</label>	
+								<input class="form-control" id="input-@coral-grid-pic-border-radius" type="text" value="@border-radius" data-var="@coral-grid-pic-border-radius">
+							</div>
+
+
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片的图片大小，默认110像素"></span>
+								<label for="input-@coral-grid-pic-img-height">@coral-grid-pic-img-height</label>				
+								<input class="form-control" id="input-@coral-grid-pic-img-height" type="text" value="110px" data-var="@coral-grid-pic-img-height">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片鼠标经过时内容展示的方向，默认靠左"></span>
+								<label for="input-@coral-grid-pic-toolbar-text-align">@coral-grid-pic-toolbar-text-align</label>				
+								<input class="form-control" id="input-@coral-grid-pic-toolbar-text-align" type="text" value="left" data-var="@coral-grid-pic-toolbar-text-align">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片鼠标经过时内容展示的背景颜色，默认#000(黑色)"></span>
+								<label for="input-@coral-grid-pic-toolbar-bg-color">@coral-grid-pic-toolbar-bg-color</label>				
+								<input class="form-control" id="input-@coral-grid-pic-toolbar-bg-color" type="text" value="#000" data-var="@coral-grid-pic-toolbar-bg-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片鼠标经过时内容展示的字体颜色，默认在其背景颜色基础上减淡100%"></span>
+								<label for="input-@coral-grid-pic-toolbar-font-color">@coral-grid-pic-toolbar-font-color</label>		
+								<input class="form-control" id="input-@coral-grid-pic-toolbar-font-color" type="text" value="lighten(@coral-grid-pic-toolbar-bg-color,100%)" data-var="@coral-grid-pic-toolbar-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片按钮的位置，默认靠右显示"></span>
+								<label for="input-@coral-grid-pic-model-buttons-float">@coral-grid-pic-model-buttons-float</label>		
+								<input class="form-control" id="input-@coral-grid-pic-model-buttons-float" type="text" value="right" data-var="@coral-grid-pic-model-buttons-float">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="grid组件卡片模式下每个卡片按钮的颜色，默认继承全局设置"></span>
+								<label for="input-@coral-grid-pic-model-buttons-font-color">@coral-grid-pic-model-buttons-font-color</label>	
+								<input class="form-control" id="input-@coral-grid-pic-model-buttons-font-color" type="text" value="@common-color" data-var="@coral-grid-pic-model-buttons-font-color">
+							</div>
+
+						</div>
+
+
+						<h2 id="tree">tree</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-tree-font-size">@coral-tree-font-size</label>				
+								<input class="form-control" id="input-@coral-tree-font-size" type="text" value="@font-size" data-var="@coral-tree-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tree-font-color">@coral-tree-font-color</label>				
+								<input class="form-control" id="input-@coral-tree-font-color" type="text" value="@font-color" data-var="@coral-tree-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-tree-border-radius">@coral-tree-border-radius</label>				
+								<input class="form-control" id="input-@coral-tree-border-radius" type="text" value="@border-radius" data-var="@coral-tree-border-radius">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件鼠标经过时背景颜色，默认在全局设置的基础上减淡7%"></span>
+								<label for="input-@coral-tree-hover-bg-color">@coral-tree-hover-bg-color</label>		
+								<input class="form-control" id="input-@coral-tree-hover-bg-color" type="text" value="lighten(@common-color,7%)" data-var="@coral-tree-hover-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件鼠标经过时字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-tree-hover-font-color">@coral-grid-head-font-color</label>		
+								<input class="form-control" id="input-@coral-tree-hover-font-color" type="text" value="lighten(@coral-tree-hover-bg-color,80%)" data-var="@coral-tree-hover-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件选中状态下背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tree-selected-bg-color">@coral-tree-selected-bg-color</label>	
+								<input class="form-control" id="input-@coral-tree-selected-bg-color" type="text" value="@common-color" data-var="@coral-tree-selected-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件选中状态下字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-tree-selected-font-color">@coral-tree-selected-font-color</label>	
+								<input class="form-control" id="input-@coral-tree-selected-font-color" type="text" value="lighten(@coral-tree-selected-bg-color,80%)" data-var="@coral-tree-selected-font-color">
+							</div>
+
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件选中元素编辑状态下背景颜色，默认在全局设置的基础上减淡10%"></span>
+								<label for="input-@coral-tree-selected-edit-bg-color">@coral-tree-selected-edit-bg-color</label>				
+								<input class="form-control" id="input-@coral-tree-selected-edit-bg-color" type="text" value="lighten(@yellow-color,10%)" data-var="@coral-tree-selected-edit-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件选中元素编辑状态下字体颜色，默认在其背景颜色基础上减淡100%"></span>
+								<label for="input-@coral-tree-selected-edit-font-color">@coral-tree-selected-edit-font-color</label>				
+								<input class="form-control" id="input-@coral-tree-selected-edit-font-color" type="text" value="lighten(@coral-tree-selected-edit-bg-color,100%)" data-var="@coral-tree-selected-edit-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件遮罩背景颜色，默认#eee(浅灰)"></span>
+								<label for="input-@coral-tree-mask-bg-color">@coral-tree-mask-bg-color</label>				
+								<input class="form-control" id="input-@coral-tree-mask-bg-color" type="text" value="#eee" data-var="@coral-tree-mask-bg-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单背景颜色，默认白色(#fff)"></span>
+								<label for="input-@coral-tree-right-menu-bg-color">@coral-tree-right-menu-bg-color</label>		
+								<input class="form-control" id="input-@coral-tree-right-menu-bg-color" type="text" value="#fff" data-var="@coral-tree-right-menu-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单边框大小，默认1像素"></span>
+								<label for="input-@coral-tree-right-menu-border-width">@coral-tree-right-menu-border-width</label>		
+								<input class="form-control" id="input-@coral-tree-right-menu-border-width" type="text" value="1px" data-var="@coral-tree-right-menu-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单边框颜色，默认在其背景颜色基础上加深15%"></span>
+								<label for="input-@coral-tree-right-menu-border-color">@coral-tree-right-menu-border-color</label>	
+								<input class="form-control" id="input-@coral-tree-right-menu-border-color" type="text" value="darken(@coral-tree-right-menu-bg-color,15%)" data-var="@coral-tree-right-menu-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单字体大小，默认继承tree组件全局字体大小设置"></span>
+								<label for="input-@coral-tree-right-menu-font-size">@coral-tree-right-menu-font-size</label>	
+								<input class="form-control" id="input-@coral-tree-right-menu-font-size" type="text" value="@coral-tree-font-size" data-var="@coral-tree-right-menu-font-size">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单字体颜色，默认在其背景颜色基础上加深50%"></span>
+								<label for="input-@coral-tree-right-menu-font-color">@coral-tree-right-menu-font-color</label>				
+								<input class="form-control" id="input-@coral-tree-right-menu-font-color" type="text" value="darken(@coral-tree-right-menu-bg-color,50%)" data-var="@coral-tree-right-menu-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单鼠标经过时字体颜色，默认在其背景颜色基础上加深50%"></span>
+								<label for="input-@coral-tree-right-menu-hover-font-color">@coral-tree-right-menu-hover-font-color</label>				
+								<input class="form-control" id="input-@coral-tree-right-menu-hover-font-color" type="text" value="darken(@coral-tree-right-menu-bg-color,50%)" data-var="@coral-tree-right-menu-hover-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单鼠标经过时背景颜色，默认在其背景颜色基础上加深10%"></span>
+								<label for="input-@coral-tree-right-menu-hover-bg-color">@coral-tree-right-menu-hover-bg-color</label>				
+								<input class="form-control" id="input-@coral-tree-right-menu-hover-bg-color" type="text" value="darken(@coral-tree-right-menu-bg-color,10%)" data-var="@coral-tree-right-menu-hover-bg-color">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tree组件右键菜单边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-tree-right-menu-border-radius">@coral-tree-right-menu-border-radius</label>		
+								<input class="form-control" id="input-@coral-tree-right-menu-border-radius" type="text" value="@border-radius" data-var="@coral-grid-pic-bg-color">
+							</div>							
+
+						</div>
+						
+						
+						<h2 id="loading">loading</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="loading组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-loading-font-size">@coral-loading-font-size</label>				
+								<input class="form-control" id="input-@coral-loading-font-size" type="text" value="@font-size" data-var="@coral-loading-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="loading组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-loading-bg-color">@coral-loading-bg-color</label>				
+								<input class="form-control" id="input-@coral-loading-bg-color" type="text" value="#fff" data-var="@coral-loading-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="loading组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-loading-border-radius">@coral-loading-border-radius</label>				
+								<input class="form-control" id="input-@coral-loading-border-radius" type="text" value="@border-radius" data-var="@coral-loading-border-radius">
+							</div>
+						</div>
+						
+						<h2 id="progressbar">progressbar</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="progressbar组件背景颜色，默认#eee(浅灰)"></span>
+								<label for="input-@coral-progressbar-bg-color">@coral-progressbar-bg-color</label>				
+								<input class="form-control" id="input-@coral-progressbar-bg-color" type="text" value="#eee" data-var="@coral-progressbar-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="progressbar组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-progressbar-border-radius">@coral-progressbar-border-radius</label>				
+								<input class="form-control" id="input-@coral-progressbar-border-radius" type="text" value="@border-radius" data-var="@coral-progressbar-border-radius">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="progressbar组件高度，默认15像素"></span>
+								<label for="input-@coral-progressbar-height">@coral-progressbar-height</label>				
+								<input class="form-control" id="input-@coral-progressbar-height" type="text" value="15px" data-var="@coral-progressbar-height">
+							</div>
+
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="progressbar组件小圆圈背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-progressbar-value-bg-color">@coral-progressbar-value-bg-color</label>				
+								<input class="form-control" id="input-@coral-progressbar-value-bg-color" type="text" value="@common-color" data-var="@coral-progressbar-value-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="progressbar组件字体颜色，默认在其背景颜色基础上减淡30%"></span>
+								<label for="input-@coral-progressbar-font-color">@coral-progressbar-font-color</label>				
+								<input class="form-control" id="input-@coral-progressbar-font-color" type="text" value="lighten(@coral-progressbar-value-bg-color,30%)" data-var="@coral-progressbar-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="progressbar组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-progressbar-font-size">@coral-progressbar-font-size</label>				
+								<input class="form-control" id="input-@coral-progressbar-font-size" type="text" value="@font-size"  data-var="@coral-progressbar-font-size">
+							</div>
+						</div>
+						
+						
+						<h2 id="tooltip">tooltip</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件背景颜色，默认#fff(白色)"></span>
+								<label for="input-@coral-tooltip-bg-color">@coral-tooltip-bg-color</label>				
+								<input class="form-control" id="input-@coral-tooltip-bg-color" type="text" value="#fff" data-var="@coral-tooltip-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-tooltip-font-size">@coral-tooltip-font-size</label>				
+								<input class="form-control" id="input-@coral-tooltip-font-size" type="text" value="@font-size" data-var="@coral-tooltip-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件字体颜色，默认继承全局设置"></span>
+								<label for="input-@coral-tooltip-font-color">@coral-tooltip-font-color</label>				
+								<input class="form-control" id="input-@coral-tooltip-font-color" type="text" value="@font-color" data-var="@coral-tooltip-font-color">
+							</div>
+							
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件最大宽度，默认300像素(不建议设置百分比)"></span>
+								<label for="input-@coral-tooltip-max-width ">@coral-tooltip-max-width </label>				
+								<input class="form-control" id="input-@coral-tooltip-max-width " type="text" value="300px" data-var="@coral-tooltip-max-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件边框大小，默认2像素"></span>
+								<label for="input-@coral-tooltip-border-width">@coral-tooltip-border-width</label>				
+								<input class="form-control" id="input-@coral-tooltip-border-width" type="text" value="2px" data-var="@coral-tooltip-border-width">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件边框颜色，默认#aaa"></span>
+								<label for="input-@coral-tooltip-border-color">@coral-tooltip-border-color</label>				
+								<input class="form-control" id="input-@coral-tooltip-border-color" type="text" value="#aaa" data-var="@coral-tooltip-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="tooltip组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-tooltip-border-redius">@coral-tooltip-border-redius</label>				
+								<input class="form-control" id="input-@coral-tooltip-border-redius" type="text" value="@border-radius" data-var="@coral-tooltip-border-redius">
+							</div>
+						</div>
+						
+						<h2 id="uploadify">uploadify</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件按钮背景颜色，默认继承全局设置"></span>
+								<label for="input-@coral-uploadify-button-bg-color">@coral-uploadify-button-bg-color</label>				
+								<input class="form-control" id="input-@coral-uploadify-button-bg-color" type="text" value="@common-color" data-var="@coral-uploadify-button-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件按钮字体颜色，默认在其背景颜色基础上减淡80%"></span>
+								<label for="input-@coral-uploadify-button-font-color">@coral-uploadify-button-font-color</label>				
+								<input class="form-control" id="input-@coral-uploadify-button-font-color" type="text" value="lighten(@coral-uploadify-button-bg-color,80%)" data-var="@coral-uploadify-button-font-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件按钮边框大小，默认1像素"></span>
+								<label for="input-@coral-uploadify-button-border-width">@coral-uploadify-button-border-width</label>				
+								<input class="form-control" id="input-@coral-uploadify-button-border-width" type="text" value="1px" data-var="@coral-uploadify-button-border-width">
+							</div>
+							
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件按钮边框颜色，默认在其背景颜色基础上减淡5%"></span>
+								<label for="input-@coral-uploadify-button-border-color">@coral-uploadify-button-border-color </label>				
+								<input class="form-control" id="input-@coral-uploadify-button-border-color " type="text" value="darken(@coral-uploadify-button-bg-color,5%)" data-var="@coral-uploadify-button-border-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件上传列表字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-uploadify-item-font-size">@coral-uploadify-item-font-size</label>				
+								<input class="form-control" id="input-@coral-uploadify-item-font-size" type="text" value="@font-size + 2px" data-var="@coral-uploadify-item-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件上传列表背景颜色，默认#f5f5f5(浅灰)"></span>
+								<label for="input-@coral-uploadify-item-bg-color">@coral-uploadify-item-bg-color</label>	
+								<input class="form-control" id="input-@coral-uploadify-item-bg-color" type="text" value="#f5f5f5" data-var="@coral-uploadify-item-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件上传列表上传完成后背景颜色，默认#e5e5e5(灰色)"></span>
+								<label for="input-@coral-uploadify-item-bg-color-completed">@coral-uploadify-item-bg-color-completed</label>				
+								<input class="form-control" id="input-@coral-uploadify-item-bg-color-completed" type="text" value="#e5e5e5" data-var="@coral-uploadify-item-bg-color-completed">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件上传列表上传出错后背景颜色，默认#fde5dd(浅红)"></span>
+								<label for="input-@coral-uploadify-item-bg-color-error">@coral-uploadify-item-bg-color-error</label>				
+								<input class="form-control" id="input-@coral-uploadify-item-bg-color-error" type="text" value="#fde5dd" data-var="@coral-uploadify-item-bg-color-error">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="uploadify组件上传进度条默认背景颜色，默认#4094dc(灰色)"></span>
+								<label for="input-@coral-uploadify-item-progressbar-bg-color">@coral-uploadify-item-progressbar-bg-color</label>				
+								<input class="form-control" id="input-@coral-uploadify-item-progressbar-bg-color" type="text" value="#4094dc" data-var="@coral-uploadify-item-progressbar-bg-color">
+							</div>
+						</div>
+
+
+						<h2 id="fileuploder">fileuploder</h2>
+						<div class="row">
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="fileuploader组件上传进度条默认背景颜色，默认#4094dc(灰色)"></span>
+								<label for="input-@coral-fileloader-progress-bg-color">@coral-fileloader-progress-bg-color</label>				
+								<input class="form-control" id="input-@coral-fileloader-progress-bg-color" type="text" value="#4094dc" data-var="@coral-fileloader-progress-bg-color">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="fileuploader组件字体大小，默认继承全局设置"></span>
+								<label for="input-@coral-fileloader-font-size">@coral-fileloader-font-size</label>				
+								<input class="form-control" id="input-@coral-fileloader-font-size" type="text" value="@font-size" data-var="@coral-fileloader-font-size">
+							</div>
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="fileuploader组件边框颜色，默认继承全局设置"></span>
+								<label for="input-@coral-fileloader-border-color">@coral-fileloader-border-color</label>				
+								<input class="form-control" id="input-@coral-fileloader-border-color" type="text" value="@border-color" data-var="@coral-fileloader-border-color">
+							</div>
+							
+							<div class="col-xs-4">
+								<span class="tooltip help cui-icon-question4" title="fileuploader组件边框圆角大小，默认继承全局设置"></span>
+								<label for="input-@coral-fileloader-border-radius">@coral-fileloader-border-radius </label>				
+								<input class="form-control" id="input-@coral-fileloader-border-radius " type="text" value="@border-radius" data-var="@coral-fileloader-border-radius">
+							</div>							
+						</div>
+						
+						
+					</div>
+					
+					
+					
+					<div class="bs-docs-section">
+						<h1 id="download" class="page-header">下载</h1>
+						<p class="lead">庆祝一下！你的定制版 Coral 即将大功告成。只要点击下面的按钮就可以下载了。</p>
+						<div class="bs-customize-download">
+							<button type="submit" id="btn-compile" class="coral-button btn-block btn-lg btn-primary">编译并下载</button>
+						</div>
+					</div><!-- /download -->
+					
+				</form>
+				
+			</div>
+		</div>
+	
+	</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script>var __configBridge = {"autoprefixerBrowsers":["Android 2.3","Android >= 4","Chrome >= 20","Firefox >= 24","Explorer >= 8","iOS >= 6","Opera >= 12","Safari >= 6"],"jqueryCheck":["if (typeof jQuery === 'undefined') {","  throw new Error('Bootstrap\\'s JavaScript requires jQuery')","}\n"],"jqueryVersionCheck":["+function (@) {","  'use strict';","  var version = @.fn.jquery.split(' ')[0].split('.')","  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 3)) {","    throw new Error('Bootstrap\\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')","  }","}(jQuery);\n\n"]}</script>  
+<script src="js/customize.js"></script>
+<script src="js/cui.js"></script>
+<script>
+$(function(){
+	$('.help').tooltip();
+});
+
+</script>
+</body>
+</html>
