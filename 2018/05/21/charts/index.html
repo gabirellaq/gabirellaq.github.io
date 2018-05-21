@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大屏展示</title>
+<link href="screenStyles/screen.css" rel="stylesheet">
+</head>
+<body>
+<div class="monitor-screen-box">
+	<div class="monitor-screen-bg">
+		<img src="img/screen_bg.jpg" width="100%" height="100%">
+	</div>
+	<div class="monitor-screen-article clearfix">
+	
+		<div class="monitor-screen-cell" id="index-cell-3">
+			<div class="monitor-screen-row" id="index-cell-row-3">
+				<div class="monitor-screen-cell-box">
+					<div class="monitor-screen-cell-head" id="index-cell-head-3">
+						<h4>关注主机</h4>
+						<span class="setting iconfont icon-shezhi1"></span>
+						<span class="refresh2 iconfont icon-shuaxin"></span>
+						<span class="remove iconfont icon-shanchu"></span>
+					</div>
+					<div class="monitor-screen-cell-body" id="index-cell-body-3">
+						<div class="m-title">
+							<span>当前状态：可用</span>
+							<span>IP地址：192.168.20.20</span>
+							<span>操作系统：windows</span>
+							<span>主机名称：Rzuopd_do012</span>
+						</div>
+						<div class="t-box clearfix">
+							<div class="t-left-1">
+								<div class="clearfix">
+									<div style="width:50%;height:200px;float:left;">
+										<div id="container-speed-cpu"></div>
+									</div>
+									<div style="width:50%;height:200px;float:left;">
+    									<div id="container-speed-memory"></div>
+    								</div>
+								</div>
+								<div class="interface-box clearfix">
+									<!-- 致命 -->
+									<div class="interface-list color-dead">
+										<span class="iconfont icon-jiekoukaifa"></span>
+										<h1>接口异常</h1>
+										<p>本地连接</p>
+										<p>inter（R）8266LBS</p>
+									</div>
+									<!-- 严重 -->
+									<div class="interface-list color-serious">
+										<span class="iconfont icon-jiekoukaifa"></span>
+										<h1>接口异常</h1>
+										<p>本地连接</p>
+										<p>inter（R）8266LBS</p>
+									</div>
+									<!-- 警告 -->
+									<div class="interface-list color-warning">
+										<span class="iconfont icon-jiekoukaifa"></span>
+										<h1>接口异常</h1>
+										<p>本地连接</p>
+										<p>inter（R）8266LBS</p>
+									</div>
+									<!-- 主要 -->
+									<div class="interface-list color-main">
+										<span class="iconfont icon-jiekoukaifa"></span>
+										<h1>接口正常</h1>
+										<p>本地连接</p>
+										<p>inter（R）8266LBS</p>
+									</div>
+								</div>
+							</div>
+							<div class="t-right-1">
+								<!-- 致命 -->
+								<div class="slide-state">
+									<p>分区E利用率</p>
+									<span class="slide-box color-dead">
+										<span class="slide-bg">
+											<span class="slide-width" style="width:90.00%;"></span>
+										</span>
+										<span class="slide-value">90.00%</span>
+									</span>
+								</div>
+								<!-- 严重 -->
+								<div class="slide-state">
+									<p>分区F利用率</p>
+									<span class="slide-box color-serious">
+										<span class="slide-bg">
+											<span class="slide-width" style="width:65.00%;"></span>
+										</span>
+										<span class="slide-value">65.00%</span>
+									</span>
+								</div>
+								<!-- 警告 -->
+								<div class="slide-state">
+									<p>分区C利用率</p>
+									<span class="slide-box color-warning">
+										<span class="slide-bg">
+											<span class="slide-width" style="width:75.00%;"></span>
+										</span>
+										<span class="slide-value">75.00%</span>
+									</span>
+								</div>
+								<!-- 主要 -->
+								<div class="slide-state">
+									<p>分区D利用率</p>
+									<span class="slide-box color-main">
+										<span class="slide-bg">
+											<span class="slide-width" style="width:45.00%;"></span>
+										</span>
+										<span class="slide-value">45.00%</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="monitor-screen-cell-box" id="index-cell-5">
+				<div class="monitor-screen-cell-head" id="index-cell-head-5">
+					<h4>关注主机</h4>
+					<span class="setting iconfont icon-shezhi1"></span>
+					<span class="refresh2 iconfont icon-shuaxin"></span>
+					<span class="remove iconfont icon-shanchu"></span>
+				</div>
+				<div class="monitor-screen-cell-body" id="index-cell-body-5">
+					<div class="m-title">
+						<span>当前状态：可用</span>
+						<span>IP地址：192.168.20.20</span>
+						<span>监控类型：交换机</span>
+						<span>设备名称：swhivj_do012</span>
+					</div>
+					<div class="t-box clearfix">
+						<div class="t-left">
+							<div id="container-speed-cpu-2" style="height:180px;"></div>
+							<div id="container-speed-memory-2" style="height:180px;"></div>
+						</div>
+						<div class="t-right">
+							<div class="t-icon-box">
+								<!-- 致命 -->
+								<span class="iconfont icon-jiekoukaifa color-dead active" title="Fastoius_0293" onclick="interfaceMessChange(this,event);"></span>
+								<!-- 主要 -->
+								<span class="iconfont icon-jiekoukaifa color-main" title="Fastoius_0294" onclick="interfaceMessChange(this,event);"></span>
+								<!-- 严重 -->
+								<span class="iconfont icon-jiekoukaifa color-serious" title="Fastoius_0295" onclick="interfaceMessChange(this,event);"></span>
+								<!-- 警告 -->
+								<span class="iconfont icon-jiekoukaifa color-warning" title="Fastoius_0296" onclick="interfaceMessChange(this,event);"></span>
+								<span class="iconfont icon-jiekoukaifa color-main" title="Fastoius_0297" onclick="interfaceMessChange(this,event);"></span>
+								<span class="iconfont icon-jiekoukaifa color-main" title="Fastoius_0298" onclick="interfaceMessChange(this,event);"></span>
+							</div>
+							<div class="t-content" id="tContent"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="monitor-screen-cell" id="index-cell-4">
+			<div class="monitor-screen-row" id="index-cell-row-4">
+				<div class="monitor-screen-cell-box">
+					<div class="monitor-screen-cell-head" id="index-cell-row-head-4">
+						<h4>告警预览</h4>
+						<span class="setting iconfont icon-shezhi1"></span>
+						<span class="refresh2 iconfont icon-shuaxin"></span>
+						<span class="remove iconfont icon-shanchu"></span>
+					</div>
+					<div class="monitor-screen-cell-body" id="index-cell-row-body-4">
+						<div class="monitor-tabs">
+							<ul class="monitor-tabs-ul clearfix" id="tabs">
+								<li class="active"><a href="#alldevice">全部</a></li>
+								<li><a href="#host">主机</a></li>
+								<li><a href="#networkdevice">网络设备</a></li>
+								<li><a href="#application">应用</a></li>
+							</ul>
+							<div class="monitor-tabs-box">
+								<div id="alldevice">
+									<div id="container-alldevice"></div>
+								</div>
+								<div id="host">2</div>
+								<div id="networkdevice">3</div>
+								<div id="application">4</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="monitor-screen-cell-box" id="index-cell-6">
+				<div class="monitor-screen-cell-head" id="index-cell-head-6">
+					<h4>TOPN-CPU利用率</h4>
+					<span class="setting iconfont icon-shezhi1"></span>
+					<span class="refresh2 iconfont icon-shuaxin"></span>
+					<span class="remove iconfont icon-shanchu"></span>
+				</div>
+				<div class="monitor-screen-cell-body" id="index-cell-body-6">
+					<div id="container-cpu"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>	
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts-more.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/solid-gauge.js"></script>
+<script>
+//第一个接口信息加载
+interfaceMessage("Fastoius_0293");
+//关注主机2 接口信息切换
+function interfaceMessChange(obj,event){
+	$(obj).addClass('active').siblings().removeClass('active');
+	//获取接口名称
+	var name = $(event.target).attr('title');
+	interfaceMessage(name);
+}
+//调用接口信息
+function interfaceMessage(name){
+	var html = '<p class="t-name">接口名称:'+name+'</p>'
+			+ '<div class="t-descript clearfix"><div class="t-des-div">'	
+			+ '<p><label>宽带利用率</label><span>5.5%</span></p>'
+			+ '<p><label>宽带利用率</label><span>23kbps</span></p>'
+			+ '<p><label>发送利用率</label><span>2.89%</span></p></div>'
+			+ '<div class="t-des-div"><p><label>接收速率</label><span>5.5%</span></p>'
+			+ '<p><label>接收利用率</label><span>23kbps</span></p>'
+			+ '<p><label>丢包率</label><span>2.89%</span></p></div></div>';
+	$('#tContent').html(html);
+}
+
+$('#tabs li').click(function(){
+	var $this = $(this);
+	$this.addClass('active').siblings().removeClass('active');
+	$this.parents('.monitor-tabs').find('.monitor-tabs-box > div:eq('+$this.index()+')').show().siblings().hide();
+});
+var chart = null;
+$('#container-alldevice').highcharts({
+	chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        spacing : [20, 0 , 20, 40]
+    },
+    title: {
+        floating:true,
+        text: ' '
+    },
+    credits:{
+    	enabled:false
+    },
+    legend : {
+ 	   layout: 'vertical',
+        backgroundColor: '#FFFFFF',
+        floating: true,
+        align: 'left',
+        verticalAlign: 'top',
+        x: 0,
+        y: 15,
+        labelFormatter: function () {
+            return this.name + ' <span style="color:#b6daff;">'+this.percentage.toFixed(2)+'%</span>';
+        }
+    },
+    subtitle: {
+        text: ''
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            showInLegend:true,
+            dataLabels: {
+                enabled: false,
+                
+                format: '<b>{point.name}</b>: {point.percentage:.1f} ',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            },
+            point: {
+                events: {
+                    mouseOver: function(e) {  // 鼠标滑过时动态更新标题
+                        // 标题更新函数，API 地址：https://api.hcharts.cn/highcharts#Chart.setTitle
+                        chart.setTitle({
+                            text: e.target.name+ '\t'+ e.target.y
+                        });
+                    }
+                }
+            },
+        }
+    },
+    series: [{
+    	type: 'pie',
+        innerSize: '50%',
+        name: '',
+        data: [{
+        	'name':'致命',
+        	y:6,
+        	'color':'#cd4718'
+        },{
+        	'name':'严重',
+        	y:8	,
+        	'color':'#e07808'
+        },{
+        	'name':'警告',
+        	y:3,
+        	'color':'#da9715'
+        },{
+        	'name':'主要',
+        	y:2,
+        	'color':'#0cbcd6'
+        }]
+    }]
+}, function(c) {
+    // 环形图圆心
+    var centerY = c.series[0].center[1],
+        titleHeight = parseInt(c.title.styles.fontSize);
+    c.setTitle({
+        y:centerY + titleHeight/2
+    });
+    chart = c;
+});
+
+Highcharts.getOptions().plotOptions.column.colors = (function () {
+    var colors = ['#0dcfd6','#1b7ec1','#1b7ec1','#1b7ec1','#1b7ec1','#1b7ec1'];
+    return colors;
+}());
+//Cpu利用率
+Highcharts.chart('container-cpu', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: ''
+    },
+    credits:{
+    	enabled:false
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        type: 'category'
+    },
+    yAxis: {
+        title: {
+            text: ''
+        }
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+    },
+    series: [{
+        name: '',
+        colorByPoint: true,
+        data: [{
+            name: '192.168.20.20',
+            y: 56.33,
+        }, {
+            name: '192.168.30.20',
+            y: 24.03,
+        }, {
+            name: '192.168.40.10',
+            y: 10.38,
+        }, {
+            name: '10.10.250.10',
+            y: 4.77,
+        }]
+    }]
+});
+
+
+var gaugeOptions = {
+    chart: {
+        type: 'solidgauge'
+    },
+    title: null,
+    credits:{
+    	enabled:false
+    },
+    pane: {
+        center: ['50%', '85%'],
+        size: '140%',
+        startAngle: -90,
+        endAngle: 90,
+        background: {
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#1f67a5',
+            innerRadius: '60%',
+            outerRadius: '100%',
+            shape: 'arc'
+        }
+    },
+    tooltip: {
+        enabled: false
+    },
+    // the value axis
+    yAxis: {
+        stops: [
+            [0.1, '#0cbcd6'], // 主要
+            [0.6, '#da9715'], // 警告
+            [0.8, '#e07808'], // 严重
+            [0.9, '#cd4718'] //致命
+        ],
+        lineWidth: 0,
+        minorTickInterval: null,
+        tickPixelInterval: 400,
+        tickWidth: 0,
+        title: {
+            y: -70
+        },
+        labels: {
+            y: 16
+        }
+    },
+    plotOptions: {
+        solidgauge: {
+            dataLabels: {
+                y: 5,
+                borderWidth: 0,
+                useHTML: true
+            }
+        }
+    }
+};
+// The speed gauge
+$('#container-speed-cpu').highcharts(Highcharts.merge(gaugeOptions, {
+    yAxis: {
+        min: 0,
+        max: 200,
+        title: {
+            text: 'CPU平均利用率'
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'CPU平均利用率',
+        data: [80],
+        dataLabels: {
+            format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+            ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'white') + '">{y}</span><br/>' +
+            '<span style="font-size:12px;color:silver">km/h</span></div>'
+        },
+        tooltip: {
+            valueSuffix: ' km/h'
+        }
+    }]
+}));
+// The RPM gauge
+$('#container-speed-memory').highcharts(Highcharts.merge(gaugeOptions, {
+    yAxis: {
+        min: 0,
+        max: 5,
+        title: {
+            text: '内存平均利用率'
+        }
+    },
+    series: [{
+        name: '内存平均利用率',
+        data: [1],
+        dataLabels: {
+            format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+            ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'white') + '">{y:.1f}</span><br/>' +
+            '<span style="font-size:12px;color:silver">* 1000 / min</span></div>'
+        },
+        tooltip: {
+            valueSuffix: ' revolutions/min'
+        }
+    }]
+}));
+
+//The speed gauge
+$('#container-speed-cpu-2').highcharts(Highcharts.merge(gaugeOptions, {
+    yAxis: {
+        min: 0,
+        max: 200,
+        title: {
+            text: 'CPU平均利用率'
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'CPU平均利用率',
+        data: [80],
+        dataLabels: {
+            format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+            ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'white') + '">{y}</span><br/>' +
+            '<span style="font-size:12px;color:silver">km/h</span></div>'
+        },
+        tooltip: {
+            valueSuffix: ' km/h'
+        }
+    }]
+}));
+// The RPM gauge
+$('#container-speed-memory-2').highcharts(Highcharts.merge(gaugeOptions, {
+    yAxis: {
+        min: 0,
+        max: 5,
+        title: {
+            text: '内存平均利用率'
+        }
+    },
+    series: [{
+        name: '内存平均利用率',
+        data: [1],
+        dataLabels: {
+            format: '<div style="text-align:center"><span style="font-size:25px;color:' +
+            ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'white') + '">{y:.1f}</span><br/>' +
+            '<span style="font-size:12px;color:silver">* 1000 / min</span></div>'
+        },
+        tooltip: {
+            valueSuffix: ' revolutions/min'
+        }
+    }]
+}));
+// Bring life to the dials
+setInterval(function () {
+    // cpu
+    var charts = $('#container-speed-cpu').highcharts(),
+        point,
+        newVal,
+        inc;
+    if (charts) {
+        point = charts.series[0].points[0];
+        inc = Math.round((Math.random() - 0.5) * 100);
+        newVal = point.y + inc;
+        if (newVal < 0 || newVal > 200) {
+            newVal = point.y - inc;
+        }
+        point.update(newVal);
+    }
+    // 内存
+    charts = $('#container-speed-memory').highcharts();
+    if (charts) {
+        point = charts.series[0].points[0];
+        inc = Math.random() - 0.5;
+        newVal = point.y + inc;
+        if (newVal < 0 || newVal > 5) {
+            newVal = point.y - inc;
+        }
+        point.update(newVal);
+    }
+    charts = $('#container-speed-cpu-2').highcharts();
+    if (charts) {
+        point = charts.series[0].points[0];
+        inc = Math.round((Math.random() - 0.5) * 100);
+        newVal = point.y + inc;
+        if (newVal < 0 || newVal > 200) {
+            newVal = point.y - inc;
+        }
+        point.update(newVal);
+    }
+    // RPM
+    charts = $('#container-speed-memory-2').highcharts();
+    if (charts) {
+        point = charts.series[0].points[0];
+        inc = Math.random() - 0.5;
+        newVal = point.y + inc;
+        if (newVal < 0 || newVal > 5) {
+            newVal = point.y - inc;
+        }
+        point.update(newVal);
+    }
+}, 2000);
+
+</script>
